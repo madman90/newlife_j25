@@ -1,0 +1,13 @@
+#bg {
+    background:url('images/header_bg.png') repeat-x top center #fff;
+}
+body.inner {
+    background:url('images/header_bg.png') repeat-x center -342px  #fff;
+}
+#wrap {
+    width:901px;
+    overflow:visible;
+    margin:0 auto;
+    padding:0 0 80px;
+}
+
