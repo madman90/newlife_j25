@@ -22,8 +22,8 @@ $app= JFactory::getApplication();
 
 <body>
 
-<jdoc:include type="modules" name="debug" style="rounded"/><br>
-<jdoc:include type="modules" name="position-0" style="rounded"/><br>
+<jdoc:include type="modules" name="debug" style="rounded"/>
+<jdoc:include type="modules" name="position-0" style="rounded"/>
 <jdoc:include type="modules" name="position-1" style="rounded"/><br>
 <jdoc:include type="modules" name="position-2" style="rounded"/><br>
 <jdoc:include type="modules" name="position-3" style="rounded"/><br>
@@ -39,9 +39,6 @@ $app= JFactory::getApplication();
 <jdoc:include type="modules" name="position-13" style="rounded"/><br>
 <jdoc:include type="modules" name="position-14" style="rounded"/><br>
 <jdoc:include type="component" />
-
-
-
 
 </body>
 

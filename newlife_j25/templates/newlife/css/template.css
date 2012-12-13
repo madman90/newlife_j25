@@ -47,7 +47,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 .menu {
     width: 750px;
-    float: left;
+    /*float: left;*/
     padding: 0 0 0 68px;
 }
 
@@ -56,7 +56,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     list-style: none;
     float: left;
     display: block;
-    height: 40px;
+    /*height: 40px;*/
 }
 
 
@@ -67,7 +67,8 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     text-decoration: none;
     font-size: 22px;
     color: #333;
-   }
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.15);
+}
 
 .menu li.active {
     background: url("../images/active_arrow.png") no-repeat 30% 0;
@@ -80,7 +81,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 .menu li ul {
     margin: 17px 0 0 0;
     background: url("../images/dropped_nav.png") /*repeat-x*/ no-repeat 0px 8px;
-    z-index: 3;
+    /*z-index: 3;*/
     position: absolute;
     top: 69px;
     left: 20px;
@@ -95,8 +96,8 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
     background-size: 100% 100%;
-
 
 }
 
@@ -104,13 +105,17 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     background: url("../images/nav_arrow.png") no-repeat 17px 0px;
     }
 
-.menu li:hover > ul { opacity: 1; }
+.menu li:hover > ul {
+    opacity: 1;
+    }
 
 .menu li ul li {
     float: none;
     padding: 10px 0 0px 0px;
-    height: 10px;
+    height: 0px;
     overflow: visible;
+
+
     -webkit-transition: height .5s ease .1s;
     -moz-transition: height .5s ease .1s;
     -o-transition: height .5s ease .1s;
@@ -125,7 +130,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 }
 
 .menu li:hover >  ul li {
-    height: 36px;
+    height: 30px;
     overflow: visible;
     }
 
@@ -137,3 +142,145 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 }
 
+/*****************************************header*image**************************************************/
+
+.custom_header_image {
+    overflow: hidden;
+    width: 644px;
+    height: 252px;
+    /*position: absolute;*/
+    /*left: 811px;*/
+    top: 100px;
+    /*top: 89px;*/
+    /*z-index: 1;*/
+    border: 10px #FFF solid;
+
+    -webkit-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -ms-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+
+
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.custom_header_image p {
+    display: block;
+    position: relative;
+    top: 153px;
+    right: 20px;
+    font-weight: bold;
+    color: #333333;
+    font-family: "Segoe UI",sans-serif;
+
+
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.custom_sidebar {
+    overflow: hidden;
+    /*float: left;*/
+    width: 320px;
+    padding: 0 10px 0 0;
+}
+
+.custom_sidebar p {
+    width: 260px;
+    margin: 10px 0 10px 30px;
+
+}
+/*.sidebar ul.preaches {*/
+    /*overflow: hidden;*/
+    /*margin: 0 0 15px 30px;*/
+/*}*/
+/*.sidebar ul.preaches li {*/
+    /*overflow: hidden;*/
+    /*padding: 5px 0 15px;*/
+    /*background: url("./images/preaches_line.png") no-repeat 0 87px;*/
+/*}*/
+/*.sidebar ul.preaches li h3 {*/
+    /*line-height: 20px;*/
+    /*font-family: "Century Gothic", sans-serif;*/
+    /*font-size: 13px;*/
+/*}*/
+/*.sidebar ul.preaches li p {*/
+    /*width: 260px;*/
+    /*font-size: 13px;*/
+/*}*/
+/*.quote {*/
+    /*overflow: hidden;*/
+    /*width: 319px;*/
+    /*height: 218px;*/
+    /*margin: 0 0 0 15px;*/
+    /*background: url("./images/quote.png") no-repeat;*/
+/*}*/
+/*.quote .date {*/
+    /*margin: 30px 0 14px 36px;*/
+    /*padding: 18px 0 0;*/
+    /*background: url("./images/logo_mini.png") no-repeat;*/
+/*}*/
+/*.quote .date p {*/
+    /*padding: 0 0 0 62px;*/
+    /*line-height: 17px;*/
+    /*font-size: 12px;*/
+/*}*/
+/*.quote p {*/
+    /*width: 267px;*/
+    /*padding: 0 0 0 30px;*/
+    /*font-size: 15px;*/
+/*}*/
+/*.quote p  a {*/
+    /*font-size: 15px;*/
+    /*color: #000;*/
+/*}*/
+/*.sidebar a.tw_link {*/
+    /*padding: 0 0 0 30px;*/
+    /*font-family: Arial, sans-serif;*/
+    /*font-size: 13px;*/
+    /*color: #990000;*/
+    /*line-height: 21px;*/
+/*}*/
+
+
+
+/***************tweeter************/
+
+.quote {
+    overflow: hidden;
+    width: 319px;
+    height: 218px;
+    margin: 0 0 0 15px;
+
+    background: url("../images/quote.png") no-repeat;
+}
+.quote .date {
+    margin: 30px 0 14px 36px;
+    padding: 18px 0 0;
+    background: url("./images/logo_mini.png") no-repeat;
+}
+.quote .date p {
+    padding: 0 0 0 62px;
+    line-height: 17px;
+    font-size: 12px;
+}
+.quote p {
+    width: 267px;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+}
+.quote p  a {
+    font-size: 15px;
+    color: #000;
+}
+.tw_link {
+    padding: 0 0 0 30px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #990000;
+    line-height: 21px;
+}
