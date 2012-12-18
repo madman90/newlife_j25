@@ -13,7 +13,7 @@ $app= JFactory::getApplication();
 <head>
 
     <jdoc:include type="head" />
-    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/reset.css" type="text/css" />
+<!--    <link rel="stylesheet" href="--><?php //echo $this->baseurl ?><!--/templates/--><?php //echo $this->template; ?><!--/css/reset.css" type="text/css" />-->
     <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 
@@ -39,6 +39,9 @@ $app= JFactory::getApplication();
 <jdoc:include type="modules" name="position-13" style="rounded"/><br>
 <jdoc:include type="modules" name="position-14" style="rounded"/><br>
 <jdoc:include type="component" />
+
+
+
 
 </body>
 

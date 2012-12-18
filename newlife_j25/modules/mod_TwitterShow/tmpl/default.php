@@ -167,58 +167,52 @@ $width=$params->get('width');
 
 
 
-//    html view start
 
     { ?>
 
-<!--        <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>-->
-<!--        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/--><?php //echo $params->get('username')?><!--.json?callback=twitterCallback2&count=--><?php //echo $params->get('rpp') ?><!--"></script>-->
-        <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/newlife_ck_ua.json?callback=twitterCallback2&count=5"></script>
+
+<!--           html view start-->
 
 
-        <h3>Twitter</h3>
-        <ul id="twitter_update_list">
+        <?php
+        $twitter_show = json_decode(file_get_contents ('https://api.twitter.com/1/users/show.json?screen_name=newlife_ck_ua'));
+        $twitter_timeline = json_decode(file_get_contents('https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=newlife_ck_ua&count=2'));
+//        echo "\n" . "ссылка на картинку: " . $twitter_show->profile_image_url_https;
+//        echo "\n" . "твит: " . $twitter_timeline[0]->text;
+//        echo "\n" . "время: " . $twitter_timeline[0]->created_at;
+//        echo "\n" . "tweet_id: " . $twitter_timeline[0]->id_str;
+        $twitter_timeline_array = explode(" ", $twitter_timeline[0]->text);
+//        формируем ссылку непосредственно в твите
+        $tweet_link = (array_pop($twitter_timeline_array));
+        $tweet = implode(" ",($twitter_timeline_array));
+//        формируем отображение даты создания твита
+        $date_array = explode(" ",$twitter_timeline[0]->created_at);
+        $month_array = array ('Jan' => 'січня' , 'Feb' => 'лютого' , 'Mar' => 'березня' , 'Apr' => 'квітня' ,
+            'May' => 'травня' , 'Jun' => 'червень' , 'Jul' => 'липня' , 'Aug' => 'серпня' , 'Sep' => 'вересня' ,
+            'Oct' => 'жовтня' , 'Nov' => 'листопада' , 'Dec' => 'грудня');
+        $day_of_week_array = array('Sun'=>'Неділя','Mon'=>'Понеділок','Tue'=>'Вівторок','Wed'=>'Середа',
+            'Thu'=>'Четвер','Fri'=>'П\'ятниця','Sat'=>'Субота' );
+        $day_of_week = $day_of_week_array[$date_array[0]];
+        $day= $date_array[2];
+        $month= $month_array[$date_array[1]];
+        $year = $date_array[5];
+
+
+        ?>
+
+        <ul class="quote">
+            <li>
+                <img class="avatar" src="<?php echo $twitter_show->profile_image_url_https;?>">
+                <p class="date"><?php echo $day_of_week?>, <br><?php echo $day. " " . $month. " " . $year;?></p>
+            </li>
+            <li class="last_tweet">
+                <p><?php echo $tweet;?> <a href="<?php echo $tweet_link;?>"><?php echo $tweet_link;?></a></p></p>
+            </li>
         </ul>
+        <a class = "tw_link" href="https://twitter.com/<?php echo $params->get('username')?>">слідкуйте за нами в twitter</a>
 
-<!--        <div class="quote">-->
-<!--            <div class="date">-->
-<!--                <p>Вівторок,</p>-->
-<!--                <p>13 вересня 2011 from Bible</p>-->
-<!--             <ul id="twitter_update_list">-->
-<!---->
-<!--             </ul>-->
-<!--            </div>-->
-<!--        </div>-->
+<!--            html view end-->
 
-
-
-
-
-        <a class = "tw_link" href="#">слідкуйте за нами в twitter</a>
-
-
-<!--<div id="twitter_div">-->
-<!---->
-<!---->
-<!---->
-<!--<ul id="twitter_update_list"></ul>-->
-<!---->
-<!---->
-<!---->
-<!--<a href="http://twitter.com/--><?php //echo $params->get('username')?><!--" id="twitter-link" style="display:block;text-align:right;">follow me on Twitter</a>-->
-<!---->
-<!---->
-<!---->
-<!--</div>-->
-
-
-
-<!--<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>-->
-
-
-
-<!--<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/--><?php //echo $params->get('username')?><!--.json?callback=twitterCallback2&amp;count=--><?php //echo $params->get('rpp') ?><!--"></script>-->
 
 
 
@@ -227,7 +221,6 @@ $width=$params->get('width');
 
 
 
-//    html view end
     else {?>
 
 
