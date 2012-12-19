@@ -175,8 +175,8 @@ $width=$params->get('width');
 
 
         <?php
-        $twitter_show = json_decode(file_get_contents ('https://api.twitter.com/1/users/show.json?screen_name=newlife_ck_ua'));
-        $twitter_timeline = json_decode(file_get_contents('https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=newlife_ck_ua&count=2'));
+        $twitter_show = json_decode(file_get_contents ('https://api.twitter.com/1/users/show.json?screen_name=' . $params->get('username')));
+        $twitter_timeline = json_decode(file_get_contents('https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=' . $params->get('username') . '&count=2'));
 //        echo "\n" . "ссылка на картинку: " . $twitter_show->profile_image_url_https;
 //        echo "\n" . "твит: " . $twitter_timeline[0]->text;
 //        echo "\n" . "время: " . $twitter_timeline[0]->created_at;

@@ -24,20 +24,20 @@ $app= JFactory::getApplication();
 
 <jdoc:include type="modules" name="debug" style="rounded"/>
 <jdoc:include type="modules" name="position-0" style="rounded"/>
-<jdoc:include type="modules" name="position-1" style="rounded"/><br>
-<jdoc:include type="modules" name="position-2" style="rounded"/><br>
-<jdoc:include type="modules" name="position-3" style="rounded"/><br>
-<jdoc:include type="modules" name="position-4" style="rounded"/><br>
-<jdoc:include type="modules" name="position-5" style="rounded"/><br>
-<jdoc:include type="modules" name="position-6" style="rounded"/><br>
-<jdoc:include type="modules" name="position-7" style="rounded"/><br>
-<jdoc:include type="modules" name="position-8" style="rounded"/><br>
-<jdoc:include type="modules" name="position-9" style="rounded"/><br>
-<jdoc:include type="modules" name="position-10" style="rounded"/><br>
-<jdoc:include type="modules" name="position-11" style="rounded"/><br>
-<jdoc:include type="modules" name="position-12" style="rounded"/><br>
-<jdoc:include type="modules" name="position-13" style="rounded"/><br>
-<jdoc:include type="modules" name="position-14" style="rounded"/><br>
+<jdoc:include type="modules" name="position-1" style="rounded"/>
+<jdoc:include type="modules" name="position-2" style="rounded"/>
+<jdoc:include type="modules" name="position-3" style="rounded"/>
+<jdoc:include type="modules" name="position-4" style="rounded"/>
+<jdoc:include type="modules" name="position-5" style="rounded"/>
+<jdoc:include type="modules" name="position-6" style="rounded"/>
+<jdoc:include type="modules" name="position-7" style="rounded"/>
+<jdoc:include type="modules" name="position-8" style="rounded"/>
+<jdoc:include type="modules" name="position-9" style="rounded"/>
+<jdoc:include type="modules" name="position-10" style="rounded"/>
+<jdoc:include type="modules" name="position-11" style="rounded"/>
+<jdoc:include type="modules" name="position-12" style="rounded"/>
+<jdoc:include type="modules" name="position-13" style="rounded"/>
+<jdoc:include type="modules" name="position-14" style="rounded"/>
 <jdoc:include type="component" />
 
 
