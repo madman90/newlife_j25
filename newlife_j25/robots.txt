@@ -12,6 +12,7 @@
 # http://www.sxw.org.uk/computing/robots/check.html
 
 User-agent: *
+Disallow: /
 Disallow: /administrator/
 Disallow: /cache/
 Disallow: /cli/

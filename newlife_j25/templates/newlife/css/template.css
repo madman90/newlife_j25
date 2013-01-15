@@ -2,22 +2,22 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body {
-    width:100%;
-    height:100%;
+	width:100%;
+	height:100%;
 }
 body {
-    padding:0;
-    margin:0;
-    font-size:12px;
-    font-family: "Myriad Pro", sans-serif;
-    color:#000;
-
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-family: "Myriad Pro", sans-serif; 
+	color:#000;
+	
 }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
-    padding:0;
-    margin:0;
-    outline:none;
-    list-style:none;
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -38,17 +38,53 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 .align-l                       { text-align:left !important; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrapper {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1600px;
+    background-color: #DCC4A5;
+}
 
+.inner_wrapper {
+    overflow: hidden;
+    background: url("../images/innerwrapper_bg.png") repeat-y;
+}
+.logo_bg {
+    background: url("../images/logo_bg.png") no-repeat 7px  bottom;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header {
+    overflow: hidden;
+    height: 360px;
+    background: url("../images/header.fw.png") no-repeat;
 
+}
+#header h1.logo {
+    float: left;
+	width: 258px;
+	height: 187px;
+	padding: 77px 0 0 333px;
 
+}
+#header h1.logo a {
+    display: block;
+    width: 258px;
+    height: 187px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -500px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------NAV------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
 .menu {
     width: 750px;
-    /*float: left;*/
-    padding: 0 0 0 68px;
+    float: left;
+    padding: 0 0 0 74px;
 }
 
 .menu li {
@@ -56,7 +92,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     list-style: none;
     float: left;
     display: block;
-    /*height: 40px;*/
 }
 
 
@@ -79,12 +114,12 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 }
 
 .menu li ul {
-    margin: 17px 0 0 0;
-    background: url("../images/dropped_nav.png") /*repeat-x*/ no-repeat 0px 8px;
-    /*z-index: 3;*/
     position: absolute;
     top: 69px;
     left: 20px;
+    margin: 17px 0 0 0;
+    background: url("../images/dropped_nav.png")  no-repeat 0px 8px;
+    z-index: 3;
     opacity: 0;
 
     -webkit-transition: opacity .5s ease .1s;
@@ -103,11 +138,12 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 .menu li ul li:first-child {
     background: url("../images/nav_arrow.png") no-repeat 17px 0px;
-    }
+}
 
 .menu li:hover > ul {
+    display: block;
     opacity: 1;
-    }
+}
 
 .menu li ul li {
     float: none;
@@ -127,14 +163,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 .menu li ul li a {
     color: #ffffff;
     padding: 20px 0 0 0;
-}
-
-.menu li:hover >  ul li {
-    height: 30px;
-    overflow: visible;
-    }
-
-.menu li ul li a {
     white-space: nowrap;
     padding: 4px 0 4px 4px;
     margin: 0 20px 0 0;
@@ -142,21 +170,25 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 }
 
-/*****************************************header*image**************************************************/
+.menu li:hover >  ul li {
+    height: 30px;
+    overflow: visible;
+}
+
+/*----------------------------------------------------------------------------------*/
 
 .custom_header_image {
     overflow: hidden;
+    position: absolute;
+    margin: 95px 0 0 657px;
+    z-index: 1;
     width: 644px;
-    height: 252px;
-    /*position: absolute;*/
-    /*left: 811px;*/
-    top: 100px;
-    /*top: 89px;*/
-    /*z-index: 1;*/
-    border: 10px #FFF solid;
+    height: 249px;
+    border: solid #fff 11px;
 
     -webkit-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
     -moz-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -o-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
     -ms-box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
     box-shadow:0 1px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3) inset;
 
@@ -178,13 +210,142 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 
 }
+/*----------------------------------------------------------------------------------*/
+.guidance {
+    overflow: hidden;
+    padding: 0 274px 0 302px;
+    margin: 0 0 13px;
+    background: url("../images/guidance_bg.png") repeat-x;
+    width: 1024px;
+    height: 79px;
+    box-shadow: 0 1px 5px 0;
+    -webkit-box-shadow: 0 1px 5px 0;
+    -moz-box-shadow: 0 1px 5px 0;
+}
+.guidance p {
+    float: left;
+    width: 245px;
+    margin: 5px 0 0 47px;
+    line-height: 21px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #333333;
+}
+.guidance h2 {
+    float: left;
+    margin: 22px 0 0 65px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+}
+.guidance h2.whats_new {
+    font-family: "Myriad Pro", sans-serif;
+    color: #333333;
+    font-weight: bold;
 
+}
+.guidance form.search {
+    overflow: hidden;
+    float: right;
+    margin: 23px 13px 0 0;
+}
+.search label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+}
+.search fieldset {
+    border: 0 none;
+}
+.search input.search {
+    border: solid 1px #525657;
+    border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    box-shadow: 0 0 10px 1px #DDDFE0 inset;
+    -moz-box-shadow: 0 0 10px 1px #DDDFE0 inset;
+    -webkit-box-shadow: 0 0 10px 1px #DDDFE0 inset;
+    background: url("../images/magnifying_glass.png") no-repeat 2px 6px #F8FAFC;
+    height: 24px;
+    padding: 0 0 0 18px;
+    margin: 0;
+}
+.search input.submit {
+    background-color: #60AFD7;
+    border: solid 1px #FEFEFF;
+    border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 5px 0 #7A7670;
+    -moz-box-shadow: 0 2px 5px 0 #7A7670;
+    -webkit-box-shadow: 0 2px 5px 0 #7A7670;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 25px;
+    margin: 2px 2px 2px 0;
+    position: relative;
+    top: 0;
+    right: 4px;
+}
+
+.social_links {
+    overflow: hidden;
+    float: right;
+    width: 83px;
+    height: 44px;
+    margin: 21px 0 0;
+}
+.social_links li {
+    float: left;
+    height: 37px;
+    margin: 0 0 0 3px;
+}
+.social_links li a {
+    text-indent: 100px;
+    background: url("../images/social_links.png") no-repeat;
+    display: block;
+    height: 37px;
+}
+
+.social_links li.fb {
+    width: 30px;
+}
+
+.social_links li.tw {
+    width: 41px;
+}
+.social_links li.fb a {
+    width: 30px;
+    background-position: -2px -1px;
+}
+.social_links li.fb a:hover {
+    background-position: -2px -40px;
+}
+.social_links li.tw  a {
+    width: 41px;
+    background-position: -32px -1px;
+}
+.social_links li.tw  a:hover {
+    background-position: -32px -40px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#content {
+    overflow: hidden;
+    width: 1057px;
+    margin: 0 auto 36px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.custom_sidebar {
+.sidebar {
     overflow: hidden;
-    /*float: left;*/
+    float: left;
     width: 320px;
     padding: 0 10px 0 0;
 }
@@ -194,62 +355,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     margin: 10px 0 10px 30px;
 
 }
-/*.sidebar ul.preaches {*/
-    /*overflow: hidden;*/
-    /*margin: 0 0 15px 30px;*/
-/*}*/
-/*.sidebar ul.preaches li {*/
-    /*overflow: hidden;*/
-    /*padding: 5px 0 15px;*/
-    /*background: url("./images/preaches_line.png") no-repeat 0 87px;*/
-/*}*/
-/*.sidebar ul.preaches li h3 {*/
-    /*line-height: 20px;*/
-    /*font-family: "Century Gothic", sans-serif;*/
-    /*font-size: 13px;*/
-/*}*/
-/*.sidebar ul.preaches li p {*/
-    /*width: 260px;*/
-    /*font-size: 13px;*/
-/*}*/
-/*.quote {*/
-    /*overflow: hidden;*/
-    /*width: 319px;*/
-    /*height: 218px;*/
-    /*margin: 0 0 0 15px;*/
-    /*background: url("./images/quote.png") no-repeat;*/
-/*}*/
-/*.quote .date {*/
-    /*margin: 30px 0 14px 36px;*/
-    /*padding: 18px 0 0;*/
-    /*background: url("./images/logo_mini.png") no-repeat;*/
-/*}*/
-/*.quote .date p {*/
-    /*padding: 0 0 0 62px;*/
-    /*line-height: 17px;*/
-    /*font-size: 12px;*/
-/*}*/
-/*.quote p {*/
-    /*width: 267px;*/
-    /*padding: 0 0 0 30px;*/
-    /*font-size: 15px;*/
-/*}*/
-/*.quote p  a {*/
-    /*font-size: 15px;*/
-    /*color: #000;*/
-/*}*/
-/*.sidebar a.tw_link {*/
-    /*padding: 0 0 0 30px;*/
-    /*font-family: Arial, sans-serif;*/
-    /*font-size: 13px;*/
-    /*color: #990000;*/
-    /*line-height: 21px;*/
-/*}*/
-
-
-
-/***************tweeter************/
-
 .quote {
     overflow: hidden;
     width: 319px;
@@ -290,4 +395,86 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     font-size: 13px;
     color: #990000;
     line-height: 21px;
+
 }
+/*------------------------------------------------------------------------------------*/
+/*-------------------------------------CONTAINER--------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+.container {
+    overflow: hidden;
+    width: 678px;
+    padding: 10px 0 0 10px;
+}
+.container p {
+    padding: 0 0 31px 13px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.container h3 {
+    padding: 0 0 12px 18px;
+    font-size: 22px;
+    color: #333333;
+    line-height: 22px;
+}
+/*-----------------------------map-----------------------------*/
+.module_map {
+    position: relative;
+    width: 247px;
+    height: 247px;
+    margin: 0 30px 0 50px;
+    z-index: 3;
+
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+}
+.custom_map {
+    position: relative;
+    top: -31px;
+    z-index: 2;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#footer {
+    overflow: hidden;
+    height: 58px;
+    margin: 35px 0 0;
+    padding: 11px 286px 0 362px;
+    border-top: 1px solid #8A8277;
+    box-shadow: 0 0 35px 0 #FFFFFF;
+    -moz-box-shadow: 0 0 35px 0 #FFFFFF;
+    -webkit-box-shadow: 0 0 35px 0 #FFFFFF;
+}
+#footer  p {
+    overflow: hidden;
+    float: left;
+    width: 300px;
+    height: 49px;
+    padding: 10px 0 0 0;
+    font-size: 14px;
+}
+#footer  a {
+    display: block;
+    float: right;
+    width: 79px;
+    height: 39px;
+    background: url("../images/designer_link.png") no-repeat;
+    text-indent: -1400px;
+}
+#footer  a:hover {
+    background-position: 0 -40px;
+}
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = 'root';
-	public $db = 'newlife_j25';
+	public $db = 'newli965_newlifej25';
 	public $dbprefix = 'gs4lk_';
 	public $live_site = '';
 	public $secret = '4T2vPD8RwvQfcZ0l';
@@ -57,4 +57,10 @@ class JConfig {
 	public $tmp_path = '/home/madman90/www/newlife_j25/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
 }

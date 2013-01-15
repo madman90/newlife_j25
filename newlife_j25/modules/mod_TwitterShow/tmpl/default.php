@@ -206,7 +206,7 @@ $width=$params->get('width');
                 <p class="date"><?php echo $day_of_week?>, <br><?php echo $day. " " . $month. " " . $year;?></p>
             </li>
             <li class="last_tweet">
-                <p><?php echo $tweet;?> <a href="<?php echo $tweet_link;?>"><?php echo $tweet_link;?></a></p></p>
+                <p><?php echo $tweet;?> <a href="<?php echo $tweet_link;?>"><?php echo $tweet_link;?></a></p>
             </li>
         </ul>
         <a class = "tw_link" href="https://twitter.com/<?php echo $params->get('username')?>">слідкуйте за нами в twitter</a>
@@ -305,5 +305,5 @@ new TWTR.Widget({
 
 <?php } ?>
 
-<!--</div>-->
+</div>
 <!--<div align="right" style="color:#999;margin-bottom:3px;font-size:9px">E2: <a target="_blank" class="external" title="empirepromos.com" href="http://www.empirepromos.com"><span style="color:#999;margin-bottom:3px;font-size:9px" >Promotional Products</span></a></div>-->
