@@ -1,0 +1,76 @@
+/*
+# mod_sp_quickcontact - Ajax based quick contact Module by JoomShaper.com
+# -----------------------------------------------------------------------
+# Author    JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2012 JoomShaper.com. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.joomshaper.com
+*/
+
+.sp_quickcontact {
+    overflow: hidden;
+    margin: 0 0 27px 15px;
+    border: 0 none;
+}
+h3 {
+    font-family: Arial;
+}
+textarea#message {
+    margin: 0 0 10px 0;
+    padding: 15px 9px 9px 9px;
+    width: 439px;
+    height: 147px;
+    border: solid 1px #990000;
+    font: 15px/16px Arial;
+    color: #999999;
+}
+input {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 9px;
+    width: 448px;
+    height: 30px;
+    border: solid 1px #990000;
+    font: 15px/16px Arial;
+    color: #999999;
+}
+.button {
+    width: 141px;
+    height: 53px;
+    padding: 0;
+    margin: 1px;
+    background-color: #9B0606;
+    border: solid 1px #FFFFFF;
+    font-size: 27px;
+    color: #FFFFFF;
+    box-shadow: 0 0 2px 0 #CCC0B2;
+    -moz-box-shadow: 0 0 2px 0 #CCC0B2;
+    -webkit-box-shadow: 0 0 2px 0 #CCC0B2;
+    -o-box-shadow: 0 0 2px 0 #CCC0B2;
+    -ms-box-shadow: 0 0 2px 0 #CCC0B2;
+}
+p.sp_qc_loading {
+    background: url(../images/ajax-loader.gif) no-repeat 0 50%;
+    padding: 5px 20px
+}
+p.sp_qc_warn {
+    color: #9B0606;
+    font: 18px/18px Arial;
+}
+p.sp_qc_success {
+    color: #3875d7;
+    font-weight: normal;
+    font: 18px/18px Arial;
+}
+.sp_qc_error {
+    border:1px solid #e20000;
+    box-shadow: 0 0 5px 0 #990000 inset;
+}
+.sp_qc_error:focus {
+    border:1px solid red;
+}
+.sp_qc_clr {
+    clear:both;
+    margin-bottom:10px;
+}

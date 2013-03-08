@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
-	public $host = 'localhost';
-	public $user = 'root';
-	public $password = 'root';
-	public $db = 'newlife_j25';
+	public $host = '193.108.251.210';
+    public $user = 'newli965_newlife';
+    public $password = 'newlifechurch';
+    public $db = 'newli965_newlifej25';
 	public $dbprefix = 'gs4lk_';
 	public $live_site = '';
 	public $secret = '4T2vPD8RwvQfcZ0l';

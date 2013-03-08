@@ -1,0 +1,78 @@
+<?PHP
+/*------------------------------------------------------------------------
+# milkbox.php for PLG - SYSTEM - IMAGESIZER
+# ------------------------------------------------------------------------
+# author    reDim - Norbert Bayer
+# copyright (C) 2012 redim.de. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.redim.de
+# Technical Support:  Forum - http://www.redim.de/kontakt/
+-------------------------------------------------------------------------*/
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+JHTML::_('behavior.mootools');
+
+$path="plugins"."/"."system"."/"."imagesizer"."/"."lbscripts"."/"."milkbox"."/";
+
+$lang = JFactory::getLanguage();
+$l=substr($lang->getTag(),0,2);
+$document   = JFactory::getDocument();
+
+if(file_exists(JPATH_SITE."/".$path.$l.'_milkbox.css')){
+	$document->addStyleSheet($path.$l.'_milkbox.css','text/css',"screen");	
+}else{
+	$document->addStyleSheet($path.'milkbox.css','text/css',"screen");
+}
+
+if(file_exists(JPATH_SITE.DS.$path.$l.'milkbox.js')){
+	$document->addScript($path.$l.'milkbox.js');
+}else{
+	$document->addScript($path.'milkbox.js');	
+}
+unset($path);
+
+/*
+$java="window.addEvent('domready',function() {
+    ReMooz.assign();
+    $$('a.".trim($this->params->get("linkclass","linkthumb"))."').each(function(element) {
+        // Constructor, takes the element and options as arguments
+        new ReMooz(element, {
+            centered: true, // Zoom the center of the screen
+            origin: element.getElement('img') // Take the image inside as origin for the zooming element
+        });
+ 
+    });
+});
+";
+$document->addScriptDeclaration($java);
+*/
+
+function ImageSizer_addon_GetImageHTML(&$ar,&$img,&$imagesizer){
+
+	$output=plgSystemimagesizer::make_img_output($ar);
+
+	$x=explode("/",$ar["href"]);
+	$c=count($x)-1;
+	$x[$c]=rawurlencode($x[$c]);
+	$x=implode("/",$x);
+	
+	$title="";
+	if(!empty($ar["title"])){
+		$title.=$ar["title"];
+	}
+	if(!empty($ar["alt"])){
+	 	if($title!=""){$title=strtoupper($title)."<br />";}
+		$title.=$ar["alt"];
+	}
+
+	$id=0;
+	
+	if(isset($imagesizer->article->id)){
+		$id=$imagesizer->article->id;
+	}
+
+	$output='<a class="'.trim($imagesizer->params->get("linkclass","linkthumb")).'" target="_blank" title="'.$title.'" data-milkbox="milkbox:'.$id.'" href="'.$x.'"><img '.$output.' /></a>';	
+
+	return $output;
+
+}
