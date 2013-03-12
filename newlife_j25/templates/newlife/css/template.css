@@ -526,7 +526,7 @@ form.search {
 /*------------------------------------------------------------------------------------*/
 .container {
     overflow: hidden;
-    /*width: 678px;*/
+    width: 652px;
     padding: 0 0 0 40px;
 }
 .container h2 {
@@ -641,13 +641,7 @@ form.search {
     color: #333333;
 }
 .news li span.video_arrow {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 79px;
-    left: 638px;
-    z-index: 0;
+
 }
 .news li span.video_arrow a {
     display: block;
@@ -1043,7 +1037,7 @@ form.search {
 /*-------------------------------------we believe-----------------------------------*/
 .photo {
     overflow: hidden;
-    width: 646px;
+
     margin: 4px 4px 13px 10px;
     padding: 14px 5px 15px 10px;
     background-color: #F1F1F1;

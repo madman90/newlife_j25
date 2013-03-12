@@ -30,7 +30,7 @@
 .avVideo .avPlayerContainer {
     float: left;
     padding: 0;
-    border: 13px solid #E2E6E7;
+    border: 6px solid #E2E6E7;
     box-shadow: 0 0 5px 0 #999999;
     -moz-box-shadow: 0 0 5px 0 #999999;
     -webkit-box-shadow: 0 0 5px 0 #999999;

@@ -28,10 +28,11 @@ class SPQuickContact{
 		$success 		= $params->success;
 		$failed 		= $params->failed;
 		$recipient 		= $params->email;
+
 		
 		$email 			= JRequest::getVar('email');
 		$name 			= JRequest::getVar('name');
-		$subject 		= JRequest::getVar('subject');
+        $subject 		= JRequest::getVar('subject');
 		$message 		= JRequest::getVar('message');
 		
 		$sender = array($email, $name);	

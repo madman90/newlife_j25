@@ -516,7 +516,7 @@ form.search {
 /*------------------------------------------------------------------------------------*/
 .container {
     overflow: hidden;
-    /*width: 678px;*/
+    width: 652px;
     padding: 10px 0 0 40px;
 }
 .container h2 {
@@ -542,26 +542,13 @@ form.search {
 }
 /*------------------------------------news------------------------------------------*/
 .news {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    padding: 9px 12px 7px 4px;
+
 }
 .news li {
-    overflow: hidden;
-    height: 154px;
-    padding: 15px 0 0 19px;
-    margin: 1px 5px;
-    box-shadow: 0 0 8px 0 #37322C;
-    -webkit-box-shadow: 0 0 8px 0 #37322C;
-    -moz-box-shadow: 0 0 8px 0 #37322C;
-    background: url("../images/news_bg.png") repeat-x;
+
 }
 .news li h4 {
-    float: left;
-    width: 60px;
-    margin: 38px 13px 45px 0;
-    color: #333333;
+
 }
 .news li h4 span {
     display: block;
@@ -603,12 +590,7 @@ form.search {
     padding: 4px 0 23px;
 }
 .news li h5 a {
-    height: 17px;
-    font-size: 16px;
-    font-weight: normal;
-    color: #333333;
-    text-decoration: none;
-    letter-spacing: -1px;
+
 }
 .news li h5 a:hover {
     color: #FF0033;

@@ -29,20 +29,20 @@ defined('_JEXEC') or die;
 		    <?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
 	    </span>
         <?php endif; ?>
-
+        <a class="video_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
         <?php if($this->params->get('latestItemVideo') && !empty($this->item->video)): ?>
         <!-- Item video -->
         <div class="latestItemVideoBlock">
-            <h3><?php echo JText::_('K2_RELATED_VIDEO'); ?></h3>
             <span class="latestItemVideo<?php if($this->item->videoType=='embedded'): ?> embedded<?php endif; ?>"><?php echo $this->item->video; ?></span>
         </div>
         <?php endif; ?>
 
 
+
         <div class="latestItemBody">
           <?php if($this->item->params->get('latestItemTitle')): ?>
           <!-- Item title -->
-          <h2 class="latestItemTitle">
+          <h3 class="latestItemTitle">
             <?php if ($this->item->params->get('latestItemTitleLinked')): ?>
             <a href="<?php echo $this->item->link; ?>">
                 <?php echo $this->item->title; ?>
@@ -50,7 +50,7 @@ defined('_JEXEC') or die;
             <?php else: ?>
             <?php echo $this->item->title; ?>
             <?php endif; ?>
-          </h2>
+          </h3>
           <?php endif; ?>
             <!-- Plugins: AfterDisplayTitle -->
             <?php echo $this->item->event->AfterDisplayTitle; ?>
@@ -65,7 +65,7 @@ defined('_JEXEC') or die;
             </div>
             <?php endif; ?>
         </div>
-
+        <span class="video_arrow"><a class="video_link_arrow" href="<?php echo $this->item->link; ?>">&nbsp;</a></span>
           <!-- Plugins: BeforeDisplayContent -->
           <?php echo $this->item->event->BeforeDisplayContent; ?>
 
@@ -111,20 +111,11 @@ defined('_JEXEC') or die;
                 <?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
             </span>
             <?php endif; ?>
-
-        <?php if($this->params->get('latestItemVideo') && !empty($this->item->video)): ?>
-            <!-- Item video -->
-            <div class="latestItemVideoBlock">
-                <h3><?php echo JText::_('K2_RELATED_VIDEO'); ?></h3>
-                <span class="latestItemVideo<?php if($this->item->videoType=='embedded'): ?> embedded<?php endif; ?>"><?php echo $this->item->video; ?></span>
-            </div>
-            <?php endif; ?>
-
-
         <div class="latestItemBody">
+
             <?php if($this->item->params->get('latestItemTitle')): ?>
             <!-- Item title -->
-            <h2 class="latestItemTitle">
+            <h3 class="latestItemTitle">
                 <?php if ($this->item->params->get('latestItemTitleLinked')): ?>
                 <a href="<?php echo $this->item->link; ?>">
                     <?php echo $this->item->title; ?>
@@ -132,13 +123,20 @@ defined('_JEXEC') or die;
                 <?php else: ?>
                 <?php echo $this->item->title; ?>
                 <?php endif; ?>
-            </h2>
+            </h3>
             <?php endif; ?>
             <!-- Plugins: AfterDisplayTitle -->
             <?php echo $this->item->event->AfterDisplayTitle; ?>
 
             <!-- K2 Plugins: K2AfterDisplayTitle -->
             <?php echo $this->item->event->K2AfterDisplayTitle; ?>
+
+            <?php if($this->params->get('latestItemVideo') && !empty($this->item->video)): ?>
+            <!-- Item audio -->
+            <div class="latestItemVideoBlock">
+                <span class="latestItemVideo<?php if($this->item->videoType=='embedded'): ?> embedded<?php endif; ?>"><?php echo $this->item->video; ?></span>
+            </div>
+            <?php endif; ?>
 
             <?php if($this->item->params->get('latestItemIntroText')): ?>
             <!-- Item introtext -->

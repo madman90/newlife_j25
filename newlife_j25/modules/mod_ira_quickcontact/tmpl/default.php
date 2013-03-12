@@ -33,16 +33,16 @@ window.addEvent('domready',function(){
 </script>
 
 <div id="sp_quickcontact<?php echo $uniqid ?>" class="sp_quickcontact">
-	<div id="sp_qc_status"></div>
-	<div class="sp_qc_clr"></div>
+    <div id="sp_qc_status"></div>
+    <div class="sp_qc_clr"></div>
     <input autocomplete="off" type="text" name="name" id="name" onfocus="if (this.value=='<?php echo str_replace("'","&prime;",$name_text) ?>') this.value='';" onblur="if (this.value=='<?php echo str_replace("'","&prime;",$name_text) ?>') this.value='';" value="<?php echo str_replace("'","&prime;",$name_text) ?>" />
-	<div class="sp_qc_clr"></div>
-	<input autocomplete="off" type="text" name="email" id="email" onfocus="if (this.value=='<?php echo $email_text ?>') this.value='';" onblur="if (this.value=='') this.value='<?php echo $email_text ?>';" value="<?php echo $email_text ?>" />
-	<div class="sp_qc_clr"></div>
-<!--	<input type="text" name="subject" id="subject" onfocus="if (this.value=='--><?php //echo $subject_text ?><!--') this.value='';" onblur="if (this.value=='') this.value='--><?php //echo $subject_text ?><!--';" value="--><?php //echo $subject_text ?><!--" />-->
-<!--	<div class="sp_qc_clr"></div>-->
-	<textarea autocomplete="off" name="message" id="message" onfocus="if (this.value=='<?php echo $msg_text ?>') this.value='';" onblur="if (this.value=='') this.value='<?php echo $msg_text ?>';" cols="" rows=""><?php echo $msg_text ?></textarea>
-	<div class="sp_qc_clr"></div>
-	<input id="sp_qc_submit" class="button" type="submit" value="<?php echo $send_msg ?>" />
-	<div class="sp_qc_clr"></div>
+    <div class="sp_qc_clr"></div>
+    <input autocomplete="off" type="text" name="email" id="email" onfocus="if (this.value=='<?php echo $email_text ?>') this.value='';" onblur="if (this.value=='') this.value='<?php echo $email_text ?>';" value="<?php echo $email_text ?>" />
+    <div class="sp_qc_clr"></div>
+    <!--	<input type="text" name="subject" id="subject" onfocus="if (this.value=='--><?php //echo $subject_text ?><!--') this.value='';" onblur="if (this.value=='') this.value='--><?php //echo $subject_text ?><!--';" value="--><?php //echo $subject_text ?><!--" />-->
+    <!--	<div class="sp_qc_clr"></div>-->
+    <textarea autocomplete="off" name="message" id="message" onfocus="if (this.value=='<?php echo $msg_text ?>') this.value='';" onblur="if (this.value=='') this.value='<?php echo $msg_text ?>';" cols="" rows=""><?php echo $msg_text ?></textarea>
+    <div class="sp_qc_clr"></div>
+    <input id="sp_qc_submit" class="button" type="submit" value="<?php echo $send_msg ?>" />
+    <div class="sp_qc_clr"></div>
 </div>
