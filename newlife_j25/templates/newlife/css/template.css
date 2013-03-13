@@ -290,10 +290,13 @@ form.search {
 
 .social_links {
     overflow: hidden;
+    position: absolute;
     float: right;
     width: 83px;
     height: 44px;
     margin: 21px 0 0;
+    top: 0;
+    left: 934px;
 }
 .social_links li {
     float: left;
@@ -861,22 +864,20 @@ form.search {
 .bloggroups {
     overflow: hidden;
     margin: 0 0 0 12px;
-    box-shadow: 0 -1px 4px 1px #999999;
-    -moz-box-shadow: 0 -1px 4px 1px #999999;
-    -webkit-box-shadow: 0 -1px 4px 1px #999999;
+
 }
 .groups {
-    margin: 1px;
-    padding: 10px 17px 10px 25px;
-    box-shadow: 2px 2px 6px 4px #999999;
-    -moz-box-shadow: 2px 2px 6px 4px #999999;
-    -webkit-box-shadow: 2px 2px 6px 4px #999999;
+    margin: 1px 5px;
+    padding: 6px 17px 10px 25px;
+    box-shadow: 0 0 2px 1px #666666;
+    -moz-box-shadow: 0 0 2px 1px #666666;
+    -webkit-box-shadow: 0 0 2px 1px #666666;
     background-color: #F7F7F7;
 }
 .pastors_photo {
     overflow: hidden;
     float: left;
-    margin: 12px 14px 0 0;
+    margin: 6px 14px 0 0;
     width: 111px;
     height: 105px;
     border: solid 3px #FFFFFF;
@@ -893,26 +894,27 @@ form.search {
     -moz-box-shadow: 0 0 5px 2px #C1C1C1 inset;
     -webkit-box-shadow: 0 0 5px 2px #C1C1C1 inset;
 }
-.groups h2 {
+.groups h3 {
     overflow: hidden;
     float: left;
     padding: 4px 15px 10px 0;
-    font-size: 20px;
-    color: #333333;
-    text-decoration: none;
-}
-.groups h3 {
-    overflow: hidden;
-    padding: 0 0 9px 0;
-    width: 331px;
-}
-.groups h3 a {
     font-size: 20px;
     font-weight: normal;
     color: #333333;
     text-decoration: none;
 }
-.groups h3 a:hover {
+.groups h4 {
+    overflow: hidden;
+    padding: 0 0 8px 0;
+    width: 331px;
+}
+.groups h4 a {
+    font-size: 20px;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+}
+.groups h4 a:hover {
     color: #FF0033;
 }
 .groups p {
