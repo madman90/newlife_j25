@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+	<name>Simple Email Form</name> 
+ 
+    <!-- Name of the Author -->
+	<author>unlikelysource.com</author> 
+ 
+    <!-- Version Date of the Module -->
+	<creationDate>2012-08-20</creationDate>
+ 
+    <!-- Copyright information -->
+	<copyright>All rights reserved by unlikelysource.com (c) 2010 - 2012</copyright> 
+ 
+    <!-- License Information -->
+	<license>GNU General Public License version 2</license>
+ 
+    <!-- Author's email address -->
+	<authorEmail>hit@unlikelysource.com</authorEmail> 
+ 
+    <!-- Author's website -->
+	<authorUrl>www.unlikelysource.com</authorUrl> 
+ 
+    <!-- Module version number -->
+	<version>1.7.09</version> 
+ 
+    <!-- Description of what the module does -->
+	<description><![CDATA[ 
+	A simple email form from unlikelysource.com with up to 6 fields + CAPTCHA + 20 languages. 
+	<br />Version 1.7.08 -- works on Joomla 1.5, 1.6, 1.7 and 2.5.
+	<br />REQUIRES a web server running at a minimum PHP 5.1!!!
+	<br />TO LOAD IN AN ARTICLE (most common): 
+	<ul><li>In the Details box, modify Position to user99 (or whatever).  </li>
+	<li>In your target article, add this line: {loadposition user99}.</li>
+	<li>Make sure Extensions - Plugin Manager - Content - Load Module is active.</li>
+	</ul>]]></description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+	<files>
+		<!-- The "module" attribute signifies that this is the main controller file -->
+		<filename module="mod_simpleemailform">mod_simpleemailform.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>FreeSansBold.ttf</filename>
+		<filename>Image.php</filename>
+		<filename>Text.php</filename>
+		<filename>CAPTCHA.php</filename>
+		<filename>Password.php</filename>
+		<filename>PEAR.php</filename>
+		<filename>PEAR5.php</filename>
+		<filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>language_files/ar-EG.mod_simpleemailform.ini</filename>
+		<filename>language_files/ar-SA.mod_simpleemailform.ini</filename>
+		<filename>language_files/cs-CZ.mod_simpleemailform.ini</filename>
+		<filename>language_files/de-DE.mod_simpleemailform.ini</filename>
+		<filename>language_files/dk-DK.mod_simpleemailform.ini</filename>
+		<filename>language_files/el-GR.mod_simpleemailform.ini</filename>
+		<filename>language_files/en-GB.mod_simpleemailform.ini</filename>
+		<filename>language_files/en-US.mod_simpleemailform.ini</filename>
+		<filename>language_files/es-ES.mod_simpleemailform.ini</filename>
+		<filename>language_files/et-EE.mod_simpleemailform.ini</filename>
+		<filename>language_files/fr-FR.mod_simpleemailform.ini</filename>
+		<filename>language_files/he-IL.mod_simpleemailform.ini</filename>
+		<filename>language_files/hu-HU.mod_simpleemailform.ini</filename>
+		<filename>language_files/it-IT.mod_simpleemailform.ini</filename>
+		<filename>language_files/nl-NL.mod_simpleemailform.ini</filename>
+		<filename>language_files/pl-PL.mod_simpleemailform.ini</filename>
+		<filename>language_files/pt-BR.mod_simpleemailform.ini</filename>
+		<filename>language_files/ru-RU.mod_simpleemailform.ini</filename>
+		<filename>language_files/se-SE.mod_simpleemailform.ini</filename>
+		<filename>language_files/th-TH.mod_simpleemailform.ini</filename>
+		<filename>language_files/tr-TR.mod_simpleemailform.ini</filename>
+		<filename>language_files/lv-LV.mod_simpleemailform.ini</filename>
+	</files>
+ 
+	<!-- Joomla 1.5 defs -->
+	<params>
+		<param name="mod_simpleemailform_defaultLang" type="list" default="en" label="Default Language" description="Choose the default language" >
+			<option value="ar-SA">Arabic</option>
+			<option value="cs-CZ">česky</option>
+			<option value="dk-DK">Dansk</option>
+			<option value="de-DE">Deutsch</option>
+			<option value="el-GR">Ελληνικά (Greek)</option>
+			<option value="en-GB">English</option>
+			<option value="es-ES">Español</option>
+			<option value="et-EE">Eesti</option>
+			<option value="fr-FR">Français</option>
+			<option value="he-IL">Hebrew</option>
+			<option value="it-IT">Italiano</option>
+			<option value="lv-LV">Latvian</option>
+			<option value="hu-HU">Magyar</option>
+			<option value="nl-NL">Nederlandse</option>
+			<option value="pl-PL">Polski</option>
+			<option value="pt-BR">Português (Brazil)</option>
+			<option value="ru-RU">русский (Russian)</option>
+			<option value="se-SE">Svenska</option>
+			<option value="th-TH">ไทย (Thai)</option>
+			<option value="tr-TR">Türkçe (Turkish)</option>
+		</param>
+		<param name="mod_simpleemailform_emailTo"      type="text" size="40" default=""  label="Send Results To" description="Send results to this email address.  If more than one, separate with commas or spaces." />
+		<param name="mod_simpleemailform_labelAlign"   type="radio" 		 default="L" label="Label Alignment" description="Choose to have the labels aligned LEFT,RIGHT, or CENTER" >
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="center">Center</option>
+		</param>
+		<param name="mod_simpleemailform_subjectline"  type="text" size="40"  default="Please Contact Me" 	label="Subject Line" description="This is the subject line of the email which will be sent when the form is submitted (i.e. http://example.com/images)" />
+		<param name="mod_simpleemailform_subjectsize"  type="text" size="4"   default="60" 					label="Display Size of Subject Line" description="The size of the subject line which will appear in your email form" />
+		<param name="mod_simpleemailform_subjectlabel" type="text" size="40"  default="Subject" 			label="Label for Subject Line" description="The label for the subject line which will appear in your email form" />
+		<param name="mod_simpleemailform_fromsize"     type="text" size="4"   default="40" 					label="Size of From Field" description="The size of the From field which will appear in your email form" />
+		<param name="mod_simpleemailform_fromlabel"    type="text" size="40"  default="From (email)" 		label="Label for From Field" description="The label for the 'From' field which will appear in your email form" />
+		<param name="mod_simpleemailform_field1active" type="radio"           default="N" 					label="Activate Field 1" description="Select 'Y' if you want to activate Field 1 and 'R' to activate and make it required" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+			<option value="R">Required</option>
+		</param>
+		<param name="mod_simpleemailform_field1size"   type="text" size="4"  default="40" 		label="Display Size of Field 1" description="The size of the 1st optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field1maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 1" description="The maximum number of characters allowed in this field" />
+		<param name="mod_simpleemailform_field1label"  type="text" size="40" default="Field 1" 	label="Label for Field 1" description="The label for the 1st optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field2active" type="radio"          default="N" 		label="Activate Field 2" description="Select 'Y' if you want to activate Field 2 and 'R' to activate and make it required" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+			<option value="R">Required</option>
+		</param>
+		<param name="mod_simpleemailform_field2size"   type="text" size="4"  default="40" 		label="Display Size of Field 2" description="The size of the 2nd optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field2maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 2" description="The maximum number of characters allowed in this field" />
+		<param name="mod_simpleemailform_field2label"  type="text" size="40" default="Field 2" 	label="Label for Field 2" description="The label for the 2nd optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field3active" type="radio"          default="N" 		label="Activate Field 3" description="Select 'Y' if you want to activate Field 3 and 'R' to activate and make it required" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+			<option value="R">Required</option>
+		</param>
+		<param name="mod_simpleemailform_field3size"   type="text" size="4"  default="40" 		label="Display Size of Field 3" description="The size of the 3rd optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field3maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 3" description="The maximum number of characters allowed in this field" />
+		<param name="mod_simpleemailform_field3label"  type="text" size="40" default="Field 3" 	label="Label for Field 3" description="The label for the 3rd optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field4active" type="radio"          default="N" 		label="Activate Field 4" description="Select 'Y' if you want to activate Field 4 and 'R' to activate and make it required" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+			<option value="R">Required</option>
+		</param>
+		<param name="mod_simpleemailform_field4size"   type="text" size="4"  default="40" 		label="Display Size of Field 4" description="The size of the 4th optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field4maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 4" description="The maximum number of characters allowed in this field" />
+		<param name="mod_simpleemailform_field4label"  type="text" size="40" default="Field 4" 	label="Label for Field 4" description="The label for the 4th optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field5active" type="radio"          default="N" 		label="Activate Field 5" description="Select 'Y' if you want to activate Field 5 and 'R' to activate and make it required" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+			<option value="R">Required</option> 
+		</param>
+		<param name="mod_simpleemailform_field5size"     type="text" size="4"  default="40" 	 label="Display Size of Field 5" description="The size of the 5th optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_field5maxx"     type="text" size="4"  default="255" 	 label="Maximum Length of Field 5" description="The maximum number of characters allowed in this field" />
+		<param name="mod_simpleemailform_field5label"    type="text" size="40" default="Field 5" label="Label for Field 5" description="The label for the 5th optional field which will appear in your email form" />
+		<param name="mod_simpleemailform_textareaActive" type="radio"          default="N" 		 label="Activate Textarea" description="Select 'Y' if you want to activate the textarea and 'R' to activate and make it required" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+			<option value="R">Required</option>
+		</param>
+		<param name="mod_simpleemailform_textareaRows"  type="text" size="4"  default="4" 		 label="Textarea Rows" description="How many rows in the textarea (vertical)" />
+		<param name="mod_simpleemailform_textareaCols"  type="text" size="4"  default="40" 		 label="Textarea Cols" description="How many columns in the textarea (horizontal)" />
+		<param name="mod_simpleemailform_textareaLabel" type="text" size="40" default="Comments" label="Label for the Textarea" description="The label for the textarea" />
+		<param name="mod_simpleemailform_autoreset" 	type="radio"          default="N" 		 label="Auto Reset fields" description="Select 'Y' if you want all form fields to be automatically reset (cleared) after successful form submission" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+        <param name="mod_simpleemailform_instance"      type="text" size="4"  default="1"  label="Form Instance" description="Set this field to a unique number if using more than one Simple Email Form on one page." />
+		<param name="mod_simpleemailform_emailCC"       type="text" size="40" default=""  label="Send Results CC" description="Send a CC email of results to this email address.   If more than one, separate with commas or spaces." />
+		<param name="mod_simpleemailform_emailBCC"      type="text" size="40" default=""  label="Send Results BCC" description="Send a BCC email of results to this email address.   If more than one, separate with commas or spaces." />
+		<param name="mod_simpleemailform_emailReplyTo"  type="text" size="40" default=""  label="Reply To this address" description="Direct replies to this email address." />
+		<param name="mod_simpleemailform_replytoActive" type="radio"	      default="N" label="Activate Reply To" description="Select 'Y' if you want a 'Reply-To' field to appear when the email sent." >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+		<param name="mod_simpleemailform_cssClass"     type="text" size="20" default=""  label="Name of CSS Class" description="Enter the name of a CSS class to use with the form.  Creates xxx_table, xxx_row, xxx_th, xxx_td classes and xxx_input inside form where xxx = your CSS class." />
+		<param name="mod_simpleemailform_col2space"    type="text" size="4"  default="5" label="Space After Labels" description="Enter the amount of space between the label and the input Field in pixels" />
+		<param name="mod_simpleemailform_redirectURL"  type="text" size="20" default=""  label="Redirect URL" description="Enter the URL you wish to redirect to after successful form submission.  NOTE: leave blank to NOT redirect!" />
+		<param name="mod_simpleemailform_useCaptcha"   type="radio"          default="N" label="Use Captcha" description="To use a 'Captcha' to foil spammers, select 'I' for an image captcha (requires additional configuration), or 'T' for a text captcha." >
+			<option value="N">No Captcha</option>
+			<option value="I">Image Captcha</option>
+			<option value="T">Text Captcha</option>
+		</param>
+		<param name="mod_simpleemailform_captchaDir"   		type="text" size="60" default=""        label="Directory to Write Captchas" description="Enter the absolute directory path where the module can write 'captchas' (i.e. /var/www/application/images" />
+		<param name="mod_simpleemailform_captchaURL"   		type="text" size="60" default=""        label="URL for Captcha Directory" description="Enter a URL which corresponds with the Captcha Directory (above)" />
+		<param name="mod_simpleemailform_captchaLen"   		type="text" size="4"  default="8"       label="Captcha Word Lengh" description="Enter the desired Captcha word length (number of characters)" />
+		<param name="mod_simpleemailform_captchaSize"  		type="text" size="4"  default="24"      label="Captcha Font Size" description="Enter the desired Captcha font size" />
+		<param name="mod_simpleemailform_captchaWidth"  	type="text" size="4"  default="200"     label="Captcha Width" description="Enter the desired Captcha width in pixels" />
+		<param name="mod_simpleemailform_captchaHeight"  	type="text" size="4"  default="80"      label="Captcha Height" description="Enter the desired Captcha height in pixels" />
+		<param name="mod_simpleemailform_captchaTxtColor"  	type="text" size="8"  default="#000000" label="Captcha Text Color" description="Enter the desired Captcha text color" />
+		<param name="mod_simpleemailform_captchaLinesColor" type="text" size="8"  default="#FFFF00" label="Captcha Lines Color" description="Enter the desired Captcha lines color" />
+		<param name="mod_simpleemailform_captchaBgColor"  	type="text" size="8"  default="#BFBFBF" label="Captcha Background Color" description="Enter the desired Captcha background color" />
+		<param name="mod_simpleemailform_errorTxtColor"  	type="text" size="8"  default="red"     label="Error Text Color" description="Enter the desired HTML text color for errors" />
+		<param name="mod_simpleemailform_successTxtColor"  	type="text" size="8"  default="green"   label="Success Text Color" description="Enter the desired HTML text color for success" />  
+		<param name="mod_simpleemailform_anchor"  			type="text" size="8"  default="#"   	label="Name of Anchor Tag" description="Enter the name of any anchor tags associated with the form" />                
+		<param name="mod_simpleemailform_uploadActive"      type="radio"	      default="N"       label="Activate Email Attachment Upload Field" description="Select 'Y' if you want to activate a file upload Field for email attachments" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+		<param name="mod_simpleemailform_uploadAllowed" type="text" size="20" default=""             	label="Allowed Attachment Filenames" description="Enter a list of allowed filename extensions separated by commas.  Example: if you want jpg,png, or gif, then enter 'jpg,png,gif'.  Leave blank to allow ANY type of file." />
+		<param name="mod_simpleemailform_emailFile"    	type="text" size="60" default=""          		label="Directory to Save Attachments" description="Enter the absolute directory path for email attachment files" />
+		<param name="mod_simpleemailform_copymeLabel" 	type="text" size="40" default="Send me a copy"	label="Label for the Send Me A Copy Field" description="The label for the Send Me A Copy Field" />
+		<param name="mod_simpleemailform_copymeActive" 	type="radio"		  default="N"         		label="Send Me A Copy Field" description="Select 'Y' if you want to activate a Field which lets users send a copy to themselves" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+		<param name="mod_simpleemailform_copymeAuto"  	type="radio"	      default="N" 			label="Send User a Copy Automatically" description="Select 'Y' if you want to send a copy to users automatically" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+		<param name="mod_simpleemailform_emailCheck"	type="radio"	      default="Y" 			label="Email Check" description="Select 'Y' if you want to check the 'From' email address.  Set to 'N' to disable this check." >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+		<param name="mod_simpleemailform_testMode"  	type="radio"	      default="N" 			label="Test Mode" description="Select 'Y' if you want to use the module in test mode.  Set to 'N' when done testing!" >
+			<option value="Y">Yes</option>
+			<option value="N">No</option>
+		</param>
+	</params>
+	 
+	<!-- Joomla 1.6 & 1.7 parameters -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="mod_simpleemailform_defaultLang" type="list" default="en" label="Default Language" description="Choose the default language" >
+					<option value="ar-SA">Arabic</option>
+					<option value="cs-CZ">česky</option>
+					<option value="dk-DK">Dansk</option>
+					<option value="de-DE">Deutsch</option>
+					<option value="el-GR">Ελληνικά (Greek)</option>
+					<option value="en-GB">English</option>
+					<option value="es-ES">Español</option>
+					<option value="et-EE">Eesti</option>
+					<option value="fr-FR">Français</option>
+					<option value="he-IL">Hebrew</option>
+					<option value="it-IT">Italiano</option>
+					<option value="lv-LV">Latvian</option>
+					<option value="nl-NL">Nederlandse</option>
+					<option value="hu-HU">Magyar</option>
+					<option value="pl-PL">Polski</option>
+					<option value="pt-BR">Português (Brazil)</option>
+					<option value="ru-RU">русский (Russian)</option>
+					<option value="se-SE">Svenska</option>
+					<option value="th-TH">ไทย (Thai)</option>
+					<option value="tr-TR">Türkçe (Turkish)</option>
+				</field>
+                <field name="mod_simpleemailform_emailTo"      type="text" size="40" default=""  label="Send Results To" description="Send results to this email address.   If more than one, separate with commas or spaces." />
+                <field name="mod_simpleemailform_labelAlign"   type="radio" 		 default="L" label="Label Alignment" description="Choose to have the labels aligned LEFT,RIGHT, or CENTER" >
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+					<option value="center">Center</option>
+				</field>
+                <field name="mod_simpleemailform_subjectline"  		type="text" size="40"  default="Please Contact Me" 	label="Subject Line" description="This is the subject line of the email which will be sent when the form is submitted (i.e. http://example.com/images)" />
+                <field name="mod_simpleemailform_subjectsize"  		type="text" size="4"   default="60" 				label="Display Size of Subject Line" description="The size of the 1st subject which will appear in your email form" />
+                <field name="mod_simpleemailform_subjectlabel" 		type="text" size="40"  default="Subject" 			label="Label for Subject Line" description="The label for the 1st subject which will appear in your email form" />
+                <field name="mod_simpleemailform_fromsize"     		type="text" size="4"   default="40" 				label="Size of From Field" description="The size of the 1st field which will appear in your email form" />
+                <field name="mod_simpleemailform_fromlabel"  		type="text" size="40"  default="From (email)" 		label="Label for From Field" description="The label for the 'From' field which will appear in your email form" />
+                <field name="mod_simpleemailform_field1active" 		type="radio"           default="N" 					label="Activate Field 1" description="Select 'Y' if you want to activate field 1 and 'R' to activate and make it required" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option>
+				</field>
+                <field name="mod_simpleemailform_field1size"   type="text" size="4"   default="40" 		label="Display Size of Field 1" description="The size of the 1st optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field1maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 1" description="The maximum number of characters allowed in this field" />
+                <field name="mod_simpleemailform_field1label"  type="text" size="40"  default="Field 1" label="Label for Field 1" description="The label for the 1st optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field2active" type="radio"          default="N" 		label="Activate Field 2" description="Select 'Y' if you want to activate field 2 and 'R' to activate and make it required" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option>
+				</field>
+                <field name="mod_simpleemailform_field2size"   type="text" size="4"  default="40" 		label="Display Size of Field 2" description="The size of the 2nd optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field2maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 2" description="The maximum number of characters allowed in this field" />
+                <field name="mod_simpleemailform_field2label"  type="text" size="40" default="Field 2" 	label="Label for Field 2" description="The label for the 2nd optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field3active" type="radio"          default="N" 		label="Activate Field 3" description="Select 'Y' if you want to activate field 3 and 'R' to activate and make it required" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option>
+				</field>
+                <field name="mod_simpleemailform_field3size"   type="text" size="4"  default="40" 		label="Display Size of Field 3" description="The size of the 3rd optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field3maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 3" description="The maximum number of characters allowed in this field" />
+                <field name="mod_simpleemailform_field3label"  type="text" size="40" default="Field 3" 	label="Label for Field 3" description="The label for the 3rd optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field4active" type="radio"          default="N" 		label="Activate Field 4" description="Select 'Y' if you want to activate field 4 and 'R' to activate and make it required" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option>
+				</field>
+                <field name="mod_simpleemailform_field4size"   type="text" size="4"  default="40" 		label="Display Size of Field 4" description="The size of the 4th optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field4maxx"   type="text" size="4"  default="255" 		label="Maximum Length of Field 4" description="The maximum number of characters allowed in this field" />
+                <field name="mod_simpleemailform_field4label"  type="text" size="40" default="Field 4" 	label="Label for Field 4" description="The label for the 4th optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field5active" type="radio"          default="N" 		label="Activate Field 5" description="Select 'Y' if you want to activate field 5 and 'R' to activate and make it required" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option> 
+				</field>
+                <field name="mod_simpleemailform_field5size"     type="text" size="4"  default="40" 	 label="Display Size of Field 5" description="The size of the 5th optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_field5maxx"     type="text" size="4"  default="255" 	 label="Maximum Length of Field 5" description="The maximum number of characters allowed in this field" />
+                <field name="mod_simpleemailform_field5label"    type="text" size="40" default="Field 5" label="Label for Field 5" description="The label for the 5th optional field which will appear in your email form" />
+                <field name="mod_simpleemailform_textareaActive" type="radio"          default="N" 		 label="Activate Textarea" description="Select 'Y' if you want to activate the textarea and 'R' to activate and make it required" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option>
+				</field>
+                <field name="mod_simpleemailform_textareaRows"  type="text" size="4"  default="4" 		 label="Textarea Rows" description="How many rows in the textarea (vertical)" />
+                <field name="mod_simpleemailform_textareaCols"  type="text" size="4"  default="40" 		 label="Textarea Cols" description="How many columns in the textarea (horizontal)" />
+                <field name="mod_simpleemailform_textareaLabel" type="text" size="40" default="Comments" label="Label for the Textarea" description="The label for the textarea" />
+                <field name="mod_simpleemailform_autoreset" 	type="radio"          default="N" 		 label="Auto Reset Fields" description="Select 'Y' if you want all form fields to be automatically reset (cleared) after successful form submission" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+                <field name="mod_simpleemailform_instance"      type="text" size="4"  default="1"  label="Form Instance" description="Set this field to a unique number if using more than one Simple Email Form on one page." />
+                <field name="mod_simpleemailform_emailCC"       type="text" size="40" default=""  label="Send Results CC" description="Send a CC email of results to this email address.   If more than one, separate with commas or spaces." />
+                <field name="mod_simpleemailform_emailBCC"      type="text" size="40" default=""  label="Send Results BCC" description="Send a BCC email of results to this email address.   If more than one, separate with commas or spaces." />
+				<field name="mod_simpleemailform_emailReplyTo"  type="text" size="40" default=""  label="Reply To this address" description="Direct replies to this email address." />
+				<field name="mod_simpleemailform_replytoActive" type="radio"	      default="N" label="Activate Reply To" description="Select 'Y' if you want a 'Reply-To' field to appear when the email sent." >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+                <field name="mod_simpleemailform_cssClass"     type="text" size="20" default=""  label="Name of CSS Class" description="Enter the name of a CSS class to use with the form.  Creates xxx_table, xxx_row, xxx_th, xxx_td classes and xxx_input inside form where xxx = your CSS class." />
+                <field name="mod_simpleemailform_col2space"    type="text" size="4"  default="5" label="Space After Labels" description="Enter the amount of space between the label and the input field in pixels" />
+                <field name="mod_simpleemailform_redirectURL"  type="text" size="20" default=""  label="Redirect URL" description="Enter the URL you wish to redirect to after successful form submission.  NOTE: leave blank to NOT redirect!" />
+                <field name="mod_simpleemailform_useCaptcha"   type="radio"          default="N" label="Use Captcha" description="To use a 'Captcha' to foil spammers, select 'I' for an image captcha (requires additional configuration), or 'T' for a text captcha." >
+					<option value="N">No Captcha</option>
+					<option value="I">Image Captcha</option>
+					<option value="T">Text Captcha</option>
+				</field>
+                <field name="mod_simpleemailform_captchaDir"   		type="text" size="60" default=""        label="Directory to Write Captchas" description="Enter the absolute directory path where the module can write 'captchas' (i.e. /var/www/application/images" />
+                <field name="mod_simpleemailform_captchaURL"   		type="text" size="60" default=""        label="URL for Captcha Directory" description="Enter a URL which corresponds with the Captcha Directory (above)" />
+                <field name="mod_simpleemailform_captchaLen"   		type="text" size="4"  default="8"       label="Captcha Word Lengh" description="Enter the desired Captcha word length (number of characters)" />
+                <field name="mod_simpleemailform_captchaSize"  		type="text" size="4"  default="24"      label="Captcha Font Size" description="Enter the desired Captcha font size" />
+                <field name="mod_simpleemailform_captchaWidth"  	type="text" size="4"  default="200"     label="Captcha Width" description="Enter the desired Captcha width in pixels" />
+                <field name="mod_simpleemailform_captchaHeight"  	type="text" size="4"  default="80"      label="Captcha Height" description="Enter the desired Captcha height in pixels" />
+                <field name="mod_simpleemailform_captchaTxtColor"  	type="text" size="8"  default="#000000" label="Captcha Text Color" description="Enter the desired Captcha text color" />
+                <field name="mod_simpleemailform_captchaLinesColor" type="text" size="8"  default="#FFFF00" label="Captcha Lines Color" description="Enter the desired Captcha lines color" />
+                <field name="mod_simpleemailform_captchaBgColor"  	type="text" size="8"  default="#BFBFBF" label="Captcha Background Color" description="Enter the desired Captcha background color" />
+                <field name="mod_simpleemailform_errorTxtColor"  	type="text" size="8"  default="red"     label="Error Text Color" description="Enter the desired HTML text color for errors" />
+                <field name="mod_simpleemailform_successTxtColor"  	type="text" size="8"  default="green"   label="Success Text Color" description="Enter the desired HTML text color for success" />                
+				<field name="mod_simpleemailform_anchor"  			type="text" size="8"  default="#"   	label="Name of Anchor Tag" description="Enter the name of any anchor tags associated with the form" />
+                <field name="mod_simpleemailform_uploadActive"      type="radio"	      default="N"       label="Activate Email Attachment Upload Field" description="Select 'Y' if you want to activate a file upload field for email attachments" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+                <field name="mod_simpleemailform_uploadAllowed" type="text" size="20" default=""             	label="Allowed Attachment Filenames" description="Enter a list of allowed filename extensions separated by commas.  Example: if you want jpg,png, or gif, then enter 'jpg,png,gif'.  Leave blank to allow ANY type of file." />
+                <field name="mod_simpleemailform_emailFile"    	type="text" size="60" default=""          		label="Directory to Save Attachments" description="Enter the absolute directory path for email attachment files" />
+                <field name="mod_simpleemailform_copymeLabel" 	type="text" size="40" default="Send me a copy"	label="Label for the Send Me A Copy Field" description="The label for the Send Me A Copy Field" />
+                <field name="mod_simpleemailform_copymeActive" 	type="radio"		  default="N"         		label="Send Me A Copy Field" description="Select 'Y' if you want to activate a field which lets users send a copy to themselves" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+                <field name="mod_simpleemailform_copymeAuto"  	type="radio"	      default="N" 			label="Send User a Copy Automatically" description="Select 'Y' if you want to send a copy to users automatically" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+				<field name="mod_simpleemailform_emailCheck"	type="radio"	      default="Y" 			label="Email Check" description="Select 'Y' if you want to check the 'From' email address.  Set to 'N' to disable this check." >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+				<field name="mod_simpleemailform_testMode"  	type="radio"	      default="N" 			label="Test Mode" description="Select 'Y' if you want to use the module in test mode.  Set to 'N' when done testing!" >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>
