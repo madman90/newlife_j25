@@ -11,7 +11,6 @@
 defined('_JEXEC') or die;
 
 ?>
-<h2 class="title">Відео</h2>
 <!-- Start K2 Category Layout -->
 <!--<div id="k2Container" class="itemListView--><?php //if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?><!--">-->
 <!---->

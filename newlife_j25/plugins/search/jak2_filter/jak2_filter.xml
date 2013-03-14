@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="search" method="upgrade">
+	<name>JA K2 Search Plugin for Joomla 2.5</name>
+	<author>www.JoomlArt.com</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://joomlart.com</authorUrl>
+	<version>1.0.0 Alpha</version>
+	<description>
+	<![CDATA[
+	Configuration in this plugin is reflected in the JA K2 Search and Filter Module. 
+	It is required to enable and configure this plugin to use JA K2 Search and Filter Module.
+	]]>
+	</description>
+	<files>
+		<filename plugin="jak2_filter">jak2_filter.php</filename>
+		<folder>jak2_filter</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_search_jak2_filter.ini</language>
+		<language tag="en-GB">en-GB.plg_search_jak2_filter.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/search/jak2_filter/jak2_filter/elements">
+			<fieldset name="basic">
+				<field name="search_limit" type="text" size="5" default="50"
+					label="SEARCH_LIMIT_LABEL" description="SEARCH_LIMIT_DESC"
+				/>
+					
+				<field name="search_tags" type="radio" default="0"
+					label="SEARCH_TAGS_LABEL" description="SEARCH_TAGS_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="&lt;hr color=#aaaaaa size=1 /&gt;" label="" description="" />
+					
+				<field name="show_extra_fields_groups" type="radio" default="0"
+					label="SHOW_EXTRA_FIELDS_GROUPS_LABEL" description="SHOW_EXTRA_FIELDS_GROUPS_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="show_cats" type="radio" default="0"
+					label="SHOW_CATEGORIES_LABEL" description="SHOW_CATEGORIES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="filter_author" type="radio" default="0"
+					label="FILTER_AUTHOR_LABEL" description="FILTER_AUTHOR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="inline_label" type="radio" default="0"
+					label="INLINE_TEXT_LABEL_LABEL" description="INLINE_TEXT_LABEL_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="hide_filter_form" type="radio" default="0"
+					label="HIDE_FILTER_FROM_LABEL" description="HIDE_FILTER_FROM_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<!-- field name="search_language" type="radio" default="1"
+					label="SEARCH_LANGUAGE" description="SEARCH_LANGUAGE_DES"
+				>
+					<option value="1">CURRENT_LANGUAGE</option>
+					<option value="0">DEFAULT_LANGUAGE</option>
+				</field> -->
+				
+				<field name="searcharea_label" type="text" default="JAK2 Filter"
+					size="50" label="SEARCHAREA_LABEL" description="SEARCHAREA_LABEL" 
+				/>
+					
+				<field name="description" type="textarea" default="Search"
+					label="DESCRIPTION_LABEL" description="DESCRIPTION_DESC" 
+					cols="30" rows="5" size="100" 
+				/>
+					
+				<field name="extrafield_data" type="JaExtraField"
+					label="EXTRAFIELD_DATA_LABEL" description="EXTRAFIELD_DATA_DESC"
+					default=""
+				/>
+				
+				<field name="@spacer" type="spacer" default="&lt;hr color=#aaaaaa size=1 /&gt;" label="" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</install>

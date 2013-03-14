@@ -437,41 +437,39 @@ form.search {
     font-size: 15px;
 }
 /*----------------------------------search form---------------------------------------*/
-.search_form {
+div.k2SearchBlock {
     overflow: hidden;
-    margin: 67px 0 70px 45px;
+    position: absolute;
+    top: 0;
+    left: 714px;
+    margin: 23px 13px 0 0;
+
 }
-.search_form form {
+.k2SearchBlockForm {
     overflow: hidden;
-}
-.search_form form fieldset {
+    position: relative;
+    float: right;
+    width: 300px;
     border: 0;
+
 }
-.search_form form fieldset h3 {
-    padding: 0 0 18px 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333333;
-}
-.search_form form fieldset label {
-    display: block;
+
+.k2SearchBlockForm .inputbox {
     float: left;
-    width: 57px;
-    padding: 8px 0 0;
-    font-size: 16px;
-    color: #333333;
-}
-.search_form form fieldset input {
-    width: 124px;
     height: 24px;
-    margin: 0 30px 10px 14px;
-    padding: 5px;
-    border: solid 1px #525657;
+    width: 200px;
+    margin: 0;
+    padding: 0 0 0 18px;
+    background: url("../images/magnifying_glass.png") no-repeat scroll 2px 6px #F8FAFC;
+    border: 1px solid #525657;
+    border-radius: 4px 0 0 4px;
     box-shadow: 0 0 10px 1px #DDDFE0 inset;
-    -moz-box-shadow: 0 0 10px 1px #DDDFE0 inset;
-    -webkit-box-shadow: 0 0 10px 1px #DDDFE0 inset;
+    z-index: 0;
 }
-.search_form form fieldset input.submit {
+.k2SearchBlockForm input.button {
+    position: absolute;
+    top: 0;
+    left: 217px;
     width: 79px;
     height: 25px;
     margin: 0 0 2px 1px;
@@ -489,6 +487,21 @@ form.search {
     font-size: 15px;
     font-weight: bold;
     text-shadow: 2px 0 1px #376880;
+    z-index: 1;
+}
+.search_form form fieldset h3 {
+    padding: 0 0 18px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+.search_form form fieldset label {
+    display: block;
+    float: left;
+    width: 57px;
+    padding: 8px 0 0;
+    font-size: 16px;
+    color: #333333;
 }
 /*------------------------------------preaches series---------------------------------*/
 .preaches_series {
@@ -534,9 +547,9 @@ form.search {
 }
 .container h2 {
     overflow: hidden;
-    height: 67px;
+    height: 58px;
     margin: 0 0 13px;
-    padding: 13px 0 0 10px;
+    padding: 22px 0 0 10px;
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-size: 22px;
@@ -777,6 +790,34 @@ form.search {
     overflow: hidden;
     margin: 0 0 27px 15px;
 }
+
+
+.custom_map {
+    overflow: hidden;
+    width: 606px;
+    height: 406px;
+    border: solid 1px #666666;
+    box-shadow: 0 0 3px 1px #999999 inset;
+    margin: 20px 0px 27px 15px;
+    background-color: #ebe6dc;
+}
+
+.custom_map .phocamaps {
+    position: relative;
+    top: -37px;
+}
+.moduletable_map h3 {
+    overflow: hidden;
+    height: 58px;
+    margin: 0 0 13px;
+    padding: 22px 0 0 10px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+}
+
+
 .find_us .map {
     overflow: hidden;
     float: left;
@@ -927,20 +968,34 @@ form.search {
 .groups .small_map {
     overflow: hidden;
     float: right;
+    position: relative;
+    z-index: 3;
     width: 100px;
     height: 100px;
     margin: 10px 0 0;
+    border: solid 1px #666666;
+    box-shadow: 0 0 3px 1px #999999 inset;
 }
-.groups .small_map a {
-    display: block;
-}
-.groups .small_map a:hover {
+.groups .small_map:hover {
     border: solid 1px #FF0033;
 }
-.groups .small_map img {
+
+
+.groups .small_map .phocamaps {
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    left: 4px;
+    width: 93px;
+    height: 106px;
+    z-index: 0;
+}
+.groups .small_map .modal-button{
     display: block;
-    width: 98px;
-    height: 98px;
+    width: 102px;
+    height: 102px;
+    position: relative;
+    z-index: 1000;
 }
 /*-------------------------------------video----------------------------------------*/
 .video {
@@ -986,6 +1041,16 @@ form.search {
     color: #333333;
 }
 /*-------------------------------------about us-------------------------------------*/
+.moduletableabout_us h3 {
+    overflow: hidden;
+    height: 58px;
+    margin: 0 0 13px;
+    padding: 22px 0 0 10px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+}
 .about_us {
     overflow: hidden;
     margin: 15px 0 0 35px;
@@ -1007,13 +1072,17 @@ form.search {
 }
 .about_us ul li a {
     display: block;
+    /*width: 194px;*/
+    height: 187px;
     margin: 2px;
+    text-indent: -1000px;
     border: solid 2px #8A8277;
     border-radius: 24px 24px 24px 24px;
     -moz-border-radius: 24px 24px 24px 24px;
     -webkit-border-radius: 24px 24px 24px 24px;
     -o-border-radius: 24px 24px 24px 24px;
     -ms-border-radius: 24px 24px 24px 24px;
+
 }
 .about_us ul li a:hover {
     border: solid 2px #FFFFFF;
@@ -1027,6 +1096,24 @@ form.search {
     -webkit-box-shadow: 0 0 5px 0 #666666;
     -o-box-shadow: 0 0 5px 0 #666666;
     -ms-box-shadow: 0 0 5px 0 #666666;
+}
+.about_us ul li.find a  {
+    background: url("../images/find_us.png") no-repeat;
+}
+.about_us ul li.find a:hover {
+    background-position: 0 -200px;
+}
+.about_us ul li.believe a  {
+    background: url("../images/we_believe1.png") no-repeat;
+}
+.about_us ul li.believe a:hover {
+    background-position: 0 -200px;
+}
+.about_us ul li.pastors a  {
+    background: url("../images/pastors2.png") no-repeat;
+}
+.about_us ul li.pastors a:hover {
+    background-position: 0 -200px;
 }
 .about_us ul li a img {
     display: block;
@@ -1064,7 +1151,7 @@ form.search {
 }
 .photo p {
     overflow: hidden;
-    padding: 20px 130px 0 10px;
+    padding: 20px 30px 0 10px;
     font-size: 20px;
     line-height: 23px;
     color: #333333;
