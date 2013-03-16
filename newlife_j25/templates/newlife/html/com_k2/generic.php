@@ -9,6 +9,111 @@
 
 // no direct access
 defined('_JEXEC') or die;
+K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
+
+/**
+ * truncateHtml can truncate a string up to a number of characters while preserving whole words and HTML tags
+ *
+ * @param string $text String to truncate.
+ * @param integer $length Length of returned string, including ellipsis.
+ * @param string $ending Ending to be appended to the trimmed string.
+ * @param boolean $exact If false, $text will not be cut mid-word
+ * @param boolean $considerHtml If true, HTML tags would be handled correctly
+ *
+ * @return string Trimmed string.
+ */
+function truncateHtml($text, $length = 100, $ending = '...', $exact = false, $considerHtml = true) {
+    if ($considerHtml) {
+        // if the plain text is shorter than the maximum length, return the whole text
+        if (strlen(preg_replace('/<.*?>/', '', $text)) <= $length) {
+            return $text;
+        }
+        // splits all html-tags to scanable lines
+        preg_match_all('/(<.+?>)?([^<>]*)/s', $text, $lines, PREG_SET_ORDER);
+        $total_length = strlen($ending);
+        $open_tags = array();
+        $truncate = '';
+        foreach ($lines as $line_matchings) {
+            // if there is any html-tag in this line, handle it and add it (uncounted) to the output
+            if (!empty($line_matchings[1])) {
+                // if it's an "empty element" with or without xhtml-conform closing slash
+                if (preg_match('/^<(\s*.+?\/\s*|\s*(img|br|input|hr|area|base|basefont|col|frame|isindex|link|meta|param)(\s.+?)?)>$/is', $line_matchings[1])) {
+                    // do nothing
+                    // if tag is a closing tag
+                } else if (preg_match('/^<\s*\/([^\s]+?)\s*>$/s', $line_matchings[1], $tag_matchings)) {
+                    // delete tag from $open_tags list
+                    $pos = array_search($tag_matchings[1], $open_tags);
+                    if ($pos !== false) {
+                        unset($open_tags[$pos]);
+                    }
+                    // if tag is an opening tag
+                } else if (preg_match('/^<\s*([^\s>!]+).*?>$/s', $line_matchings[1], $tag_matchings)) {
+                    // add tag to the beginning of $open_tags list
+                    array_unshift($open_tags, strtolower($tag_matchings[1]));
+                }
+                // add html-tag to $truncate'd text
+                $truncate .= $line_matchings[1];
+            }
+            // calculate the length of the plain text part of the line; handle entities as one character
+            $content_length = strlen(preg_replace('/&[0-9a-z]{2,8};|&#[0-9]{1,7};|[0-9a-f]{1,6};/i', ' ', $line_matchings[2]));
+            if ($total_length+$content_length> $length) {
+                // the number of characters which are left
+                $left = $length - $total_length;
+                $entities_length = 0;
+                // search for html entities
+                if (preg_match_all('/&[0-9a-z]{2,8};|&#[0-9]{1,7};|[0-9a-f]{1,6};/i', $line_matchings[2], $entities, PREG_OFFSET_CAPTURE)) {
+                    // calculate the real length of all entities in the legal range
+                    foreach ($entities[0] as $entity) {
+                        if ($entity[1]+1-$entities_length <= $left) {
+                            $left--;
+                            $entities_length += strlen($entity[0]);
+                        } else {
+                            // no more characters left
+                            break;
+                        }
+                    }
+                }
+                $truncate .= substr($line_matchings[2], 0, $left+$entities_length);
+                // maximum lenght is reached, so get off the loop
+                break;
+            } else {
+                $truncate .= $line_matchings[2];
+                $total_length += $content_length;
+            }
+            // if the maximum length is reached, get off the loop
+            if($total_length>= $length) {
+                break;
+            }
+        }
+    } else {
+        if (strlen($text) <= $length) {
+            return $text;
+        } else {
+            $truncate = substr($text, 0, $length - strlen($ending));
+        }
+    }
+    // if the words shouldn't be cut in the middle...
+    if (!$exact) {
+        // ...search the last occurance of a space...
+        $spacepos = strrpos($truncate, ' ');
+        if (isset($spacepos)) {
+            // ...and cut the text in this position
+            $truncate = substr($truncate, 0, $spacepos);
+        }
+    }
+    // add the defined ending to the text
+    $truncate .= $ending;
+    if($considerHtml) {
+        // close all unclosed html-tags
+        foreach ($open_tags as $tag) {
+            $truncate .= '</' . $tag . '>';
+        }
+    }
+    return $truncate;
+}
+
+
+$plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
 
 ?>
 
@@ -22,46 +127,73 @@ defined('_JEXEC') or die;
 	</div>
 	<?php endif; ?>
 
-	<?php if($this->params->get('genericFeedIcon',1)): ?>
-	<!-- RSS feed icon -->
-	<div class="k2FeedIcon">
-		<a href="<?php echo $this->feed; ?>" title="<?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?>">
-			<span><?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?></span>
-		</a>
-		<div class="clr"></div>
-	</div>
-	<?php endif; ?>
-
 	<?php if(count($this->items)): ?>
-	<div class="genericItemList">
+	<ul class="genericItemList">
 		<?php foreach($this->items as $item): ?>
 
 		<!-- Start K2 Item Layout -->
-		<div class="genericItemView">
+		<li class="genericItemView">
+
 
 			<div class="genericItemHeader">
-				<?php if($this->params->get('genericItemDateCreated')): ?>
-				<!-- Date created -->
-				<span class="genericItemDateCreated">
-					<?php echo JHTML::_('date', $item->created , 'j.m.Y'); ?>
-				</span>
-				<?php endif; ?>
-			
-			  <?php if($this->params->get('genericItemTitle')): ?>
-			  <!-- Item title -->
-			  <h2 class="genericItemTitle">
-			  	<?php if ($this->params->get('genericItemTitleLinked')): ?>
-					<a href="<?php echo $item->link; ?>">
-			  		<?php echo $item->title; ?>
-			  	</a>
-			  	<?php else: ?>
-			  	<?php echo $item->title; ?>
-			  	<?php endif; ?>
-			  </h2>
-			  <?php endif; ?>
+                <!-- Plugins: BeforeDisplayContent -->
+                <?php echo $this->item->event->BeforeDisplayContent; ?>
+                <!-- K2 Plugins: K2BeforeDisplayContent -->
+                <?php echo $this->item->event->K2BeforeDisplayContent; ?>
+                <?php if(!empty($item->video)): ?>
+                <!-- ITEM VIDEO -->
+                    <?php if($item->videoType=='embedded'): ?>
+                    <div class="catItemVideoEmbedded">
+                        <?php echo $item->video; ?>
+                    </div>
+                    <?php else: ?>
+                    <span class="catItemVideo"><?php echo $item->video; ?></span>
+                    <?php endif; ?>
+                <?php endif; ?>
+
 		  </div>
 
 		  <div class="genericItemBody">
+              <?php if($this->params->get('genericItemExtraFields') && count($item->extra_fields)): ?>
+              <!-- Item extra fields -->
+
+              <ul class="genericItemExtraFields">
+                      <?php foreach ($item->extra_fields as $key=>$extraField): ?>
+                      <?php if($extraField->value != ''): ?>
+                          <li class="<?php echo ($key%2) ? "odd" : "even"; ?> type<?php echo ucfirst($extraField->type); ?> group<?php echo $extraField->group; ?>">
+                              <?php if($extraField->type == 'header'): ?>
+                              <h4 class="genericItemExtraFieldsHeader"><?php echo $extraField->name; ?></h4>
+                              <?php else: ?>
+
+                              <span class="genericItemExtraFieldsValue"><?php echo $extraField->value; ?></span>
+                              <?php endif; ?>
+                          </li>
+                          <?php endif; ?>
+                      <?php endforeach; ?>
+              </ul>
+
+
+              <?php endif; ?>
+              <?php if($this->params->get('genericItemTitle')): ?>
+              <!-- Item title -->
+              <h2 class="genericItemTitle">
+                  <?php if ($this->params->get('genericItemTitleLinked')): ?>
+                  <a href="<?php echo $item->link; ?>">
+                      <?php echo $item->title; ?>
+                  </a>
+                  <?php else: ?>
+                  <?php echo $item->title; ?>
+                  <?php endif; ?>
+              </h2>
+              <?php endif; ?>
+              <?php if($this->params->get('genericItemDateCreated')): ?>
+              <!-- Date created -->
+              <span class="genericItemDateCreated">
+					<?php echo JHTML::_('date', $item->created , 'j.m.Y'); ?>
+				</span>
+              <?php endif; ?>
+
+
 			  <?php if($this->params->get('genericItemImage') && !empty($item->imageGeneric)): ?>
 			  <!-- Item Image -->
 			  <div class="genericItemImageBlock">
@@ -70,73 +202,28 @@ defined('_JEXEC') or die;
 				    	<img src="<?php echo $item->imageGeneric; ?>" alt="<?php if(!empty($item->image_caption)) echo K2HelperUtilities::cleanHtml($item->image_caption); else echo K2HelperUtilities::cleanHtml($item->title); ?>" style="width:<?php echo $this->params->get('itemImageGeneric'); ?>px; height:auto;" />
 				    </a>
 				  </span>
-				  <div class="clr"></div>
+				   
 			  </div>
 			  <?php endif; ?>
 			  
 			  <?php if($this->params->get('genericItemIntroText')): ?>
 			  <!-- Item introtext -->
 			  <div class="genericItemIntroText">
-			  	<?php echo $item->introtext; ?>
+			  	<?php echo truncateHtml($item->introtext) ?>
 			  </div>
 			  <?php endif; ?>
-
-			  <div class="clr"></div>
 		  </div>
-		  
-		  <div class="clr"></div>
-		  
-		  <?php if($this->params->get('genericItemExtraFields') && count($item->extra_fields)): ?>
-		  <!-- Item extra fields -->  
-		  <div class="genericItemExtraFields">
-		  	<h4><?php echo JText::_('K2_ADDITIONAL_INFO'); ?></h4>
-		  	<ul>
-				<?php foreach ($item->extra_fields as $key=>$extraField): ?>
-				<?php if($extraField->value != ''): ?>
-				<li class="<?php echo ($key%2) ? "odd" : "even"; ?> type<?php echo ucfirst($extraField->type); ?> group<?php echo $extraField->group; ?>">
-					<?php if($extraField->type == 'header'): ?>
-					<h4 class="genericItemExtraFieldsHeader"><?php echo $extraField->name; ?></h4>
-					<?php else: ?>
-					<span class="genericItemExtraFieldsLabel"><?php echo $extraField->name; ?></span>
-					<span class="genericItemExtraFieldsValue"><?php echo $extraField->value; ?></span>
-					<?php endif; ?>
-				</li>
-				<?php endif; ?>
-				<?php endforeach; ?>
-				</ul>
-		    <div class="clr"></div>
-		  </div>
-		  <?php endif; ?>
-		  
-			<?php if($this->params->get('genericItemCategory')): ?>
-			<!-- Item category name -->
-			<div class="genericItemCategory">
-				<span><?php echo JText::_('K2_PUBLISHED_IN'); ?></span>
-				<a href="<?php echo $item->category->link; ?>"><?php echo $item->category->name; ?></a>
-			</div>
-			<?php endif; ?>
-			
-			<?php if ($this->params->get('genericItemReadMore')): ?>
-			<!-- Item "read more..." link -->
-			<div class="genericItemReadMore">
-				<a class="k2ReadMore" href="<?php echo $item->link; ?>">
-					<?php echo JText::_('K2_READ_MORE'); ?>
-				</a>
-			</div>
-			<?php endif; ?>
-
-			<div class="clr"></div>
-		</div>
+		</li>
 		<!-- End K2 Item Layout -->
 		
 		<?php endforeach; ?>
-	</div>
+	</ul>
 
 	<!-- Pagination -->
 	<?php if($this->pagination->getPagesLinks()): ?>
 	<div class="k2Pagination">
 		<?php echo $this->pagination->getPagesLinks(); ?>
-		<div class="clr"></div>
+
 		<?php echo $this->pagination->getPagesCounter(); ?>
 	</div>
 	<?php endif; ?>

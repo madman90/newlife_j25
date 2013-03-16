@@ -20,59 +20,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.75">
-              <folding>
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generic_search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic_search.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="24" selection-start="355" selection-end="355" vertical-scroll-proportion="-3.125">
-              <folding>
-                <marker date="1360401707000" expanded="true" signature="423:572" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jak2_filter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="59" selection-start="6714" selection-end="6714" vertical-scroll-proportion="-25.041666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jaextrafield.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/elements/jaextrafield.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jak2_filter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/tmpl/jak2_filter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="11" selection-start="3508" selection-end="3508" vertical-scroll-proportion="-50.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/script.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,10 +29,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jak2_filter.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="476" column="78" selection-start="11894" selection-end="11894" vertical-scroll-proportion="0.6530837">
+            <state line="476" column="78" selection-start="11894" selection-end="11894" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generic.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="75" selection-start="423" selection-end="423" vertical-scroll-proportion="0.086107925">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modules.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/modules.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="27" selection-start="531" selection-end="542" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tag.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/jw_allvideo/Classic/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="336" selection-end="1003" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1363330517751" expanded="true" signature="406:968" placeholder="..." />
+                <marker date="1363330517751" expanded="false" signature="421:465" placeholder="..." />
+                <marker date="1363330517751" expanded="true" signature="492:961" placeholder="..." />
+                <marker date="1363330517751" expanded="true" signature="560:953" placeholder="..." />
+                <marker date="1363330517751" expanded="true" signature="697:925" placeholder="..." />
+                <marker date="1363330517751" expanded="true" signature="759:832" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_item.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="4" selection-start="436" selection-end="511" vertical-scroll-proportion="-2.142857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod_jak2_filter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/mod_jak2_filter/mod_jak2_filter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="775" selection-end="837" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -94,16 +113,7 @@
       <file leaf-file-name="k2.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1213" column="0" selection-start="50277" selection-end="50315" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jak2_filter.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="772" column="35" selection-start="33525" selection-end="33525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,8 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/modules/mod_sp_quickcontact/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/tmp/con/mod_ira_quickcontact.xml" />
         <option value="$PROJECT_DIR$/tmp/con/helper.php" />
         <option value="$PROJECT_DIR$/modules/mod_ira_quickcontact/mod_ira_quickcontact.php" />
         <option value="$PROJECT_DIR$/tmp/con/mod_ira_quickcontact.php" />
@@ -133,17 +141,19 @@
         <option value="$PROJECT_DIR$/modules/mod_jak2_filter/mod_jak2_filter.php" />
         <option value="$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter.php" />
         <option value="$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/script.js" />
-        <option value="$PROJECT_DIR$/templates/newlife/css/k2.css" />
         <option value="$PROJECT_DIR$/templates/newlife/css/template.css" />
+        <option value="$PROJECT_DIR$/plugins/search/k2/k2.php" />
+        <option value="$PROJECT_DIR$/templates/newlife/css/k2.css" />
+        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/generic.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -171,6 +181,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,7 +250,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,7 +264,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_k2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,233 +290,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemId" value="newlife" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
+              <option name="myItemId" value="com_k2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="k2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jak2_filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newlife_j25" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,8 +319,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="last_opened_file_path" value="$USER_HOME$/Документы" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -558,15 +376,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18131565" sideWeight="0.32655245" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18131565" sideWeight="0.66595286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18076286" sideWeight="0.32655245" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18518518" sideWeight="0.6713062" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -575,6 +392,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -646,60 +464,72 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php">
+    <entry file="file://$PROJECT_DIR$/components/com_k2/controllers/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1362238782175" expanded="true" signature="924:1468" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="1154:1223" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="1614:13689" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="2244:3225" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="2378:2580" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="2488:2569" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="2739:2806" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="3063:3183" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="3085:3167" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="3721:3798" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="4213:4366" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="4673:5085" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="5368:5433" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="5957:6575" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="5989:6560" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="6218:6548" placeholder="..." />
-            <marker date="1362238782175" expanded="false" signature="6465:6528" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="6854:8164" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="6965:8149" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="7009:7993" placeholder="..." />
-            <marker date="1362238782175" expanded="false" signature="7121:7173" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="8695:8870" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="8725:8851" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="9167:9374" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="9687:10043" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="9800:10024" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="10385:11262" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="10513:11243" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="10618:11180" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="10767:10859" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="11600:11740" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="12179:13010" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="12550:12738" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="12856:12959" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="13326:13521" placeholder="..." />
-            <marker date="1362238782175" expanded="true" signature="13409:13498" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic.php">
+    <entry file="file://$PROJECT_DIR$/components/com_k2/controllers/itemlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="12" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-9.416667">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/content/jw_allvideos/jw_allvideos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="28" selection-start="1140" selection-end="1155" vertical-scroll-proportion="0.42420813" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="355" selection-end="355" vertical-scroll-proportion="0.08484163" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htaccess.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="772" column="35" selection-start="33525" selection-end="33525" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_jak2_filter/mod_jak2_filter.php">
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/jw_allvideo/Classic/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="58" selection-start="822" selection-end="833" vertical-scroll-proportion="-5.5833335">
+        <state line="12" column="0" selection-start="336" selection-end="1003" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1363330517751" expanded="true" signature="406:968" placeholder="..." />
+            <marker date="1363330517751" expanded="false" signature="421:465" placeholder="..." />
+            <marker date="1363330517751" expanded="true" signature="492:961" placeholder="..." />
+            <marker date="1363330517751" expanded="true" signature="560:953" placeholder="..." />
+            <marker date="1363330517751" expanded="true" signature="697:925" placeholder="..." />
+            <marker date="1363330517751" expanded="true" signature="759:832" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/modules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="27" selection-start="531" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="59" selection-start="6714" selection-end="6714" vertical-scroll-proportion="-0.625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -711,77 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/elements/jaextrafield.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic_search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="355" selection-end="355" vertical-scroll-proportion="-3.125">
-          <folding>
-            <marker date="1360401707000" expanded="true" signature="423:572" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.75">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/k2/k2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/elements/assets/js/japaramhelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1620111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/elements/jaextrafields.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="25" selection-start="3760" selection-end="3760" vertical-scroll-proportion="1.9251101">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/tmpl/jak2_filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="11" selection-start="3508" selection-end="3508" vertical-scroll-proportion="-50.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/k2/k2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="81" selection-start="8163" selection-end="8163" vertical-scroll-proportion="3.8059702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="59" selection-start="6714" selection-end="6714" vertical-scroll-proportion="-25.041666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/search/jak2_filter/jak2_filter/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="258" column="74" selection-start="7574" selection-end="7574" vertical-scroll-proportion="0.0">
@@ -789,17 +548,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
+    <entry file="file://$PROJECT_DIR$/modules/mod_jak2_filter/mod_jak2_filter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1213" column="0" selection-start="50277" selection-end="50315" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="775" selection-end="837" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="476" column="78" selection-start="11894" selection-end="11894" vertical-scroll-proportion="0.6530837">
+        <state line="13" column="4" selection-start="436" selection-end="511" vertical-scroll-proportion="-2.142857">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="75" selection-start="423" selection-end="423" vertical-scroll-proportion="0.086107925">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

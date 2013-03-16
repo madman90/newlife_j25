@@ -75,8 +75,7 @@ body.contentpane #k2Container {padding:16px;} /* used in popups */
 .clr {clear:both;height:0;line-height:0;display:block;float:none;padding:0;margin:0;border:none;}
 
 /* --- Zebra rows --- */
-.even {background:#fffff0;padding:2px;border-bottom:1px dotted #ccc;}
-.odd {background:#fff;padding:2px;border-bottom:1px dotted #ccc;}
+
 
 /* --- RSS feed icon --- */
 div.k2FeedIcon {padding:4px 8px;}
@@ -721,15 +720,45 @@ div.tagItemReadMore {display:inline;}
 /*----------------------------------------------------------------------
 	Component: Itemlist view (generic)
 ----------------------------------------------------------------------*/
-div.genericView {}
-
-div.genericItemList {}
-
-div.genericItemView {border-bottom:1px dotted #ccc;padding:8px 0;margin:0 0 16px 0;} /* this is the item container for this view */
+div.genericView {
+    overflow: hidden;
+    margin: 0;
+}
+div.componentheading {
+    overflow: hidden;
+    height: 58px;
+    padding: 22px 318px 0 10px;
+    margin: 0 0 13px;
+    font-family: Arial,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 31px;
+}
+div.genericItemList {
+    overflow: hidden;
+}
+li.genericItemView{
+    overflow: hidden;
+    /*height: 170px;*/
+    margin: 3px;
+    padding: 0 0 7px;
+}
 
 div.genericItemHeader {}
-	div.genericItemHeader span.genericItemDateCreated {color:#999;font-size:11px;}
-	div.genericItemHeader h2.genericItemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;padding:10px 0 4px 0;margin:0;}
+span.genericItemDateCreated {
+    display: block;
+    padding: 0 0 10px;
+    color: #333333;
+    font: 13px/13px Arial;
+}
+h2.genericItemTitle {
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0 0 11px;
+    color: #333333;
+    font: 13px/13px Arial;
+}
 
 div.genericItemBody {padding:8px 0;margin:0;}
 
@@ -737,15 +766,30 @@ div.genericItemImageBlock {padding:0;margin:0;float:left;}
 	span.genericItemImage {display:block;text-align:center;margin:0 8px 8px 0;}
 	span.genericItemImage img {border:1px solid #ccc;padding:8px;}
 
-div.genericItemIntroText {font-size:inherit;font-weight:normal;line-height:inherit;padding:4px 0 12px 0;}
+div.genericItemIntroText {
+    overflow: hidden;
+}
+div.genericItemIntroText p {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+}
 	div.genericItemIntroText img {}
 	
-	div.genericItemExtraFields {}
-		div.genericItemExtraFields h4 {}
-		div.genericItemExtraFields ul {}
-			div.genericItemExtraFields ul li {}
-				div.genericItemExtraFields ul li span.genericItemExtraFieldsLabel {}
-				div.genericItemExtraFields ul li span.genericItemExtraFieldsValue {}
+	ul.genericItemExtraFields {
+        overflow: hidden;
+    }
+    ul.genericItemExtraFields li {
+        overflow: hidden;
+        margin: 0 0 8px;
+        border: none;
+
+    }
+    ul.genericItemExtraFields li span.genericItemExtraFieldsValue {
+            font-size: 16px;
+    }
 
 	div.genericItemCategory {display:inline;margin:0 8px 0 0;padding:0 8px 0 0;border-right:1px solid #ccc;}
 		div.genericItemCategory span {font-weight:bold;color:#555;padding:0 4px 0 0;}
