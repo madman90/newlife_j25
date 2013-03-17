@@ -433,7 +433,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 
 .video_list {
     overflow: hidden;
-    margin: 0 0 15px 50px;
+    margin: 0 0 15px 0;
 }
 .video_list li {
     overflow: hidden;
@@ -684,43 +684,71 @@ div.tagView {
     overflow: hidden;
 }
 
-div.tagItemList {
+.tagItemList {
     overflow: hidden;
 }
 
-div.tagItemView {border-bottom:1px dotted #ccc;padding:8px 0;margin:0 0 16px 0;} /* this is the item container for this view */
+.tagItemList li {
+    overflow: hidden;
+    height: 170px;
+    margin: 3px;
+    padding: 0 0 7px;
+} /* this is the item container for this view */
 
-div.tagItemHeader {}
-	div.tagItemHeader span.tagItemDateCreated {color:#999;font-size:11px;}
-	div.tagItemHeader h2.tagItemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;padding:10px 0 4px 0;margin:0;}
-
-div.tagItemBody {padding:8px 0;margin:0;}
+div.tagItemHeader {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 258px;
+    height: 157px;
+    margin: 4px 14px 4px 4px;
+}
+div.tagItemBody {
+    overflow: hidden;
+    padding:12px 0 0;
+    margin:0;
+}
+h3.tagItemTitle {
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0 0 10px;
+}
+span.tagItemDateCreated {
+    display: block;
+    padding: 0 0 10px;
+    color: #333333;
+    font: 13px/13px Arial;
+}
 
 div.tagItemImageBlock {padding:0;margin:0;float:left;}
 	span.tagItemImage {display:block;text-align:center;margin:0 8px 8px 0;}
 	span.tagItemImage img {border:1px solid #ccc;padding:8px;}
 
-div.tagItemIntroText {font-size:inherit;font-weight:normal;line-height:inherit;padding:4px 0 12px 0;}
-	div.tagItemIntroText img {}
-	
-	div.tagItemExtraFields {}
-		div.tagItemExtraFields h4 {}
-		div.tagItemExtraFields ul {}
-			div.tagItemExtraFields ul li {}
-				div.tagItemExtraFields ul li span.tagItemExtraFieldsLabel {}
-				div.tagItemExtraFields ul li span.tagItemExtraFieldsValue {}
-
-	div.tagItemCategory {display:inline;margin:0 8px 0 0;padding:0 8px 0 0;border-right:1px solid #ccc;}
-		div.tagItemCategory span {font-weight:bold;color:#555;padding:0 4px 0 0;}
-		div.tagItemCategory a {}
-
-/* Read more link */
-div.tagItemReadMore {display:inline;}
-	div.tagItemReadMore a {}
-	div.tagItemReadMore a:hover {}
-
-
-
+div.tagItemIntroText {
+    overflow: hidden;
+    padding: 0;
+}
+div.tagItemIntroText p {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 12px;
+}
+ul.tagItemExtraFields {
+     overflow: hidden;
+}
+ul.tagItemExtraFields li {
+    overflow: hidden;
+    height: auto;
+    margin: 0 0 4px;
+    padding: 0;
+    border: medium none;
+}
+ul.tagItemExtraFields li span.tagItemExtraFieldsValue {
+    font: 13px/13px Arial;
+}
 /*----------------------------------------------------------------------
 	Component: Itemlist view (generic)
 ----------------------------------------------------------------------*/
