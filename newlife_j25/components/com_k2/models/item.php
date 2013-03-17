@@ -41,7 +41,8 @@ class K2ModelItem extends K2Model
 	{
 
 		jimport('joomla.filesystem.file');
-		JTable::addIncludePath(JPATH_COMPONENT_ADMINISTRATOR.DS.'tables');
+//		JTable::addIncludePath(JPATH_COMPONENT_ADMINISTRATOR.DS.'tables');
+        JTable::addIncludePath(JPATH_SITE.DS.'administrator/components/com_k2/tables');
 		$limitstart = JRequest::getInt('limitstart');
 		$application = JFactory::getApplication();
 		//Initialize params
@@ -560,7 +561,7 @@ class K2ModelItem extends K2Model
 		}
 
 		//Video
-		if (($view == 'item' && $item->params->get('itemVideo')) || ($view == 'itemlist' && ($task == '' || $task == 'category') && $item->params->get('catItemVideo')) || ($view == 'latest' && $item->params->get('latestItemVideo')) || ($view == 'relatedByTag'))
+		if (($view == 'item' && $item->params->get('itemVideo')) || (($view == 'itemlist' || $view == 'search') && ($task == '' || $task == 'category') && $item->params->get('catItemVideo')) || ($view == 'latest' && $item->params->get('latestItemVideo')) || ($view == 'relatedByTag'))
 		{
 			if (!empty($item->video) && JString::substr($item->video, 0, 1) !== '{')
 			{

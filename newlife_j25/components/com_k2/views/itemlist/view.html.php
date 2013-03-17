@@ -437,7 +437,8 @@ class K2ViewItemlist extends K2View
 			}
 
 			// Plugins
-			$items[$i] = $model->execPlugins($items[$i], $view, $task);
+
+			$items[$i] = $model->execPlugins($items[$i], $view, ($task == 'search' || $task == 'tag') ? 'category' : $task);
 
 			// Trigger comments counter event
 			$dispatcher = JDispatcher::getInstance();

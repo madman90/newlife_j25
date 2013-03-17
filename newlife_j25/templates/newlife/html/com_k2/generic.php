@@ -150,6 +150,7 @@ $plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
                     <span class="catItemVideo"><?php echo $item->video; ?></span>
                     <?php endif; ?>
                 <?php endif; ?>
+                <a class="video_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
 
 		  </div>
 
@@ -223,8 +224,6 @@ $plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
 	<?php if($this->pagination->getPagesLinks()): ?>
 	<div class="k2Pagination">
 		<?php echo $this->pagination->getPagesLinks(); ?>
-
-		<?php echo $this->pagination->getPagesCounter(); ?>
 	</div>
 	<?php endif; ?>
 	

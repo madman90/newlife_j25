@@ -28,40 +28,70 @@ defined('_JEXEC') or die;
 		<a href="<?php echo $this->feed; ?>" title="<?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?>">
 			<span><?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?></span>
 		</a>
-		<div class="clr"></div>
+
 	</div>
 	<?php endif; ?>
 
 	<?php if(count($this->items)): ?>
-	<div class="tagItemList">
+	<ul class="tagItemList">
 		<?php foreach($this->items as $item): ?>
 
 		<!-- Start K2 Item Layout -->
-		<div class="tagItemView">
+		<li class="tagItemView">
 
 			<div class="tagItemHeader">
-				<?php if($item->params->get('tagItemDateCreated',1)): ?>
-				<!-- Date created -->
-				<span class="tagItemDateCreated">
-					<?php echo JHTML::_('date', $item->created , JText::_('K2_DATE_FORMAT_LC2')); ?>
-				</span>
-				<?php endif; ?>
-			
-			  <?php if($item->params->get('tagItemTitle',1)): ?>
-			  <!-- Item title -->
-			  <h2 class="tagItemTitle">
-			  	<?php if ($item->params->get('tagItemTitleLinked',1)): ?>
-					<a href="<?php echo $item->link; ?>">
-			  		<?php echo $item->title; ?>
-			  	</a>
-			  	<?php else: ?>
-			  	<?php echo $item->title; ?>
-			  	<?php endif; ?>
-			  </h2>
-			  <?php endif; ?>
+                <!-- Plugins: BeforeDisplayContent -->
+                <?php echo $this->item->event->BeforeDisplayContent; ?>
+                <!-- K2 Plugins: K2BeforeDisplayContent -->
+                <?php echo $this->item->event->K2BeforeDisplayContent; ?>
+                <?php if(!empty($item->video)): ?>
+                <!-- ITEM VIDEO -->
+                <?php if($item->videoType=='embedded'): ?>
+                    <div class="catItemVideoEmbedded">
+                        <?php echo $item->video; ?>
+                    </div>
+                    <?php else: ?>
+                    <span class="catItemVideo"><?php echo $item->video; ?></span>
+                    <?php endif; ?>
+                <?php endif; ?>
 		  </div>
 
 		  <div class="tagItemBody">
+              <ul class="tagItemExtraFields">
+                  <?php foreach ($item->extra_fields as $key=>$extraField): ?>
+                  <?php if($extraField->value != ''): ?>
+                      <li class="<?php echo ($key%2) ? "odd" : "even"; ?> type<?php echo ucfirst($extraField->type); ?> group<?php echo $extraField->group; ?>">
+                          <?php if($extraField->type == 'header'): ?>
+                          <h4 class="genericItemExtraFieldsHeader"><?php echo $extraField->name; ?></h4>
+                          <?php else: ?>
+
+                          <span class="genericItemExtraFieldsValue"><?php echo $extraField->value; ?></span>
+                          <?php endif; ?>
+                      </li>
+                      <?php endif; ?>
+                  <?php endforeach; ?>
+              </ul>
+
+              <?php if($item->params->get('tagItemTitle',1)): ?>
+              <!-- Item title -->
+              <h3 class="tagItemTitle">
+                  <?php if ($item->params->get('tagItemTitleLinked',1)): ?>
+                  <a href="<?php echo $item->link; ?>">
+                      <?php echo $item->title; ?>
+                  </a>
+                  <?php else: ?>
+                  <?php echo $item->title; ?>
+                  <?php endif; ?>
+              </h3>
+              <?php endif; ?>
+              <?php if($item->params->get('tagItemDateCreated',1)): ?>
+              <!-- Date created -->
+              <span class="tagItemDateCreated">
+					<?php echo JHTML::_('date', $item->created , 'j.m.Y'); ?>
+				</span>
+              <?php endif; ?>
+
+
 			  <?php if($item->params->get('tagItemImage',1) && !empty($item->imageGeneric)): ?>
 			  <!-- Item Image -->
 			  <div class="tagItemImageBlock">
@@ -70,7 +100,7 @@ defined('_JEXEC') or die;
 				    	<img src="<?php echo $item->imageGeneric; ?>" alt="<?php if(!empty($item->image_caption)) echo K2HelperUtilities::cleanHtml($item->image_caption); else echo K2HelperUtilities::cleanHtml($item->title); ?>" style="width:<?php echo $item->params->get('itemImageGeneric'); ?>px; height:auto;" />
 				    </a>
 				  </span>
-				  <div class="clr"></div>
+
 			  </div>
 			  <?php endif; ?>
 			  
@@ -81,10 +111,10 @@ defined('_JEXEC') or die;
 			  </div>
 			  <?php endif; ?>
 
-			  <div class="clr"></div>
+
 		  </div>
 		  
-		  <div class="clr"></div>
+
 		  
 		  <?php if($item->params->get('tagItemExtraFields',0) && count($item->extra_fields)): ?>
 		  <!-- Item extra fields -->  
@@ -104,7 +134,7 @@ defined('_JEXEC') or die;
 				<?php endif; ?>
 				<?php endforeach; ?>
 				</ul>
-		    <div class="clr"></div>
+
 		  </div>
 		  <?php endif; ?>
 		  
@@ -124,20 +154,18 @@ defined('_JEXEC') or die;
 				</a>
 			</div>
 			<?php endif; ?>
-
-			<div class="clr"></div>
-		</div>
+		</li>
 		<!-- End K2 Item Layout -->
 		
 		<?php endforeach; ?>
-	</div>
+	</ul>
 
 	<!-- Pagination -->
 	<?php if($this->pagination->getPagesLinks()): ?>
 	<div class="k2Pagination">
 		<?php echo $this->pagination->getPagesLinks(); ?>
-		<div class="clr"></div>
-		<?php echo $this->pagination->getPagesCounter(); ?>
+
+
 	</div>
 	<?php endif; ?>
 

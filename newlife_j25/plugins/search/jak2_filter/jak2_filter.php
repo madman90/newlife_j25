@@ -202,6 +202,18 @@ class plgSearchJAK2_Filter extends JPlugin
 //        print_r($areas);
 //        echo "</pre>";
 //        die('ku1');
+
+//        JLoader::import('joomla.application.component.model');
+////        JLoader::import( 'items', JPATH_ADMINISTRATOR . DS . 'components' . DS . 'com_k2' . DS . 'models' );
+//        JModel::addIncludePath(JPATH_SITE . '/components/com_k2/models');
+        JTable::addIncludePath(JPATH_SITE.DS.'administrator/components/com_k2/tables');
+        JLoader::register('K2HelperPermissions', JPATH_SITE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'permissions.php');
+        JLoader::register('K2HelperRoute', JPATH_SITE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'rout.php');
+        JLoader::register('K2HelperUtilities', JPATH_SITE.DS.'components'.DS.'com_k2'.DS.'helpers'.DS.'utilites.php');
+        require_once(JPATH_SITE.DS.'components/com_k2/models'.DS.'item.php');
+        $model = new K2ModelItem();
+//        $item_model = JModel::getInstance( 'item');
+
         if ($areas) {
             foreach ($areas as $area) {
                 $area = JFilterInput::clean($area, 'cmd');
@@ -309,20 +321,34 @@ class plgSearchJAK2_Filter extends JPlugin
         if ($searchLanguage) {
             $queryTranslate = "i.id as key1, c.id as key2, ";
         }
+//        $query = "
+//            SELECT
+//              $queryTranslate
+//              i.title,
+//              i.metadesc,
+//              i.metakey,
+//              c.name as section,
+//              i.image_caption,
+//              i.image_credits,
+//              i.video_caption,
+//              i.video_credits,
+//              i.extra_fields_search,
+//              i.created,
+//              i.introtext,
+//
+//              CASE WHEN CHAR_LENGTH(i.alias) THEN CONCAT_WS(':', i.id, i.alias) ELSE i.id END as slug,
+//              CASE WHEN CHAR_LENGTH(c.alias) THEN CONCAT_WS(':', c.id, c.alias) ELSE c.id END as catslug
+//            FROM #__k2_items AS i
+//                INNER JOIN #__k2_categories AS c ON c.id=i.catid AND c.access  IN(".implode(',', $access).")
+//                INNER JOIN #__k2_extra_fields_groups AS efg ON c.extraFieldsGroup = efg.id
+//        ";
         $query = "
             SELECT
               $queryTranslate
-              i.title,
-              i.metadesc,
-              i.metakey,
+              i.*,
               c.name as section,
-              i.image_caption,
-              i.image_credits,
-              i.video_caption,
-              i.video_credits,
-              i.extra_fields_search,
-              i.created,
-              i.introtext,
+
+
               CASE WHEN CHAR_LENGTH(i.alias) THEN CONCAT_WS(':', i.id, i.alias) ELSE i.id END as slug,
               CASE WHEN CHAR_LENGTH(c.alias) THEN CONCAT_WS(':', c.id, c.alias) ELSE c.id END as catslug
             FROM #__k2_items AS i
@@ -364,6 +390,8 @@ class plgSearchJAK2_Filter extends JPlugin
             $item->href = JRoute::_(K2HelperRoute::getItemRoute($item->slug, $item->catslug));
             $item->tag = $searchText;
             $item->browsernav = '';
+            $item = $model->prepareItem($item, 'itemlist', '');
+            $item = $model->execPlugins($item, 'itemlist', 'category');
             if (searchHelper::checkNoHTML($item, $searchText, array('text' , 'title' , 'metakey' , 'metadesc' , 'section' , 'image_caption' , 'image_credits' , 'video_caption' , 'video_credits' , 'extra_fields_search' , 'tag'))) {
                 $results[] = $item;
             }

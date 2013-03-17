@@ -20,10 +20,10 @@
 <?php //echo ($this->item->featured) ? 'catItemIsFeatured' : ''; ?><?php if($this->item->params->get('pageclass_sfx')) echo ' '.$this->item->params->get('pageclass_sfx'); ?>
 
 <!-- Plugins: BeforeDisplay -->
-<?php echo $this->item->event->BeforeDisplay; ?>
+<?php //echo $this->item->event->BeforeDisplay; ?>
 
 <!-- K2 Plugins: K2BeforeDisplay -->
-<?php echo $this->item->event->K2BeforeDisplay; ?>
+<?php //echo $this->item->event->K2BeforeDisplay; ?>
 
 <div class="catItemHeader">
 
@@ -44,10 +44,10 @@
 <!---------------------------------------------------------------------------------------------------------------->
     <div class="catItemBody">
     <!-- Plugins: BeforeDisplayContent -->
-    <?php echo $this->item->event->BeforeDisplayContent; ?>
+<!--    --><?php //echo $this->item->event->BeforeDisplayContent; ?>
     <!-- K2 Plugins: K2BeforeDisplayContent -->
-    <?php echo $this->item->event->K2BeforeDisplayContent; ?>
-
+<!--    --><?php //echo $this->item->event->K2BeforeDisplayContent; ?>
+<!---->
 <!--    Priches Series-->
     <?php if ($this->item->extra_fields[0]->value != ''): ?>
         <h3><?php echo $this->item->extra_fields[0]->value ?></h3>

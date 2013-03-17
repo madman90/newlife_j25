@@ -680,9 +680,13 @@ div.userItemReadMore {display:inline;}
 /*----------------------------------------------------------------------
 	Component: Itemlist view (tag)
 ----------------------------------------------------------------------*/
-div.tagView {}
+div.tagView {
+    overflow: hidden;
+}
 
-div.tagItemList {}
+div.tagItemList {
+    overflow: hidden;
+}
 
 div.tagItemView {border-bottom:1px dotted #ccc;padding:8px 0;margin:0 0 16px 0;} /* this is the item container for this view */
 
@@ -744,7 +748,13 @@ li.genericItemView{
     padding: 0 0 7px;
 }
 
-div.genericItemHeader {}
+div.genericItemHeader {
+    overflow: hidden;
+    float: left;
+    width: 258px;
+    height: 157px;
+    margin: 4px 14px 4px 4px;
+}
 span.genericItemDateCreated {
     display: block;
     padding: 0 0 10px;
@@ -760,7 +770,11 @@ h2.genericItemTitle {
     font: 13px/13px Arial;
 }
 
-div.genericItemBody {padding:8px 0;margin:0;}
+div.genericItemBody {
+    overflow: hidden;
+    padding:12px 0 0;
+    margin:0;
+}
 
 div.genericItemImageBlock {padding:0;margin:0;float:left;}
 	span.genericItemImage {display:block;text-align:center;margin:0 8px 8px 0;}

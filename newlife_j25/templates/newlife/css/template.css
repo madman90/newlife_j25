@@ -433,8 +433,6 @@ form.search {
 .tw_link:hover {
     color: #FF0033;
     text-decoration: none;
-    text-shadow: 5px 5px 3px #ffffff;
-    font-size: 15px;
 }
 /*----------------------------------search form---------------------------------------*/
 div.k2SearchBlock {
