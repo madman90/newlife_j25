@@ -24,6 +24,7 @@ function modChrome_beezDivision($module, &$params, &$attribs)
     <?php };
 }
 
+
 /**
  * beezHide chrome.
  *

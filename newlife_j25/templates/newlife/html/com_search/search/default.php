@@ -24,6 +24,7 @@ defined('_JEXEC') or die;
 <?php echo $this->loadTemplate('form'); ?>
 <?php if ($this->error==null && count($this->results) > 0) :
 	echo $this->loadTemplate('results');
+
 else :
 	echo $this->loadTemplate('error');
 endif; ?>

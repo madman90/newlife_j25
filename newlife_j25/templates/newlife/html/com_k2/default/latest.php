@@ -66,6 +66,10 @@ defined('_JEXEC') or die;
                     <li class="audio">
                        <?php $this->item=$item; echo $this->loadTemplate('item'); ?>
                     </li>
+                        <?php elseif(($item->categoryalias) == 'whats-new'): ?>
+                    <li class="whats_new">
+                        <?php $this->item=$item; echo $this->loadTemplate('item'); ?>
+                    </li>
                     <?php endif; ?>
                 <?php endforeach; ?>
 

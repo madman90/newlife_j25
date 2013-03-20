@@ -338,7 +338,7 @@ div.itemRelated {margin-bottom:16px;padding:0;} /* Add overflow-x:scroll; if you
 	div.itemRelated h3 {}
 	div.itemRelated ul {}
 		div.itemRelated ul li {}
-		div.itemRelated ul li.k2ScrollerElement {float:left;overflow:hidden;border:1px solid #ccc;padding:4px;margin:0 4px 4px 0;background:#fff;} /* you need to insert this class in the related li element in item.php for this styling to take effect */
+		/*div.itemRelated ul li.k2ScrollerElement {float:left;overflow:hidden;border:1px solid #ccc;padding:4px;margin:0 4px 4px 0;background:#fff;} *//* you need to insert this class in the related li element in item.php for this styling to take effect */
 		div.itemRelated ul li.clr {clear:both;height:0;line-height:0;display:block;float:none;padding:0;margin:0;border:none;}
 			a.itemRelTitle {}
 			div.itemRelCat {}
@@ -934,10 +934,45 @@ div.latestItemView {
 .latestItemBody .latestItemTitle a:hover {
     color: #FF0033;
 }
-div.latestItemImageBlock {padding:0;margin:0;float:left;}
-	span.latestItemImage {display:block;text-align:center;margin:0 8px 8px 0;}
-	span.latestItemImage img {border:1px solid #ccc;padding:8px;}
+.latestItemList .whats_new .news {
+    overflow: hidden;
+    float: left;
+    padding: 0;
+}
+.latestItemImageBlock {
+    overflow: hidden;
+    float: left;
+    width: 204px;
+    height: 129px;
+    margin: 0 10px 0 0;
+    padding: 3px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 5px 0 #000000;
+}
+.latestItemImageBlock a{
+    overflow: hidden;
+    display:block;
+    width: 204px;
+    height: 129px;
+    text-align:center;
 
+    }
+.latestItemImageBlock a img {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.whats_new .latestItemBody {
+    overflow: hidden;
+    margin: 7px 34px 9px 0;
+}
+.whats_new .latestItemBody h3 {
+   padding: 0;
+}
+.whats_new .latestItemBody .latestItemIntroText {
+    padding: 22px 0 0 0;
+}
 .latestItemIntroText {
     overflow: hidden;
     padding: 22px 38px 0 0;
@@ -1017,7 +1052,9 @@ div.latestItemTagsBlock {padding:4px;border-bottom:1px dotted #ccc;}
     left: 112px;
     z-index: 3;
 }
-
+.style {
+    height: 100%;
+}
 /* Anchor link to comments */
 div.latestItemCommentsLink {
     display:inline;margin:0 8px 0 0;
@@ -1041,6 +1078,87 @@ h2.latestItemTitleList {
     border-bottom:1px dotted #ccc;
     line-height:normal;
 }
+.whats-new .itemListCategory img {
+    display: none;
+}
+
+.whats-new .video_list {
+    overflow: hidden;
+    margin: 0 0 15px 0px;
+}
+.whats-new .container .catItemHeader {
+    display:none;
+}
+
+
+.whats-new .catItemTitle, .whats-new .catItemDateCreated, .whats-new .catItemIntroText{
+    margin-left: 228px;
+}
+.whats-new .itemContainer{
+    height: 135px;
+    margin: 0px;
+
+}
+
+.whats-new .catItemBody {
+    position: relative;
+    margin: 1px 5px;
+    padding: 6px 17px 10px 25px;
+    height: 124px;
+    box-shadow: 0 0 2px 1px #666666;
+    -moz-box-shadow: 0 0 2px 1px #666666;
+    -webkit-box-shadow: 0 0 2px 1px #666666;
+    background-color: #F7F7F7;
+
+
+}
+
+.whats-new .catItemImageBlock {
+    overflow: hidden;
+    position: absolute ;
+    top: 12px;
+    /*width: 111px;*/
+    height: 105px;
+    border: solid 3px #FFFFFF;
+    box-shadow: 0 0 3px 3px #C1C1C1;
+    -moz-box-shadow: 0 0 3px 3px #C1C1C1;
+    -webkit-box-shadow: 0 0 3px 3px #C1C1C1;
+}
+
+.whats-new .catItemImageBlock img {
+    overflow: hidden;
+    display: block;
+    /*width: 107px;*/
+    height: 101px;
+    padding: 2px;
+    box-shadow: 0 0 5px 2px #C1C1C1 inset;
+    -moz-box-shadow: 0 0 5px 2px #C1C1C1 inset;
+    -webkit-box-shadow: 0 0 5px 2px #C1C1C1 inset;
+}
+
+.whats-new .catItemBody h2 a {
+    overflow: hidden;
+    float: left;
+    padding: 4px 15px 10px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+}
+.whats-new .catItemDateCreated{
+    font-size: 20px;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+}
+
+.whats-new .catItemIntroText {
+    overflow: hidden;
+    padding: 0;
+    font-size: 12px;
+    line-height: 12px;
+}
+
 
 
 

@@ -24,7 +24,15 @@ $app= JFactory::getApplication();
 
 
 <body>
-    <div id="wrapper">
+<?php $classr = array_pop(explode("/",$this->base));
+ if ($classr == 'whats-new'){
+$classrr = 'whats-new';
+}
+else {
+$classrr = NULL;
+}
+?>
+    <div id="wrapper" class="<?php echo $classrr ?>">
         <div class="header_wrap">
                 <div id="header">
                     <h1 class="logo"><a href="#">Нове життя</a></h1>
