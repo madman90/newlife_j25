@@ -26,18 +26,22 @@
 <?php //echo $this->item->event->K2BeforeDisplay; ?>
 
 <div class="catItemHeader">
+    <div class="category_custom_video">
+        <img src="<?php if ($this->item->imageSmall):?><?php echo $this->item->imageSmall; ?><?php else: ?>/images/video_preview.jpg<?php endif; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
+        <a class="category_custom_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
+    </div>
 
-        <?php if($this->item->params->get('catItemVideo') && !empty($this->item->video)): ?>
-        <!-- ITEM VIDEO -->
-            <?php if($this->item->videoType=='embedded'): ?>
-            <div class="catItemVideoEmbedded">
-                <?php echo $this->item->video; ?>
-            </div>
-            <?php else: ?>
-            <span class="catItemVideo"><?php echo $this->item->video; ?></span>
-            <?php endif; ?>
-        <?php endif; ?>
-    <a class="video_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
+<!--        --><?php //if($this->item->params->get('catItemVideo') && !empty($this->item->video)): ?>
+<!--        <!-- ITEM VIDEO -->
+<!--            --><?php //if($this->item->videoType=='embedded'): ?>
+<!--            <div class="catItemVideoEmbedded">-->
+<!--                --><?php //echo $this->item->video; ?>
+<!--            </div>-->
+<!--            --><?php //else: ?>
+<!--            <span class="catItemVideo">--><?php //echo $this->item->video; ?><!--</span>-->
+<!--            --><?php //endif; ?>
+<!--        --><?php //endif; ?>
+<!--    <a class="video_link" href="--><?php //echo $this->item->link; ?><!--">&nbsp;</a>-->
 
 
 </div>

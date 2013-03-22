@@ -29,13 +29,17 @@ defined('_JEXEC') or die;
 		    <?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
 	    </span>
         <?php endif; ?>
-        <a class="video_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
-        <?php if($this->params->get('latestItemVideo') && !empty($this->item->video)): ?>
-        <!-- Item video -->
-        <div class="latestItemVideoBlock">
-            <span class="latestItemVideo<?php if($this->item->videoType=='embedded'): ?> embedded<?php endif; ?>"><?php echo $this->item->video; ?></span>
+
+        <div class="custom_video">
+            <img src="<?php if ($this->item->imageSmall):?><?php echo $this->item->imageSmall; ?><?php else: ?>/images/video_preview.jpg<?php endif; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
+            <a class="custom_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
         </div>
-        <?php endif; ?>
+<!--        --><?php //if($this->params->get('latestItemVideo') && !empty($this->item->video)): ?>
+<!--        <!-- Item video -->
+<!--        <div class="latestItemVideoBlock">-->
+<!--            <span class="latestItemVideo--><?php //if($this->item->videoType=='embedded'): ?><!-- embedded--><?php //endif; ?><!--">--><?php //echo $this->item->video; ?><!--</span>-->
+<!--        </div>-->
+<!--        --><?php //endif; ?>
 
 
 

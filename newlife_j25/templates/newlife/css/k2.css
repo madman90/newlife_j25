@@ -507,106 +507,6 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     line-height: 14px;
     color: #333333;
 }
-/* --- Item groups --- */
-/*div.itemList {}*/
-	/*div#itemListLeading {}*/
-	/*div#itemListPrimary {}*/
-	/*div#itemListSecondary {}*/
-	/*div#itemListLinks {background:#f7fafe;border:1px solid #ddd;margin:8px 0;padding:8px;}*/
-
-		/*div.itemContainer {float:left;}*/
-		/*div.itemContainerLast {} *//* this class is appended to the last container on each row of items (useful when you want to set 0 padding/margin to the last container) */
-
-/* --- Item block for each item group --- */
-/*div.catItemView {padding:4px;} *//* this is the item container for this view - we add a generic padding so that items don't get stuck with each other */
-
-	/* Additional class appended to the element above for further styling per group item */
-	/*div.groupLeading {}*/
-	/*div.groupPrimary {}*/
-	/*div.groupSecondary {}*/
-	/*div.groupLinks {padding:0;margin:0;}*/
-
-	/*div.catItemIsFeatured {} *//* Attach a class for each featured item */
-
-/*span.catItemEditLink {float:right;display:block;padding:4px 0;margin:0;width:120px;text-align:right;}*/
-/*span.catItemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text-decoration:none;font-size:11px;font-weight:normal;font-family:Arial, Helvetica, sans-serif;}*/
-/*span.catItemEditLink a:hover {background:#ffffcc;}*/
-
-/*div.catItemHeader {}*/
-	/*div.catItemHeader span.catItemDateCreated {color:#999;font-size:11px;}*/
-	/*div.catItemHeader h3.catItemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;padding:10px 0 4px 0;margin:0;}*/
-	/*div.catItemHeader h3.catItemTitle span {}*/
-	/*div.catItemHeader h3.catItemTitle span sup {font-size:12px;color:#CF1919;text-decoration:none;} *//* superscript */
-	/*div.catItemHeader span.catItemAuthor {display:block;padding:0;margin:0;}*/
-	/*div.catItemHeader span.catItemAuthor a {}*/
-	/*div.catItemHeader span.catItemAuthor a:hover {}*/
-
-/*div.catItemRatingBlock {padding:8px 0;}*/
-	/*div.catItemRatingBlock span {display:block;float:left;font-style:normal;padding:0 4px 0 0;margin:0;color:#999;}*/
-
-/*div.catItemBody {padding:8px 0;margin:0;}*/
-
-/*div.catItemImageBlock {padding:8px;margin:0 0 16px 0;}*/
-	/*span.catItemImage {display:block;text-align:center;margin:0 0 8px 0;}*/
-	/*span.catItemImage img {border:1px solid #ccc;padding:8px;}*/
-
-/*div.catItemIntroText {font-size:inherit;font-weight:normal;line-height:inherit;padding:4px 0 12px 0;}*/
-	/*div.catItemIntroText img {}*/
-
-/*div.catItemExtraFields, div.genericItemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;}*/
-	/*div.catItemExtraFields h4, div.genericItemExtraFields h4 {margin:0;padding:0 0 8px 0;line-height:normal !important;}*/
-	/*div.catItemExtraFields ul, div.genericItemExtraFields ul {margin:0;padding:0;list-style:none;}*/
-	/*div.catItemExtraFields ul li, div.genericItemExtraFields ul li {display:block;}*/
-	/*div.catItemExtraFields ul li span.catItemExtraFieldsLabel, div.genericItemExtraFields ul li span.genericItemExtraFieldsLabel {display:block;float:left;font-weight:bold;margin:0 4px 0 0;width:30%;}*/
-	/*div.catItemExtraFields ul li span.catItemExtraFieldsValue {}*/
-
-/*div.catItemLinks {margin:0 0 16px 0;padding:0;}*/
-
-/*div.catItemHitsBlock {padding:4px;border-bottom:1px dotted #ccc;}*/
-	/*span.catItemHits {}*/
-
-/*div.catItemCategory {padding:4px;border-bottom:1px dotted #ccc;}*/
-	/*div.catItemCategory span {font-weight:bold;color:#555;padding:0 4px 0 0;}*/
-	/*div.catItemCategory a {}*/
-
-/*div.catItemTagsBlock {padding:4px;border-bottom:1px dotted #ccc;}*/
-	/*div.catItemTagsBlock span {font-weight:bold;color:#555;padding:0 4px 0 0;}*/
-	/*div.catItemTagsBlock ul.catItemTags {list-style:none;padding:0;margin:0;display:inline;}*/
-	/*div.catItemTagsBlock ul.catItemTags li {display:inline;list-style:none;padding:0 4px 0 0;margin:0;text-align:center;}*/
-	/*div.catItemTagsBlock ul.catItemTags li a {}*/
-	/*div.catItemTagsBlock ul.catItemTags li a:hover {}*/
-
-/*div.catItemAttachmentsBlock {padding:4px;border-bottom:1px dotted #ccc;}*/
-	/*div.catItemAttachmentsBlock span {font-weight:bold;color:#555;padding:0 4px 0 0;}*/
-	/*div.catItemAttachmentsBlock ul.catItemAttachments {list-style:none;padding:0;margin:0;display:inline;}*/
-	/*div.catItemAttachmentsBlock ul.catItemAttachments li {display:inline;list-style:none;padding:0 4px;margin:0;text-align:center;}*/
-	/*div.catItemAttachmentsBlock ul.catItemAttachments li a {}*/
-	/*div.catItemAttachmentsBlock ul.catItemAttachments li a:hover {}*/
-	/*div.catItemAttachmentsBlock ul.catItemAttachments li span {font-size:10px;color:#999;font-weight:normal;}*/
-
-/* Video */
-/*div.catItemVideoBlock {margin:0 0 16px 0;padding:16px;background:#010101 url(../images/system/videoplayer-bg.gif) repeat-x bottom;}*/
-	/*div.catItemVideoBlock div.catItemVideoEmbedded {text-align:center;} *//* for embedded videos (not using AllVideos) */._allvideos_v4_bg_1000x550.jpg
-	/*div.catItemVideoBlock span.catItemVideo {display:block;}*/
-
-/* Image Gallery */
-/*div.catItemImageGallery {margin:0 0 16px 0;padding:0;}*/
-
-/* Anchor link to comments */
-/*div.catItemCommentsLink {display:inline;margin:0 8px 0 0;padding:0 8px 0 0;border-right:1px solid #ccc;}*/
-	/*div.catItemCommentsLink a {}*/
-	/*div.catItemCommentsLink a:hover {}*/
-
-/* Read more link */
-/*div.catItemReadMore {display:inline;}*/
-	/*div.catItemReadMore a {}*/
-	/*div.catItemReadMore a:hover {}*/
-
-/* Modified date */
-/*span.catItemDateModified {display:block;text-align:right;padding:4px;margin:4px 0;color:#999;border-top:1px solid #ddd;}*/
-
-
-
 /*----------------------------------------------------------------------
 	Component: Itemlist view (user)
 ----------------------------------------------------------------------*/
@@ -901,11 +801,46 @@ div.latestItemView {
     overflow: hidden;
     display: block;
     float: left;
+    width: 72px;
     margin: 38px 13px 0 0;
     color: #333333;
     font-size: 13px;
 }
+.custom_video {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 204px;
+    height: 129px;
+    padding: 3px;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0 2px 5px 0 #000000;
 
+}
+.custom_video .custom_link {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 200px;
+    height: 125px;
+    padding: 2px;
+    box-shadow: 0 0 2px 0 #999999 inset;
+    background: url("../images/link_arrow_1.png") no-repeat;
+
+}
+.custom_video .custom_link:hover {
+    background-position: 0 -127px;
+}
+.custom_video img {
+    overflow: hidden;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
 .latestItemBody {
     overflow: hidden;
     padding:0;
@@ -942,21 +877,25 @@ div.latestItemView {
 .latestItemImageBlock {
     overflow: hidden;
     float: left;
+    position: relative;
     width: 204px;
     height: 129px;
     margin: 0 10px 0 0;
     padding: 3px;
     border: 3px solid #ffffff;
     box-shadow: 0 2px 5px 0 #000000;
+    z-index: 0;
 }
 .latestItemImageBlock a{
     overflow: hidden;
-    display:block;
-    width: 204px;
-    height: 129px;
-    text-align:center;
-
-    }
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 125px;
+    padding: 2px;
+    box-shadow: 0 0 2px 0 #999999 inset;
+    z-index: 6;
+}
 .latestItemImageBlock a img {
     overflow: hidden;
     display: block;
@@ -1078,6 +1017,7 @@ h2.latestItemTitleList {
     border-bottom:1px dotted #ccc;
     line-height:normal;
 }
+/*whats new*/
 .whats-new .itemListCategory img {
     display: none;
 }
@@ -1438,32 +1378,82 @@ div.k2CustomCodeBlock {}
 
 
 /*----------------------------------------------------------------------
-	Modules: mod_k2_users
+	Modules: search
 ----------------------------------------------------------------------*/
+.moduletable h3 {
+    overflow: hidden;
+    height: 56px;
+    padding: 24px 0 0;
+    font-family: Arial,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 31px;
+}
+#k2_ajax_form {
+    overflow: hidden;
+    padding: 10px 0 0;
+}
+#k2_ajax_form #bible_books {
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+#bible_books label {
+    overflow: hidden;
+    float: left;
+    padding: 8px 10px 0 0;
+    color: #333333;
+    font-size: 15px;
+    line-height: 15px;
+}
+#bible_books #books {
+    overflow: hidden;
+    display: block;
+    width: 230px;
+    height: 30px;
+    padding: 4px 0 0;
+    border: 1px solid #525657;
+    border-radius: 4px 0 0 4px;
+    line-height: 24px;
+    text-align: center;
+}
+#k2_ajax_form h4 {
+    overflow: hidden;
+    width: 100%;
+    padding: 8px 10px 20px 0;
+    color: #333333;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+}
+#k2_ajax_form input.seria {
+    overflow: hidden;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+#k2_ajax_form .preaches_seria {
+    overflow: hidden;
+    color: #333333;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Myriad Pro",sans-serif;
+    clear: both;
+}
+#k2_ajax_form  #reset {
+    width: 98px;
+    height: 25px;
+    margin: 25px 0 2px 1px;
+    padding: 0;
+    background-color: #60AFD7;
+    border: 1px solid #FEFEFF;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 5px 0 #7A7670;
+    color: #FFFFFF;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 0 1px #376880;
+}
 
-div.k2UsersBlock {}
-div.k2UsersBlock ul {}
-div.k2UsersBlock ul li {}
-div.k2UsersBlock ul li.lastItem {}
-div.k2UsersBlock ul li a.ubUserAvatar img {}
-div.k2UsersBlock ul li a.ubUserName {}
-div.k2UsersBlock ul li a.ubUserName:hover {}
-div.k2UsersBlock ul li div.ubUserDescription {}
-div.k2UsersBlock ul li div.ubUserAdditionalInfo {}
-	a.ubUserFeedIcon,
-	a.ubUserFeedIcon:hover {display:inline-block;margin:0 2px 0 0;padding:0;width:16px;height:16px;background:url(../images/fugue/feed.png) no-repeat 50% 50%;}
-	a.ubUserFeedIcon span,
-	a.ubUserFeedIcon:hover span {display:none;}
-	a.ubUserURL,
-	a.ubUserURL:hover {display:inline-block;margin:0 2px 0 0;padding:0;width:16px;height:16px;background:url(../images/fugue/globe.png) no-repeat 50% 50%;}
-	a.ubUserURL span,
-	a.ubUserURL:hover span {display:none;}
-	span.ubUserEmail {display:inline-block;margin:0 2px 0 0;padding:0;width:16px;height:16px;background:url(../images/fugue/mail.png) no-repeat 50% 50%;overflow:hidden;}
-	span.ubUserEmail a {display:inline-block;margin:0;padding:0;width:16px;height:16px;text-indent:-9999px;}
-
-div.k2UsersBlock ul li h3 {clear:both;margin:8px 0 0 0;padding:0;}
-div.k2UsersBlock ul li ul.ubUserItems {}
-div.k2UsersBlock ul li ul.ubUserItems li {}
 
 
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>K2 ajax search module</name>
+    <author>Irish</author>
+    <version>0.0.1</version>
+    <description>Module for search K2 video.</description>
+    <files> <filename module="mod_k2ajax">mod_k2ajax.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <filename>mod_k2ajax.xml</filename>
+    </files>
+</extension>
