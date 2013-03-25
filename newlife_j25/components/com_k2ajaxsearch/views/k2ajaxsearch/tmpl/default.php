@@ -3,7 +3,7 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <!--    <pre>-->
-<!--    --><?php //print_r($this->fields); ?>
+<!--    --><?php //print_r($this->items); ?>
 <!--</pre>-->
 <?php if(count($this->items)==0): ?>
     <div>No results</div>
@@ -21,20 +21,10 @@ defined('_JEXEC') or die('Restricted access');
     <div class="catItemHeader">
         <div class="category_custom_video">
             <img src="<?php if ($this->item->imageSmall):?><?php echo $this->item->imageSmall; ?><?php else: ?>/images/video_preview.jpg<?php endif; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
-            <a class="category_custom_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
+            <a class="category_custom_link" href="/index.php/video/item/<?php echo $this->item->id; ?>-<?php echo $this->item->alias; ?>">&nbsp;</a>
         </div>
 
-        <!--        --><?php //if($this->item->params->get('catItemVideo') && !empty($this->item->video)): ?>
-        <!--        <!-- ITEM VIDEO -->
-        <!--            --><?php //if($this->item->videoType=='embedded'): ?>
-        <!--            <div class="catItemVideoEmbedded">-->
-        <!--                --><?php //echo $this->item->video; ?>
-        <!--            </div>-->
-        <!--            --><?php //else: ?>
-        <!--            <span class="catItemVideo">--><?php //echo $this->item->video; ?><!--</span>-->
-        <!--            --><?php //endif; ?>
-        <!--        --><?php //endif; ?>
-        <!--    <a class="video_link" href="--><?php //echo $this->item->link; ?><!--">&nbsp;</a>-->
+
 
 
     </div>
@@ -46,7 +36,7 @@ defined('_JEXEC') or die('Restricted access');
         <?php endif; ?>
     <!------------------------------------------------------------------------------------------------------------->
     <h2 class="catItemTitle">
-        <a href="<?php echo $this->item->link; ?>">
+        <a href="/index.php/video/item/<?php echo $this->item->id; ?>-<?php echo $this->item->alias; ?>">
             <?php echo $this->item->title; ?>
         </a>
     </h2>

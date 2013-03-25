@@ -44,9 +44,9 @@ class IraQuickContact{
 		$mail->setBody($message);
 		 
 		if ($mail->Send()) {
-		  echo '<p class="sp_qc_success">' . $success . '</p>';
+		  echo $success;
 		} else {
-		  echo '<p class="sp_qc_warn">' . $failed . '</p>';
+		  echo $failed;
 		}
 	}
 	

@@ -67,14 +67,16 @@ var sp_sc = new Class({
             url: this.options.ajax_url,
             method: 'get',
             onRequest: function () {
-                status.set('html', '<p class="sp_qc_loading">' + wait_text + '</p>')
+//                status.set('html', '<p class="sp_qc_loading">' + wait_text + '</p>')
             }, onSuccess: function (responseText) {
-                status.set('html', responseText);
+//                status.set('html', responseText);
                 message_el.set('value','');
                 email_el.set('value','');
                 name_el.set('value','');
+                alert(responseText);
             }, onFailure: function () {
-                status.set('html', '<p class="sp_qc_warn">' + failed_text + '</p>')
+//                status.set('html', '<p class="sp_qc_warn">' + failed_text + '</p>')
+                alert(failed_text);
             }
         }).send(param)
     }

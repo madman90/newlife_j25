@@ -53,6 +53,7 @@ $classrr = NULL;
                     <div class="container">
                         <jdoc:include type="component" style="xhtml" />
                         <jdoc:include type="modules" name="position-5" style="xhtml" />
+                        <jdoc:include type="modules" name="position-6" style="xhtml" />
                     </div>
                 </div><!--content-->
                 <div class="footer_wrap">

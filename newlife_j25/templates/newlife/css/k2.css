@@ -181,6 +181,7 @@ a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
 }
 .itemView h2 {
     overflow: hidden;
+    padding: 10px 314px 0 0;
     font-weight: normal;
     color: #333333;
 }
@@ -211,7 +212,9 @@ a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
 }
 div.itemVideoBlock {
     overflow: hidden;
-    margin:0 0 16px 0;
+    width: 646px;
+    height: 514px;
+    margin:0 3px 16px 3px;
     background:none;
 }
 .itemBackToTop {
@@ -353,7 +356,23 @@ div.itemRelated {margin-bottom:16px;padding:0;} /* Add overflow-x:scroll; if you
 
 /* Video */
 
-	div.itemVideoBlock div.itemVideoEmbedded {text-align:center;} /* for embedded videos (not using AllVideos) */
+div.itemVideoBlock div.itemVideoEmbedded {
+    overflow: hidden;
+    /*width: 619px;*/
+    height: 481px;
+    margin: 3px auto;
+    border: 13px solid #FFFFFF;
+    box-shadow: 1px 1px 3px 0 #000000;
+    -moz-box-shadow: 1px 1px 3px 0 #000000;
+    -o-box-shadow: 1px 1px 3px 0 #000000;
+    -webkit-box-shadow: 1px 1px 3px 0 #000000;
+    -ms-box-shadow: 1px 1px 3px 0 #000000;
+    text-align:center;
+}
+/* for embedded videos (not using AllVideos) */
+div.itemVideoBlock div.itemVideoEmbedded object {
+
+}
 	div.itemVideoBlock span.itemVideo {display:block;overflow:hidden;}
 	div.itemVideoBlock span.itemVideoCaption {color:#eee;float:left;display:block;font-size:11px;font-weight:bold;width:60%;}
 	div.itemVideoBlock span.itemVideoCredits {color:#eee;float:right;display:block;font-style:italic;font-size:11px;width:35%;text-align:right;}
@@ -507,6 +526,43 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     line-height: 14px;
     color: #333333;
 }
+.category_custom_video {
+    overflow: hidden;
+    position: relative;
+    width: 226px;
+    height: 136px;
+    margin: 3px;
+    border: 13px solid #FFFFFF;
+    box-shadow: 0 2px 3px 0 #000000;
+    -moz-box-shadow: 0 2px 3px 0 #000000;
+    -o-box-shadow: 0 2px 3px 0 #000000;
+    -webkit-box-shadow: 0 2px 3px 0 #000000;
+    -ms-box-shadow: 0 2px 3px 0 #000000;
+}
+.category_custom_video img {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+.category_custom_video a.category_custom_link {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 222px;
+    height: 132px;
+    padding: 2px;
+    background: url("../images/link_arrow2.png") no-repeat scroll 0 0 transparent;
+    box-shadow: 0 0 2px 0 #999999 inset;
+    -moz-box-shadow: 0 0 2px 0 #999999 inset;
+    -o-box-shadow: 0 0 2px 0 #999999 inset;
+    -webkit-box-shadow: 0 0 2px 0 #999999 inset;
+    -ms-box-shadow: 0 0 2px 0 #999999 inset;
+}
+.category_custom_video a.category_custom_link:hover {
+    background-position: 0 -134px;
+}
 /*----------------------------------------------------------------------
 	Component: Itemlist view (user)
 ----------------------------------------------------------------------*/
@@ -600,7 +656,7 @@ div.tagItemHeader {
     position: relative;
     float: left;
     width: 258px;
-    height: 157px;
+    height: 170px;
     margin: 4px 14px 4px 4px;
 }
 div.tagItemBody {
@@ -659,7 +715,7 @@ div.genericView {
 div.componentheading {
     overflow: hidden;
     height: 58px;
-    padding: 22px 318px 0 10px;
+    padding: 20px 318px 0 10px;
     margin: 0 0 13px;
     font-family: Arial,sans-serif;
     font-size: 22px;
@@ -671,7 +727,7 @@ div.genericItemList {
 }
 li.genericItemView{
     overflow: hidden;
-    /*height: 170px;*/
+    height: 170px;
     margin: 3px;
     padding: 0 0 7px;
 }
@@ -680,7 +736,7 @@ div.genericItemHeader {
     overflow: hidden;
     float: left;
     width: 258px;
-    height: 157px;
+    height: 170px;
     margin: 4px 14px 4px 4px;
 }
 span.genericItemDateCreated {
@@ -780,18 +836,58 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
 .latestItemList {
     overflow: hidden;
     padding: 9px 12px 7px 4px;
-    position: relative;
-    z-index: 1;
+
 }
 .latestItemList li {
     overflow: hidden;
+    position: relative;
     height: 154px;
     padding: 15px 0 0 19px;
     margin: 1px 5px;
     background: url("../images/news_bg.png") repeat-x;
-    box-shadow: 0 0 8px 0 #37322C;
-    -webkit-box-shadow: 0 0 8px 0 #37322C;
-    -moz-box-shadow: 0 0 8px 0 #37322C;
+    box-shadow: 1px 1px 4px 1px #37322C;
+    -webkit-box-shadow: 1px 1px 4px 1px #37322C;
+    -moz-box-shadow: 1px 1px 4px 1px #37322C;
+    z-index: 1;
+}
+.latestItemList .video {
+    overflow: hidden;
+    width: 649px;
+    height: 169px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0 none;
+    box-shadow: none;
+}
+.video .main_li {
+    overflow: hidden;
+    width: 607px;
+    height: 143px;
+    padding: 15px 0 9px 19px;
+    margin: 1px 5px;
+    background: url("../images/news_bg.png") repeat-x;
+    box-shadow: 1px 1px 4px 1px #37322C;
+    -webkit-box-shadow: 1px 1px 4px 1px #37322C;
+    -moz-box-shadow: 1px 1px 4px 1px #37322C;
+}
+.video .video_arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 67px;
+    left: 609px;
+    z-index: 0;
+}
+.video .video_arrow a.video_link_arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/link_arrow.png") no-repeat;
+}
+.video .video_arrow a.video_link_arrow:hover {
+    background-position: 0 -42px;
 }
 div.latestItemView {
 
@@ -869,11 +965,7 @@ div.latestItemView {
 .latestItemBody .latestItemTitle a:hover {
     color: #FF0033;
 }
-.latestItemList .whats_new .news {
-    overflow: hidden;
-    float: left;
-    padding: 0;
-}
+
 .latestItemImageBlock {
     overflow: hidden;
     float: left;
@@ -902,6 +994,25 @@ div.latestItemView {
     width: 100%;
     height: 100%;
 }
+.news {
+    overflow: hidden;
+    float: left;
+    width: 72px;
+    margin: 0 13px 0 0;
+}
+.news span.latestItemDateCreated {
+    overflow: hidden;
+    display: block;
+    float: none;
+    margin: 38px 0 0;
+}
+.news .img_icon {
+    display: block;
+    width: 33px;
+    height: 30px;
+    margin: 12px auto 0;
+    background: url("../images/news_icon.png") no-repeat;
+}
 .whats_new .latestItemBody {
     overflow: hidden;
     margin: 7px 34px 9px 0;
@@ -927,24 +1038,7 @@ div.latestItemView {
     overflow: hidden;
     padding: 0 38px 10px 10px;
 }
-.video .video_arrow {
-    isplay: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 583px;
-    left: 612px;
-    z-index: 0;
-}
-.video .video_arrow a.video_link_arrow {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url("../images/link_arrow.png") no-repeat;
-}
-.video .video_arrow a.video_link_arrow:hover {
-    background-position: 0 -42px;
-}
+
 	div.latestItemIntroText img {}
 
 div.latestItemLinks {
@@ -1368,9 +1462,22 @@ div.k2SearchBlock div.k2LiveSearchResults {display:none;background:#fff;position
 	div.k2SearchBlock div.k2LiveSearchResults ul.liveSearchResults li a:hover {background:#fffff0;}
 	
 /* --- Tag Cloud --- */
-div.k2TagCloudBlock {padding:8px 0;}
-div.k2TagCloudBlock a {padding:4px;float:left;display:block;}
-div.k2TagCloudBlock a:hover {padding:4px;float:left;display:block;background:#135cae;color:#fff;text-decoration:none;}
+div.k2TagCloudBlock {
+    overflow: hidden;
+}
+div.k2TagCloudBlock a {
+    float:left;
+    display:block;
+    padding:4px;
+}
+div.k2TagCloudBlock a:hover {
+    float:left;
+    display:block;
+    padding:4px;
+    background:#135cae;
+    color:#fff;
+    text-decoration:none;
+}
 
 /* --- Custom Code --- */
 div.k2CustomCodeBlock {}
@@ -1409,8 +1516,8 @@ div.k2CustomCodeBlock {}
     overflow: hidden;
     display: block;
     width: 230px;
-    height: 30px;
-    padding: 4px 0 0;
+    height: 28px;
+    padding: 4px 0;
     border: 1px solid #525657;
     border-radius: 4px 0 0 4px;
     line-height: 24px;
@@ -1428,6 +1535,8 @@ div.k2CustomCodeBlock {}
 #k2_ajax_form input.seria {
     overflow: hidden;
     float: left;
+    width: 15px;
+    height: 15px;
     margin: 0 10px 10px 0;
 }
 #k2_ajax_form .preaches_seria {
