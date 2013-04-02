@@ -25,11 +25,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="k2.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
+      <file leaf-file-name="category.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1011" column="38" selection-start="35398" selection-end="35398" vertical-scroll-proportion="0.5624257">
+            <state line="226" column="42" selection-start="10131" selection-end="10131" vertical-scroll-proportion="0.58553386">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="4" selection-start="1990" selection-end="1990" vertical-scroll-proportion="57.958332">
+              <folding>
+                <element signature="e#6#297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="94" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-9.583333">
+              <folding>
+                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#jdoc:include#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,20 +64,40 @@
       <file leaf-file-name="template.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="577" column="0" selection-start="14304" selection-end="17166" vertical-scroll-proportion="-3.0">
+            <state line="363" column="17" selection-start="9772" selection-end="9772" vertical-scroll-proportion="-12.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="latest_item.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/latest_item.php">
+      <file leaf-file-name="view.html.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_k2/views/itemlist/view.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="0" selection-start="8650" selection-end="8650" vertical-scroll-proportion="-19.375">
+            <state line="469" column="0" selection-start="13347" selection-end="13347" vertical-scroll-proportion="-7.0833335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_item.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="286" column="46" selection-start="14389" selection-end="14389" vertical-scroll-proportion="-178.75">
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="e#6#306#0" expanded="true" />
+                <element signature="e#2716#2783#0" expanded="true" />
+                <element signature="e#8380#8451#0" expanded="true" />
+                <element signature="e#8996#9056#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="k2.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1532" column="13" selection-start="50823" selection-end="50823" vertical-scroll-proportion="-8.44">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,25 +112,26 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/latest.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php" />
-        <option value="$PROJECT_DIR$/components/com_k2ajaxsearch/views/k2ajaxsearch/view.html.php" />
-        <option value="$PROJECT_DIR$/components/com_k2ajaxsearch/models/k2ajaxsearch.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php" />
-        <option value="$PROJECT_DIR$/modules/mod_k2ajax/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/generic.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/tag.php" />
-        <option value="$PROJECT_DIR$/components/com_k2ajaxsearch/views/k2ajaxsearch/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/modules/mod_ira_quickcontact/assets/js/script.js" />
-        <option value="$PROJECT_DIR$/modules/mod_ira_quickcontact/helper.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/index.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/css/sp_quickcontact.css" />
+        <option value="$PROJECT_DIR$/templates/newlife/html/com_content/article/default.php" />
+        <option value="$PROJECT_DIR$/templates/newlife/html/com_content/category/blog_item.php" />
         <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/latest_item.php" />
+        <option value="$PROJECT_DIR$/modules/mod_k2ajax/mod_k2ajax.php" />
+        <option value="$PROJECT_DIR$/modules/mod_k2_tools/helper.php" />
+        <option value="$PROJECT_DIR$/modules/mod_k2ajax/helper.php" />
+        <option value="$PROJECT_DIR$/components/com_k2ajaxsearch/views/k2ajaxsearch/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/components/com_k2ajaxsearch/models/k2ajaxsearch.php" />
+        <option value="$PROJECT_DIR$/modules/mod_k2ajax/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/modules/mod_k2changeview/mod_k2changeview.php" />
+        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php" />
+        <option value="$PROJECT_DIR$/templates/newlife/index.php" />
         <option value="$PROJECT_DIR$/templates/newlife/css/template.css" />
+        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php" />
         <option value="$PROJECT_DIR$/templates/newlife/css/k2.css" />
+        <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php" />
       </list>
     </option>
   </component>
+  <component name="PhpDebugGeneral" xdebug_show_addresses="true" />
   <component name="PhpServers">
     <option name="servers">
       <server host="newlife.home" name="Unnamed" />
@@ -91,10 +139,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -122,6 +170,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,9 +321,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mod_k2changeview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,11 +369,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/newlife/html/com_content" />
+      <recent name="$PROJECT_DIR$/templates/newlife/html/com_content/category" />
+      <recent name="$PROJECT_DIR$/tmp/mod_k2changeview" />
       <recent name="$PROJECT_DIR$/templates/newlife/html/com_search" />
       <recent name="$PROJECT_DIR$/modules/mod_sp_quickcontact/assets/css" />
-      <recent name="$PROJECT_DIR$/templates/newlife/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/newlife/html/com_content/article" />
       <recent name="$PROJECT_DIR$/templates/newlife/html/com_search/search" />
       <recent name="$PROJECT_DIR$/templates" />
     </key>
@@ -316,8 +399,10 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="FIREFOX" server_name="Unnamed">
+    <configuration default="false" name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="FIREFOX" server_name="Unnamed" start_url="//index.php/join/little-groups">
+      <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpWebAppDebugRunner" />
       <method />
     </configuration>
@@ -353,15 +438,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18739635" sideWeight="0.23768736" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21638075" sideWeight="0.6616702" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24875621" sideWeight="0.07173447" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24875621" sideWeight="0.9207709" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39828694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -369,7 +454,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33832976" sideWeight="0.9988944" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3372591" sideWeight="0.9988944" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -434,18 +519,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/components/com_k2/views/itemlist/view.html.php</url>
-          <line>288</line>
+          <line>309</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/components/com_k2/views/itemlist/view.html.php</url>
-          <line>382</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/components/com_k2/views/itemlist/view.html.php</url>
-          <line>440</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/templates/newlife/html/com_search/search/default_results.php</url>
@@ -473,7 +548,7 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="38" />
     </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
@@ -481,91 +556,114 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/latest.php">
+    <entry file="file://$PROJECT_DIR$/components/com_k2ajaxsearch/models/k2ajaxsearch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="24" selection-start="2946" selection-end="3001" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_k2ajax/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="763" selection-end="777" vertical-scroll-proportion="0.07017544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="82" selection-start="10914" selection-end="10914" vertical-scroll-proportion="25.625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item_links.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic_search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="934" selection-end="1468" vertical-scroll-proportion="-6.4693875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/generic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="40" selection-start="8671" selection-end="8671" vertical-scroll-proportion="-18.75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="0" selection-start="6164" selection-end="6164" vertical-scroll-proportion="-7.755102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_ira_quickcontact/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="22" selection-start="1490" selection-end="1490" vertical-scroll-proportion="-25.625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/css/sp_quickcontact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_k2ajaxsearch/views/k2ajaxsearch/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="60" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.40973872" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_ira_quickcontact/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="36" selection-start="3424" selection-end="3424" vertical-scroll-proportion="1.2798635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="77" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.677193" />
+        <state line="78" column="57" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.5248869" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/latest_item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="0" selection-start="8650" selection-end="8650" vertical-scroll-proportion="-19.375">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#!!top" expanded="true" />
-          </folding>
+        <state line="265" column="4" selection-start="11828" selection-end="11828" vertical-scroll-proportion="-25.666666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo_video_preview.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_k2ajaxsearch/k2ajaxsearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-7.5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_k2changeview/mod_k2changeview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_k2changeview/mod_k2changeview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="143" selection-end="143" vertical-scroll-proportion="0.10428737" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_k2ajaxsearch/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_k2ajax/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="33" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.36165327" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/joomla/environment/request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="6" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.34162897">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_k2/views/itemlist/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="469" column="0" selection-start="13347" selection-end="13347" vertical-scroll-proportion="-7.0833335">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="577" column="0" selection-start="14304" selection-end="17166" vertical-scroll-proportion="-3.0">
+        <state line="363" column="17" selection-start="9772" selection-end="9772" vertical-scroll-proportion="-12.2">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="94" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-9.583333">
+          <folding>
+            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#jdoc:include#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="4" selection-start="1990" selection-end="1990" vertical-scroll-proportion="57.958332">
+          <folding>
+            <element signature="e#6#297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1011" column="38" selection-start="35398" selection-end="35398" vertical-scroll-proportion="0.5624257">
+        <state line="1532" column="13" selection-start="50823" selection-end="50823" vertical-scroll-proportion="-8.44">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="286" column="46" selection-start="14389" selection-end="14389" vertical-scroll-proportion="-178.75">
+          <folding>
+            <element signature="e#6#306#0" expanded="true" />
+            <element signature="e#2716#2783#0" expanded="true" />
+            <element signature="e#8380#8451#0" expanded="true" />
+            <element signature="e#8996#9056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="226" column="42" selection-start="10131" selection-end="10131" vertical-scroll-proportion="0.58553386">
           <folding />
         </state>
       </provider>

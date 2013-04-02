@@ -52,7 +52,17 @@ class K2AjaxSearchModelK2AjaxSearch extends JModelItem
         }
 
         $db = JFactory::getDBO();
-        $query = "SELECT i.* FROM #__k2_items as i WHERE i.catid=1 AND i.published = 1 AND i.trash = 0";
+        $query = "SELECT DISTINCT i.id, i.* FROM #__k2_items as i ";
+        if (isset($params['tag']) && count($params['tag'])>0)
+        {
+            $query .= " LEFT JOIN #__k2_tags_xref as t ON i.id = t.itemID ";
+            $tags = implode(', ', $params['tag']);
+        }
+        $query .= " WHERE i.catid=1 AND i.published = 1 AND i.trash = 0";
+        if (isset($tags))
+        {
+            $query .= " AND t.tagID IN ({$tags})";
+        }
         $db->setQuery($query);
         $rows = $db->loadObjectList();
         $res = array();

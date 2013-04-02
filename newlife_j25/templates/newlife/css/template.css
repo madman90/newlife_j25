@@ -355,13 +355,13 @@ form.search {
 .sidebar h3 {
     overflow: hidden;
     height: 74px;
-    margin: 0 0 13px;
+    margin: 25px 0 13px;
     padding: 6px 0 0 45px;
     text-align: right;
-    line-height: 21px;
+    line-height: 18px;
     font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: normal;
+    font-size: 18px;
     color: #333333;
 }
 .sidebar a {
@@ -908,12 +908,17 @@ div.k2SearchBlock {
     -webkit-box-shadow: 0 0 2px 0 #CCC0B2;
 }
 /*-------------------------------------small groups---------------------------------*/
-.bloggroups {
+.blog {
     overflow: hidden;
-    margin: 0 0 0 12px;
+    margin: 0;
 
 }
-.groups {
+.small_groups {
+    overflow: hidden;
+}
+.small_groups li {
+    overflow: hidden;
+    height: 120px;
     margin: 1px 5px;
     padding: 6px 17px 10px 25px;
     box-shadow: 0 0 2px 1px #666666;
@@ -941,7 +946,52 @@ div.k2SearchBlock {
     -moz-box-shadow: 0 0 5px 2px #C1C1C1 inset;
     -webkit-box-shadow: 0 0 5px 2px #C1C1C1 inset;
 }
-.groups h3 {
+.intro {
+    overflow: hidden;
+}
+.intro h3 {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    padding: 4px 15px 10px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+}
+
+.intro h3 a {
+    font-size: 20px;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+}
+.intro h3 a:hover {
+    color: #FF0033;
+}
+
+.intro h4 {
+    overflow: hidden;
+    padding: 0 0 8px 0;
+    width: 331px;
+}
+
+
+.intro p {
+    overflow: hidden;
+    /*width: 331px;*/
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+.intro p strong {
+    font-weight: normal;
+    font-size: 15px;
+}
+.groups_info {
+    overflow: hidden;
+}
+.groups_info h3 {
     overflow: hidden;
     float: left;
     padding: 4px 15px 10px 0;
@@ -950,28 +1000,27 @@ div.k2SearchBlock {
     color: #333333;
     text-decoration: none;
 }
-.groups h4 {
-    overflow: hidden;
-    padding: 0 0 8px 0;
-    width: 331px;
-}
-.groups h4 a {
+.groups_info h3 a {
     font-size: 20px;
     font-weight: normal;
     color: #333333;
     text-decoration: none;
 }
-.groups h4 a:hover {
-    color: #FF0033;
+.groups_info h4 {
+    overflow: hidden;
+    padding: 0 0 2px 0;
+    width: 331px;
+    font-weight: normal;
+    font-size: 15px;
 }
-.groups p {
+.groups_info p {
     overflow: hidden;
     width: 331px;
     padding: 0;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 12px
 }
-.groups .small_map {
+.small_map {
     overflow: hidden;
     float: right;
     position: relative;
@@ -982,12 +1031,12 @@ div.k2SearchBlock {
     border: solid 1px #666666;
     box-shadow: 0 0 3px 1px #999999 inset;
 }
-.groups .small_map:hover {
+.small_map:hover {
     border: solid 1px #FF0033;
 }
 
 
-.groups .small_map .phocamaps {
+.small_map .phocamaps {
     overflow: hidden;
     position: absolute;
     top: -8px;
@@ -996,12 +1045,45 @@ div.k2SearchBlock {
     height: 106px;
     z-index: 0;
 }
-.groups .small_map .modal-button{
+.small_map .modal-button{
     display: block;
     width: 102px;
     height: 102px;
     position: relative;
     z-index: 1000;
+}
+.item-page {
+    overflow: hidden;
+}
+.item-page .img-fulltext-left {
+    overflow: hidden;
+    float: left;
+    width: 251px;
+    height: 251px;
+    margin: 3px 20px 10px 3px;
+    padding: 0;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0 0 3px 1px #838B8B;
+    -webkit-box-shadow: 0 0 3px 1px #838B8B;
+    -o-box-shadow: 0 0 3px 1px #838B8B;
+    -moz-box-shadow: 0 0 3px 1px #838B8B;
+    -ms-box-shadow: 0 0 3px 1px #838B8B;
+}
+.item-page .img-fulltext-left img {
+    overflow: hidden;
+    display: block;
+    width: 247px;
+    height: 247px;
+    margin: 2px;
+    box-shadow: 0 0 3px 1px #838B8B;
+    -webkit-box-shadow: 0 0 3px 1px #838B8B;
+    -o-box-shadow: 0 0 3px 1px #838B8B;
+    -moz-box-shadow: 0 0 3px 1px #838B8B;
+    -ms-box-shadow: 0 0 3px 1px #838B8B;
+}
+.item-page p {
+    padding: 0 0 10px 0;
+    margin: 0;
 }
 /*-------------------------------------video----------------------------------------*/
 .video {

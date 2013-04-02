@@ -117,20 +117,40 @@ $plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
 
 ?>
 
+
+
 <!-- Start K2 Generic (search/date) Layout -->
 <div id="k2Container" class="genericView<?php if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?>">
 
-	<?php if($this->params->get('show_page_title')): ?>
-	<!-- Page title -->
-	<div class="componentheading<?php echo $this->params->get('pageclass_sfx')?>">
-		<?php echo $this->escape($this->params->get('page_title')); ?>
-	</div>
-	<?php endif; ?>
+
 
 	<?php if(count($this->items)): ?>
 	<ul class="genericItemList">
 		<?php foreach($this->items as $item): ?>
-
+        <?php if ($this->view_mode == 'short'): ?>
+               <li class="video_list_short">
+                    <div class="short_view">
+                        <?php if($this->params->get('genericItemDateCreated')): ?>
+                        <!-- Date created -->
+                        <span class="genericItemDateCreated">
+                            <?php echo JHTML::_('date', $item->created , 'j.m.Y'); ?>
+                        </span>
+                        <?php endif; ?>
+                        <?php if($this->params->get('genericItemTitle')): ?>
+                        <!-- Item title -->
+                        <h3 class="genericItemTitle">
+                            <?php if ($this->params->get('genericItemTitleLinked')): ?>
+                            <a href="<?php echo $item->link; ?>">
+                                <?php echo $item->title; ?>
+                            </a>
+                            <?php else: ?>
+                            <?php echo $item->title; ?>
+                            <?php endif; ?>
+                        </h3>
+                        <?php endif; ?>
+                    </div>
+                </li>
+            <?php else: ?>
 		<!-- Start K2 Item Layout -->
 		<li class="genericItemView">
 
@@ -220,6 +240,7 @@ $plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
 		  </div>
 		</li>
 		<!-- End K2 Item Layout -->
+        <?php endif; ?>
 		
 		<?php endforeach; ?>
 	</ul>

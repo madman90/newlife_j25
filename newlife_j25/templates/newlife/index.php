@@ -43,11 +43,18 @@ $classrr = NULL;
         <div class="content_wrap">
             <div class="logo_bg">
                 <div class="title_navigation"></div>
-
                 <div id="content">
-                    <jdoc:include type="modules" name="position-10" />
+                    <?php if(($app->input->get('option') == 'com_k2' && $app->input->get('view') == 'itemlist')):?>
+                        <jdoc:include type="modules" name="position-10" />
+                    <?php endif; ?>
                     <div class="sidebar">
-                        <jdoc:include type="modules" name="position-3" style="xhtml" />
+                        <?php if ($app->input->get('option') == 'com_k2' && $app->input->get('view') == 'itemlist'): ?>
+                            <jdoc:include type="modules" name="position-8" style="xhtml" />
+                        <?php endif; ?>
+
+                        <?php if (!($app->input->get('option') == 'com_k2' && $app->input->get('view') == 'itemlist' && $app->input->get('Itemid') == 106)): ?>
+                           <jdoc:include type="modules" name="position-3" style="xhtml" />
+                        <?php endif; ?>
                         <jdoc:include type="modules" name="position-4" style="xhtml" />
                     </div>
                     <div class="container">

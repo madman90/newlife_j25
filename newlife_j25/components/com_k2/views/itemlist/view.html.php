@@ -210,6 +210,17 @@ class K2ViewItemlist extends K2View
 
 				$addHeadFeedLink = $params->get('catFeedLink');
 
+                $session = JFactory::getSession();
+                $this->view_mode = $session->get('view_mode', 'short');
+
+                if ($category->alias == 'video')
+                {
+                    if ($this->view_mode == 'short')
+                    {
+                        $limit = 20;
+                    }
+                }
+
 				break;
 
 			case 'user' :
@@ -282,6 +293,16 @@ class K2ViewItemlist extends K2View
 
 				$addHeadFeedLink = $params->get('tagFeedLink', 1);
 
+                $session = JFactory::getSession();
+                $this->view_mode = $session->get('view_mode', 'short');
+
+
+                if ($this->view_mode == 'short')
+                {
+                    $limit = 20;
+                }
+
+
 				break;
 
 			case 'search' :
@@ -295,6 +316,14 @@ class K2ViewItemlist extends K2View
 				$title = JText::_('K2_SEARCH_RESULTS_FOR').' '.JRequest::getVar('searchword');
 
 				$addHeadFeedLink = $params->get('genericFeedLink', 1);
+
+                $session = JFactory::getSession();
+                $this->view_mode = $session->get('view_mode', 'short');
+
+                if ($this->view_mode == 'short')
+                {
+                    $limit = 20;
+                }
 
 				break;
 

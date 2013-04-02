@@ -106,29 +106,43 @@ $plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
 ?>
 
 
+
+
 <!-- Start K2 Tag Layout -->
 <div id="k2Container" class="tagView<?php if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?>">
 
-    <?php if($this->params->get('show_page_title')): ?>
-    <!-- Page title -->
-    <div class="componentheading<?php echo $this->params->get('pageclass_sfx')?>">
-        <?php echo $this->escape($this->params->get('page_title')); ?>
-    </div>
-    <?php endif; ?>
 
-    <?php if($this->params->get('tagFeedIcon',1)): ?>
-    <!-- RSS feed icon -->
-    <div class="k2FeedIcon">
-        <a href="<?php echo $this->feed; ?>" title="<?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?>">
-            <span><?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?></span>
-        </a>
 
-    </div>
-    <?php endif; ?>
+
 
     <?php if(count($this->items)): ?>
     <ul class="tagItemList">
         <?php foreach($this->items as $item): ?>
+        <?php if ($this->view_mode == 'short'): ?>
+        <li class="video_list_short">
+            <div class="short_view">
+                <?php if($item->params->get('tagItemDateCreated',1)): ?>
+                <!-- Date created -->
+                <span class="tagItemDateCreated">
+                        <?php echo JHTML::_('date', $item->created , 'j.m.Y'); ?>
+                    </span>
+                <?php endif; ?>
+                <?php if($item->params->get('tagItemTitle',1)): ?>
+                <!-- Item title -->
+                <h3 class="ItemTitle">
+                    <?php if ($item->params->get('tagItemTitleLinked',1)): ?>
+                    <a href="<?php echo $item->link; ?>">
+                        <?php echo $item->title; ?>
+                    </a>
+                    <?php else: ?>
+                    <?php echo $item->title; ?>
+                    <?php endif; ?>
+                </h3>
+                <?php endif; ?>
+            </div>
+        </li>
+
+        <?php else: ?>
 
         <!-- Start K2 Item Layout -->
         <li class="tagItemView">
@@ -198,6 +212,7 @@ $plugin = JPluginHelper::getPlugin( 'content', 'jw_allvideos' );
             </div>
         </li>
         <!-- End K2 Item Layout -->
+        <?php endif; ?>
 
         <?php endforeach; ?>
     </ul>

@@ -23,6 +23,10 @@ class K2AjaxSearchViewK2AjaxSearch extends JView
             JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
             return false;
         }
+
+        $session = JFactory::getSession();
+        $this->view_mode = $session->get('view_mode', 'short');
+
         // Display the view
         parent::display($tpl);
     }

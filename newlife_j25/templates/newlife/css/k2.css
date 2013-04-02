@@ -65,7 +65,9 @@ a:focus {outline:0;}
 img {border:none;}
 
 /* --- Global K2 container --- */
-#k2Container {padding:0 0 24px 0;}
+#k2Container {
+
+}
 body.contentpane #k2Container {padding:16px;} /* used in popups */
 
 /* --- General padding --- */
@@ -181,9 +183,10 @@ a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
 }
 .itemView h2 {
     overflow: hidden;
-    padding: 10px 314px 0 0;
+    padding: 16px 0 25px;
     font-weight: normal;
     color: #333333;
+    height: auto;
 }
 .itemView h3 {
     overflow: hidden;
@@ -209,6 +212,21 @@ a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
     line-height: 16px;
     color: #333333;
     text-align: justify;
+}
+.itemView .itemImageBlock {
+    overflow: hidden;
+    width: 508px;
+    height: 250px;
+    padding: 0;
+    border: 13px solid #FFFFFF;
+    box-shadow: 1px 1px 3px 0 #000000;
+}
+.itemView .itemImageBlock .itemImage a img {
+    overflow: hidden;
+    display: block;
+    width: 506px;
+    height: 248px;
+    padding: 0;
 }
 div.itemVideoBlock {
     overflow: hidden;
@@ -449,7 +467,110 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 .container .title {
 
 }
-
+#video_content {
+    margin: 100px 0 0 0;
+}
+.itemListCategoriesBlock {
+    margin: 100px 0 0 0;
+}
+.switch_buttons {
+    overflow: hidden;
+    position: absolute;
+    width: 50px;
+    margin: 24px 0 0 381px;
+}
+.switch_buttons li {
+    overflow: hidden;
+    float: left;
+    height: 26px;
+    background: url("../images/switch_button.png") no-repeat;
+}
+.switch_buttons li a {
+    display: block;
+    height: 26px;
+    text-indent: -1000px;
+}
+.switch_buttons li.full {
+    width: 25px;
+    background-position: 0 0;
+}
+.switch_buttons li.full:hover {
+    /*background-position: 0 -28px;*/
+    width: 23px;
+    height: 24px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #999999;
+    box-shadow: 0 0 4px 1px #FFFFFF inset;
+}
+.switch_buttons li.short {
+    width: 23px;
+    background-position: -25px 0;
+}
+.switch_buttons li.short:hover {
+    /*width: 22px;*/
+    /*background-position: -25px -28px;*/
+    width: 21px;
+    height: 24px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #999999;
+    box-shadow: 0 0 4px 1px #FFFFFF inset;
+}
+.switch_buttons li span {
+    display: block;
+    height: 26px;
+    text-indent: -1000px;
+}
+.switch_buttons li
+.switch_buttons li
+.tagItemList li.video_list_short {
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.short_view {
+    overflow: hidden;
+    margin: 0 0 25px;
+}
+.video_list li.video_list_short {
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.video_list_short li .short_view span {
+    display: block;
+    float: left;
+    width: 66px;
+    padding: 1px 30px 0 0;
+    color: #333333;
+    font: 15px/15px Arial;
+}
+.video_list_short .short_view span {
+    display: block;
+    float: left;
+    width: 66px;
+    padding: 1px 30px 0 0;
+    color: #333333;
+    font: 15px/15px Arial;
+}
+.short_view h3 {
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.short_view h3 a {
+    color: #333333;
+    font: 15px/15px Arial;
+    font-weight: normal;
+    text-decoration: none;
+}
+.tagItemList .video_list_short {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
 .video_list {
     overflow: hidden;
     margin: 0 0 15px 0;
@@ -482,14 +603,14 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 }
 .catItemBody {
     overflow: hidden;
-    padding: 14px 0 0 0;
+    padding: 20px 0 0 0;
 }
 .catItemBody h3 {
     overflow: hidden;
     height: auto;
     padding: 0 0 11px 0;
     margin: 0;
-    font: 13px/13px Arial;
+    font: 14px/14px Arial;
     font-weight: normal;
     color: #333333;
 }
@@ -500,7 +621,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     margin: 0;
 }
 .catItemBody h2 a {
-    font: 13px/13px Arial;
+    font: 15px/15px Arial;
     font-weight: normal;
     color: #333333;
     text-decoration: none;
@@ -562,6 +683,15 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 }
 .category_custom_video a.category_custom_link:hover {
     background-position: 0 -134px;
+}
+#loader {
+    overflow: hidden;
+}
+#loader img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
 }
 /*----------------------------------------------------------------------
 	Component: Itemlist view (user)
@@ -638,6 +768,7 @@ div.userItemReadMore {display:inline;}
 ----------------------------------------------------------------------*/
 div.tagView {
     overflow: hidden;
+    margin: 100px 0 20px 0;
 }
 
 .tagItemList {
@@ -710,7 +841,7 @@ ul.tagItemExtraFields li span.tagItemExtraFieldsValue {
 ----------------------------------------------------------------------*/
 div.genericView {
     overflow: hidden;
-    margin: 0;
+    margin: 100px 0 0 0;
 }
 div.componentheading {
     overflow: hidden;
@@ -833,6 +964,10 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
 		span.latestItemsUserEmail {font-weight:bold;color:#555;display:block;}
 
 /* Latest items list */
+.latestView {
+    overflow: hidden;
+    margin: 0;
+}
 .latestItemList {
     overflow: hidden;
     padding: 9px 12px 7px 4px;
@@ -841,17 +976,6 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
 .latestItemList li {
     overflow: hidden;
     position: relative;
-    height: 154px;
-    padding: 15px 0 0 19px;
-    margin: 1px 5px;
-    background: url("../images/news_bg.png") repeat-x;
-    box-shadow: 1px 1px 4px 1px #37322C;
-    -webkit-box-shadow: 1px 1px 4px 1px #37322C;
-    -moz-box-shadow: 1px 1px 4px 1px #37322C;
-    z-index: 1;
-}
-.latestItemList .video {
-    overflow: hidden;
     width: 649px;
     height: 169px;
     margin: 0;
@@ -859,8 +983,9 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
     background: none;
     border: 0 none;
     box-shadow: none;
+    z-index: 1;
 }
-.video .main_li {
+.latestItemList li .main_li {
     overflow: hidden;
     width: 607px;
     height: 143px;
@@ -871,7 +996,7 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
     -webkit-box-shadow: 1px 1px 4px 1px #37322C;
     -moz-box-shadow: 1px 1px 4px 1px #37322C;
 }
-.video .video_arrow {
+.latestItemList li .video_arrow {
     display: block;
     width: 40px;
     height: 40px;
@@ -880,13 +1005,13 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
     left: 609px;
     z-index: 0;
 }
-.video .video_arrow a.video_link_arrow {
+.latestItemList li .video_arrow a.video_link_arrow {
     display: block;
     width: 40px;
     height: 40px;
     background: url("../images/link_arrow.png") no-repeat;
 }
-.video .video_arrow a.video_link_arrow:hover {
+.latestItemList li .video_arrow a.video_link_arrow:hover {
     background-position: 0 -42px;
 }
 div.latestItemView {
@@ -1221,95 +1346,10 @@ img.k2AccountPageImage {border:4px solid #ddd;margin:10px 0;padding:0;display:bl
 
 
 
-/*----------------------------------------------------------------------
-	Modules: mod_k2_comments
-----------------------------------------------------------------------*/
-
-/* Latest Comments */
-div.k2LatestCommentsBlock {}
-div.k2LatestCommentsBlock ul {}
-div.k2LatestCommentsBlock ul li {}
-div.k2LatestCommentsBlock ul li.lastItem {}
-div.k2LatestCommentsBlock ul li a.lcAvatar img {}
-div.k2LatestCommentsBlock ul li a {}
-div.k2LatestCommentsBlock ul li a:hover {}
-div.k2LatestCommentsBlock ul li span.lcComment {}
-div.k2LatestCommentsBlock ul li span.lcUsername {}
-div.k2LatestCommentsBlock ul li span.lcCommentDate {color:#999;}
-div.k2LatestCommentsBlock ul li span.lcItemTitle {}
-div.k2LatestCommentsBlock ul li span.lcItemCategory {}
-
-/* Top Commenters */
-div.k2TopCommentersBlock {}
-div.k2TopCommentersBlock ul {}
-div.k2TopCommentersBlock ul li {}
-div.k2TopCommentersBlock ul li.lastItem {}
-div.k2TopCommentersBlock ul li a.tcAvatar img {}
-div.k2TopCommentersBlock ul li a.tcLink {}
-div.k2TopCommentersBlock ul li a.tcLink:hover {}
-div.k2TopCommentersBlock ul li span.tcUsername {}
-div.k2TopCommentersBlock ul li span.tcCommentsCounter {}
-div.k2TopCommentersBlock ul li a.tcLatestComment {}
-div.k2TopCommentersBlock ul li a.tcLatestComment:hover {}
-div.k2TopCommentersBlock ul li span.tcLatestCommentDate {color:#999;}
-
-
 
 /*----------------------------------------------------------------------
 	Modules: mod_k2_content
 ----------------------------------------------------------------------*/
-
-div.k2ItemsBlock {}
-
-div.k2ItemsBlock p.modulePretext {}
-
-div.k2ItemsBlock ul {}
-div.k2ItemsBlock ul li {}
-div.k2ItemsBlock ul li a {}
-div.k2ItemsBlock ul li a:hover {}
-div.k2ItemsBlock ul li.lastItem {}
-
-div.k2ItemsBlock ul li a.moduleItemTitle {}
-div.k2ItemsBlock ul li a.moduleItemTitle:hover {}
-
-div.k2ItemsBlock ul li div.moduleItemAuthor {}
-div.k2ItemsBlock ul li div.moduleItemAuthor a {}
-div.k2ItemsBlock ul li div.moduleItemAuthor a:hover {}
-
-div.k2ItemsBlock ul li a.moduleItemAuthorAvatar img {}
-
-div.k2ItemsBlock ul li div.moduleItemIntrotext {display:block;padding:4px 0;line-height:120%;}
-div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {float:right;margin:2px 0 4px 4px;padding:0;border:2px solid #ddd;}
-
-div.k2ItemsBlock ul li div.moduleItemExtraFields {}
-	div.moduleItemExtraFields ul {}
-	div.moduleItemExtraFields ul li {}
-	div.moduleItemExtraFields ul li span.moduleItemExtraFieldsLabel {display:block;float:left;font-weight:bold;margin:0 4px 0 0;width:30%;}
-	div.moduleItemExtraFields ul li span.moduleItemExtraFieldsValue {}
-
-div.k2ItemsBlock ul li div.moduleItemVideo {}
-div.k2ItemsBlock ul li div.moduleItemVideo span.moduleItemVideoCaption {}
-div.k2ItemsBlock ul li div.moduleItemVideo span.moduleItemVideoCredits {}
-
-div.k2ItemsBlock ul li span.moduleItemDateCreated {}
-
-div.k2ItemsBlock ul li a.moduleItemCategory {}
-
-div.k2ItemsBlock ul li div.moduleItemTags {}
-div.k2ItemsBlock ul li div.moduleItemTags b {}
-div.k2ItemsBlock ul li div.moduleItemTags a {padding:0 2px;}
-div.k2ItemsBlock ul li div.moduleItemTags a:hover {}
-
-div.k2ItemsBlock ul li div.moduleAttachments {}
-
-div.k2ItemsBlock ul li a.moduleItemComments {border-right:1px solid #ccc;padding:0 4px 0 0;margin:0 8px 0 0;}
-div.k2ItemsBlock ul li a.moduleItemComments:hover {}
-div.k2ItemsBlock ul li span.moduleItemHits {border-right:1px solid #ccc;padding:0 4px 0 0;margin:0 8px 0 0;}
-div.k2ItemsBlock ul li a.moduleItemReadMore {}
-div.k2ItemsBlock ul li a.moduleItemReadMore:hover {}
-
-div.k2ItemsBlock a.moduleCustomLink {}
-div.k2ItemsBlock a.moduleCustomLink:hover {}
 
 
 
@@ -1490,7 +1530,18 @@ div.k2CustomCodeBlock {}
 .moduletable h3 {
     overflow: hidden;
     height: 56px;
+    margin: 0;
     padding: 24px 0 0;
+    font-family: Arial,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 31px;
+}
+h3.moduletabletag {
+    overflow: hidden;
+    height: auto;
+    padding: 24px 0 0;
+    text-align: left;
     font-family: Arial,sans-serif;
     font-size: 22px;
     font-weight: normal;
@@ -1532,12 +1583,19 @@ div.k2CustomCodeBlock {}
     font-size: 15px;
     line-height: 15px;
 }
+#k2_ajax_form .series_of_preaches {
+    overflow: hidden;
+}
+#k2_ajax_form .series_of_preaches li {
+    overflow: hidden;
+    margin: 0 0 10px;
+}
 #k2_ajax_form input.seria {
     overflow: hidden;
     float: left;
     width: 15px;
     height: 15px;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 0 0;
 }
 #k2_ajax_form .preaches_seria {
     overflow: hidden;
@@ -1550,7 +1608,7 @@ div.k2CustomCodeBlock {}
 #k2_ajax_form  #reset {
     width: 98px;
     height: 25px;
-    margin: 25px 0 2px 1px;
+    margin: 10px 0 2px 1px;
     padding: 0;
     background-color: #60AFD7;
     border: 1px solid #FEFEFF;

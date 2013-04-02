@@ -32,7 +32,7 @@ defined('_JEXEC') or die;
             <?php endif; ?>
 
             <div class="custom_video">
-                <img src="<?php if ($this->item->imageSmall):?><?php echo $this->item->imageSmall; ?><?php else: ?>/images/video_preview.jpg<?php endif; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
+                <img src="<?php if ($this->item->imageSmall):?><?php echo $this->item->imageSmall; ?><?php else: ?>/images/logo_video_preview.jpg<?php endif; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
                 <a class="custom_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>
             </div>
                 <!--        --><?php //if($this->params->get('latestItemVideo') && !empty($this->item->video)): ?>
@@ -187,6 +187,7 @@ defined('_JEXEC') or die;
             <?php echo $this->item->event->K2AfterDisplay; ?>
         <!------------------------------------ whats new ---------------------------------------------------------------------->
     <?php elseif ($this->item->categoryalias == 'whats-new'): ?>
+    <div class="main_li">
         <div class="news">
         <?php if($this->item->params->get('latestItemDateCreated')): ?>
             <!-- Date created -->
@@ -206,9 +207,9 @@ defined('_JEXEC') or die;
 
             </div>
         <?php endif; ?>
-<!--        <pre>-->
-<!--            --><?php //print_r($this->item); die();?>
-<!--        </pre>-->
+        <!--        <pre>-->
+        <!--            --><?php //print_r($this->item); die();?>
+        <!--        </pre>-->
         <div class="latestItemBody">
             <?php if($this->item->params->get('latestItemTitle')): ?>
             <!-- Item title -->
@@ -261,6 +262,9 @@ defined('_JEXEC') or die;
                 <?php endif; ?>
             </div>
             <?php endif; ?>
+    </div>
+    <span class="video_arrow"><a class="video_link_arrow" href="<?php echo $this->item->link; ?>">&nbsp;</a></span>
+
     <?php endif; ?>
 
     <!-- Plugins: AfterDisplay -->

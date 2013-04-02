@@ -215,7 +215,6 @@ class modK2ToolsHelper
 
     public static function tagCloud(&$params)
     {
-
         $mainframe = JFactory::getApplication();
         $user = JFactory::getUser();
         $aid = (int)$user->get('aid');

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>K2 change view module</name>
+    <author>Irish</author>
+    <version>0.0.1</version>
+    <description>Module for change view mode for K2 video.</description>
+    <files> <filename module="mod_k2changeview">mod_k2changeview.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_k2changeview.xml</filename>
+    </files>
+</extension>

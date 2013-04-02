@@ -10,11 +10,13 @@
 // no direct access
 defined('_JEXEC') or die;
 
+
 ?>
 
 
 <?php if(isset($this->category) || ( $this->params->get('subCategories') && isset($this->subCategories) && count($this->subCategories) )): ?>
 <!-- Blocks for current category and subcategories -->
+
 <div class="itemListCategoriesBlock">
 
     <?php if(isset($this->category) && ( $this->params->get('catImage') || $this->params->get('catTitle') || $this->params->get('catDescription') || $this->category->event->K2CategoryDisplay )): ?>
@@ -35,10 +37,7 @@ defined('_JEXEC') or die;
         <img alt="<?php echo K2HelperUtilities::cleanHtml($this->category->name); ?>" src="<?php echo $this->category->image; ?>" style="width:<?php echo $this->params->get('catImageWidth'); ?>px; height:auto;" />
         <?php endif; ?>
 
-        <?php if($this->params->get('catTitle')): ?>
-        <!-- Category title -->
-        <h2><?php echo $this->category->name; ?><?php if($this->params->get('catTitleItemCounter')) echo ' ('.$this->pagination->total.')'; ?></h2>
-        <?php endif; ?>
+
 
         <?php if($this->params->get('catDescription')): ?>
         <!-- Category description -->
@@ -111,14 +110,14 @@ defined('_JEXEC') or die;
 <?php endif; ?>
 
 <!----------------------------------------------------------------------->
-<?php if($this->category->alias == 'video'): ?>
+<?php if($this->category->alias == 'video' && $this->view_mode == 'short'): ?>
     <?php if((isset($this->leading) || isset($this->primary) || isset($this->secondary) || isset($this->links)) && (count($this->leading) || count($this->primary) || count($this->secondary) || count($this->links))): ?>
         <!-- Item list -->
         <!--	<ul class="itemList">-->
         <div id="video_content">
         <?php if(isset($this->leading) && count($this->leading)): ?>
             <!-- Leading items -->
-            <ul id="itemListLeading" class="video_list">
+            <ul id="itemListLeading" class="video_list_short">
                 <?php foreach($this->leading as $key=>$item): ?>
 
                 <?php
@@ -242,9 +241,13 @@ defined('_JEXEC') or die;
         </div>
         <div id="search_content" style="display: none"></div>
         <div id="loader" style="display: none"><img src="/images/350.gif"></div>
+    <!-----------------video short--------->
 <?php else: ?>
 <!--  whats new and other ctegories  -->
 <?php if((isset($this->leading) || isset($this->primary) || isset($this->secondary) || isset($this->links)) && (count($this->leading) || count($this->primary) || count($this->secondary) || count($this->links))): ?>
+
+        <div id="video_content">
+
     <!-- Item list -->
     <!--	<ul class="itemList">-->
 
@@ -364,11 +367,15 @@ defined('_JEXEC') or die;
     <!--	</ul>-->
 
     <!-- Pagination -->
-    <?php if(count($this->pagination->getPagesLinks())): ?>
+        <?php if(count($this->pagination->getPagesLinks())): ?>
         <div class="k2Pagination">
             <?php if($this->params->get('catPagination')) echo $this->pagination->getPagesLinks(); ?>
         </div>
         <?php endif; ?>
+        </div>
+
+    <div id="search_content" style="display: none"></div>
+    <div id="loader" style="display: none"><img src="/images/350.gif"></div>
 
     <?php endif; ?>
 <?php endif; ?>
