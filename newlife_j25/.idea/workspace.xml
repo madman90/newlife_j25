@@ -30,6 +30,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="33" selection-start="808" selection-end="824" vertical-scroll-proportion="-10.625">
               <folding>
+                <marker date="1365016059268" expanded="true" signature="491:18888" placeholder="..." />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
               </folding>
@@ -37,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="item.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="69" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.38652483">
+            <state line="63" column="69" selection-start="2169" selection-end="2169" vertical-scroll-proportion="-6.6734695">
               <folding />
             </state>
           </provider>
@@ -49,7 +50,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="58" selection-start="3533" selection-end="3533" vertical-scroll-proportion="0.0">
+            <state line="23" column="106" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-14.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sp_quickcontact.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/newlife/css/sp_quickcontact.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="80" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.7027972">
               <folding />
             </state>
           </provider>
@@ -58,7 +68,7 @@
       <file leaf-file-name="template.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1388" column="30" selection-start="32018" selection-end="32018" vertical-scroll-proportion="0.0">
+            <state line="11" column="18" selection-start="382" selection-end="393" vertical-scroll-proportion="-3.3">
               <folding />
             </state>
           </provider>
@@ -85,7 +95,7 @@
       <file leaf-file-name="k2.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1585" column="22" selection-start="51931" selection-end="51931" vertical-scroll-proportion="-24.8">
+            <state line="1630" column="57" selection-start="53025" selection-end="53025" vertical-scroll-proportion="-40.6">
               <folding />
             </state>
           </provider>
@@ -110,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/newlife/html/com_content/article/default.php" />
         <option value="$PROJECT_DIR$/templates/newlife/html/com_content/category/blog_item.php" />
         <option value="$PROJECT_DIR$/modules/mod_k2ajax/mod_k2ajax.php" />
         <option value="$PROJECT_DIR$/modules/mod_k2_tools/helper.php" />
@@ -122,10 +131,11 @@
         <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/category_item.php" />
         <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/latest_item.php" />
         <option value="$PROJECT_DIR$/templates/newlife/index.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/css/template.css" />
         <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php" />
-        <option value="$PROJECT_DIR$/templates/newlife/css/k2.css" />
         <option value="$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php" />
+        <option value="$PROJECT_DIR$/templates/newlife/css/template.css" />
+        <option value="$PROJECT_DIR$/templates/newlife/css/k2.css" />
+        <option value="$PROJECT_DIR$/templates/newlife/css/sp_quickcontact.css" />
       </list>
     </option>
   </component>
@@ -262,6 +272,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="jw_allvideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jw_allvideo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="com_k2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -293,6 +367,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife_j25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,16 +618,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/com_k2ajaxsearch/models/k2ajaxsearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="57" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.5248869" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/logo_video_preview.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_k2ajaxsearch/k2ajaxsearch.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-7.5" />
@@ -583,40 +669,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="58" selection-start="3533" selection-end="3533" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1388" column="30" selection-start="32018" selection-end="32018" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="33" selection-start="808" selection-end="824" vertical-scroll-proportion="-10.625">
           <folding>
+            <marker date="1365016059268" expanded="true" signature="491:18888" placeholder="..." />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1585" column="22" selection-start="51931" selection-end="51931" vertical-scroll-proportion="-24.8">
+        <state line="63" column="69" selection-start="2169" selection-end="2169" vertical-scroll-proportion="-6.6734695">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newlife/html/com_k2/default/item.php">
+    <entry file="file://$PROJECT_DIR$/templates/newlife/css/k2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="69" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.38652483">
+        <state line="1630" column="57" selection-start="53025" selection-end="53025" vertical-scroll-proportion="-40.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/html/jw_allvideo/Classic/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="8" selection-start="1802" selection-end="1806" vertical-scroll-proportion="0.8640997">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="106" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="382" selection-end="393" vertical-scroll-proportion="-3.3">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newlife/css/sp_quickcontact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="80" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.7027972">
           <folding />
         </state>
       </provider>

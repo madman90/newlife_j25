@@ -28,7 +28,7 @@ body {
     padding:0;
     margin:0;
     font-size:12px;
-    font-family: "afbattersea", sans-serif;
+    font-family: "Myriad Pro", sans-serif;
     color:#000;
 
 }
@@ -192,13 +192,13 @@ a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
     overflow: hidden;
     padding: 0 0 12px;
     font-weight: normal;
-    font: 24px/24px afbattersea;
+    font: 24px/24px Arial;
     color: #333333;
 }
 .itemView .itemDateCreated {
     display: block;
     padding: 0 0 27px;
-    font: 18px/18px afbattersea;
+    font: 18px/18px Arial;
     color: #333333;
 }
 .itemView .itemIntroText {
@@ -242,7 +242,7 @@ div.itemVideoBlock {
 .itemBackToTop a {
     text-decoration:none;
     color: #333333;
-    font: 14px/14px afbattersea;
+    font: 14px/14px Arial;
 }
 .itemBackToTop a:hover {
     color: #FF0033;
@@ -252,7 +252,7 @@ div.itemVideoBlock {
 div.itemIsFeatured {} /* Attach a class for each featured item */
 
 span.itemEditLink {float:right;display:block;padding:4px 0;margin:0;width:120px;text-align:right;}
-span.itemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text-decoration:none;font-size:11px;font-weight:normal;font-family:afbattersea, Helvetica, sans-serif;}
+span.itemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text-decoration:none;font-size:11px;font-weight:normal;font-family:Arial, Helvetica, sans-serif;}
 span.itemEditLink a:hover {background:#ffffcc;}
 
 div.itemHeader {}
@@ -544,7 +544,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     width: 66px;
     padding: 1px 30px 0 0;
     color: #333333;
-    font: 15px/15px afbattersea;
+    font: 15px/15px Arial;
 }
 .video_list_short .short_view span {
     display: block;
@@ -552,7 +552,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     width: 66px;
     padding: 1px 30px 0 0;
     color: #333333;
-    font: 15px/15px afbattersea;
+    font: 15px/15px Arial;
 }
 .short_view h3 {
     overflow: hidden;
@@ -562,7 +562,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 }
 .short_view h3 a {
     color: #333333;
-    font: 15px/15px afbattersea;
+    font: 15px/15px Arial;
     font-weight: normal;
     text-decoration: none;
 }
@@ -610,7 +610,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     height: auto;
     padding: 0 0 11px 0;
     margin: 0;
-    font: 14px/14px afbattersea;
+    font: 14px/14px Arial;
     font-weight: normal;
     color: #333333;
 }
@@ -621,7 +621,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
     margin: 0;
 }
 .catItemBody h2 a {
-    font: 15px/15px afbattersea;
+    font: 15px/15px Arial;
     font-weight: normal;
     color: #333333;
     text-decoration: none;
@@ -632,7 +632,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 .catItemBody .catItemDateCreated {
     display: block;
     padding: 0 0 10px;
-    font: 13px/13px afbattersea;
+    font: 13px/13px Arial;
     font-weight: normal;
     color: #333333;
 }
@@ -721,7 +721,7 @@ div.userItemIsFeatured {} /* Attach a class for each featured item */
 div.userItemViewUnpublished {opacity:0.9;border:4px dashed #ccc;background:#fffff2;padding:8px;margin:8px 0;}
 
 span.userItemEditLink {float:right;display:block;padding:4px 0;margin:0;width:120px;text-align:right;}
-	span.userItemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text-decoration:none;font-size:11px;font-weight:normal;font-family:afbattersea, Helvetica, sans-serif;}
+	span.userItemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text-decoration:none;font-size:11px;font-weight:normal;font-family:Arial, Helvetica, sans-serif;}
 	span.userItemEditLink a:hover {background:#ffffcc;}
 
 div.userItemHeader {}
@@ -805,7 +805,7 @@ span.tagItemDateCreated {
     display: block;
     padding: 0 0 10px;
     color: #333333;
-    font: 13px/13px afbattersea;
+    font: 13px/13px Arial;
 }
 
 div.tagItemImageBlock {padding:0;margin:0;float:left;}
@@ -834,7 +834,7 @@ ul.tagItemExtraFields li {
     border: medium none;
 }
 ul.tagItemExtraFields li span.tagItemExtraFieldsValue {
-    font: 13px/13px afbattersea;
+    font: 13px/13px Arial;
 }
 /*----------------------------------------------------------------------
 	Component: Itemlist view (generic)
@@ -848,7 +848,7 @@ div.componentheading {
     height: 58px;
     padding: 20px 318px 0 10px;
     margin: 0 0 13px;
-    font-family: afbattersea,sans-serif;
+    font-family: Arial,sans-serif;
     font-size: 22px;
     font-weight: normal;
     line-height: 31px;
@@ -874,7 +874,7 @@ span.genericItemDateCreated {
     display: block;
     padding: 0 0 10px;
     color: #333333;
-    font: 13px/13px afbattersea;
+    font: 13px/13px Arial;
 }
 h2.genericItemTitle {
     overflow: hidden;
@@ -882,7 +882,7 @@ h2.genericItemTitle {
     margin: 0;
     padding: 0 0 11px;
     color: #333333;
-    font: 13px/13px afbattersea;
+    font: 13px/13px Arial;
 }
 
 div.genericItemBody {
@@ -1239,7 +1239,7 @@ h2.latestItemTitleList {
     font-size:14px;
     padding:2px 0;
     margin:8px 0 2px 0;
-    font-family:afbattersea, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     border-bottom:1px dotted #ccc;
     line-height:normal;
 }
@@ -1542,7 +1542,7 @@ div.k2CustomCodeBlock {}
     height: 56px;
     margin: 0;
     padding: 24px 0 0;
-    font-family: afbattersea,sans-serif;
+    font-family: Arial,sans-serif;
     font-size: 22px;
     font-weight: normal;
     line-height: 31px;
@@ -1552,7 +1552,7 @@ h3.moduletabletag {
     height: auto;
     padding: 24px 0 0;
     text-align: left;
-    font-family: afbattersea,sans-serif;
+    font-family: Arial,sans-serif;
     font-size: 22px;
     font-weight: normal;
     line-height: 31px;
@@ -1613,7 +1613,7 @@ h3.moduletabletag {
     color: #333333;
     font-size: 14px;
     line-height: 14px;
-    font-family: afbattersea,sans-serif;
+    font-family: "Myriad Pro",sans-serif;
     clear: both;
 }
 #k2_ajax_form  #reset {
@@ -1626,7 +1626,7 @@ h3.moduletabletag {
     border-radius: 0 4px 4px 0;
     box-shadow: 0 2px 5px 0 #7A7670;
     color: #FFFFFF;
-    font-family: afbattersea,sans-serif;
+    font-family: Arial,sans-serif;
     font-size: 15px;
     font-weight: bold;
     text-shadow: 2px 0 1px #376880;

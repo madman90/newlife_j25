@@ -16,7 +16,7 @@
 
 }
 h3 {
-    font-family: afbattersea;
+    font-family: Arial;
     overflow: hidden;
 
 }
@@ -26,7 +26,7 @@ textarea#message {
     width: 340px;
     height: 147px;
     border: solid 1px #990000;
-    font: 15px/16px afbattersea;
+    font: 15px/16px Arial;
     color: #999999;
 }
 input {
@@ -37,7 +37,7 @@ input {
     width: 349px;
     height: 30px;
     border: solid 1px #990000;
-    font: 15px/16px afbattersea;
+    font: 15px/16px Arial;
     color: #999999;
 }
 .button {
@@ -61,12 +61,12 @@ p.sp_qc_loading {
 }
 p.sp_qc_warn {
     color: #9B0606;
-    font: 18px/18px afbattersea;
+    font: 18px/18px Arial;
 }
 p.sp_qc_success {
     color: #3875d7;
     font-weight: normal;
-    font: 18px/18px afbattersea;
+    font: 18px/18px Arial;
 }
 .sp_qc_error {
     border:1px solid #e20000;
