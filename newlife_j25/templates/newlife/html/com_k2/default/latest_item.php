@@ -23,14 +23,15 @@ defined('_JEXEC') or die;
 
     <?php if($this->item->categoryalias == 'video'): ?>
         <div class="main_li">
-
-            <?php if($this->item->params->get('latestItemDateCreated')): ?>
-            <!-- Date created -->
-            <span class="latestItemDateCreated">
-                <?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
-            </span>
-            <?php endif; ?>
-
+            <div class="news">
+                <?php if($this->item->params->get('latestItemDateCreated')): ?>
+                <!-- Date created -->
+                    <span class="latestItemDateCreated">
+                        <?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
+                    </span>
+                    <span class="video_icon">&nbsp;</span>
+                 <?php endif; ?>
+            </div>
             <div class="custom_video">
                 <img src="<?php if ($this->item->imageSmall):?><?php echo $this->item->imageSmall; ?><?php else: ?>/images/logo_video_preview.jpg<?php endif; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
                 <a class="custom_link" href="<?php echo $this->item->link; ?>">&nbsp;</a>

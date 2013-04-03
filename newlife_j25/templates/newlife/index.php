@@ -47,6 +47,7 @@ $classrr = NULL;
                     <?php if(($app->input->get('option') == 'com_k2' && $app->input->get('view') == 'itemlist')):?>
                         <jdoc:include type="modules" name="position-10" />
                     <?php endif; ?>
+                    <jdoc:include type="modules" name="position-11" />
                     <div class="sidebar">
                         <?php if ($app->input->get('option') == 'com_k2' && $app->input->get('view') == 'itemlist'): ?>
                             <jdoc:include type="modules" name="position-8" style="xhtml" />
@@ -67,6 +68,11 @@ $classrr = NULL;
                         <div id="footer">
                             <p>2011, &copy; Церква «Нове життя»</p>
                             <a href="#">Jason-designer</a>
+                            <div class="geekhub_logo">
+                                <span>&nbsp;</span>
+                                <p>Powered by geekhub</p>
+                            </div>
+
                         </div>
                 </div><!--footer_wrap-->
             </div><!--logo_bg-->

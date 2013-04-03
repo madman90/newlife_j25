@@ -1367,10 +1367,30 @@ div.k2SearchBlock {
 #footer  p {
     overflow: hidden;
     float: left;
-    width: 300px;
+    width: auto;
     height: 49px;
     padding: 10px 0 0 0;
     font-size: 14px;
+}
+#footer .geekhub_logo {
+    overflow: hidden;
+    width: 220px;
+    padding: 0;
+    margin: 0 auto;
+}
+#footer .geekhub_logo span {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 40px;
+    background: url("../images/geekhub_logo1.png") no-repeat;
+}
+#footer .geekhub_logo span:hover {
+    background-position: 0 -41px;
+}
+#footer .geekhub_logo p {
+    padding: 10px 0 0 10px;
+    width: auto;
 }
 #footer  a {
     display: block;

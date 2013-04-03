@@ -1133,8 +1133,15 @@ div.latestItemView {
 }
 .news .img_icon {
     display: block;
-    width: 33px;
-    height: 30px;
+    width: 44px;
+    height: 32px;
+    margin: 12px auto 0;
+    background: url("../images/horn1.png") no-repeat;
+}
+.news .video_icon {
+    display: block;
+    width: 34px;
+    height: 31px;
     margin: 12px auto 0;
     background: url("../images/news_icon.png") no-repeat;
 }
@@ -1237,10 +1244,13 @@ h2.latestItemTitleList {
     line-height:normal;
 }
 /*whats new*/
+#whatsnew_content {
+    overflow: hidden;
+    margin: 30px 0 0;
+}
 .whats-new .itemListCategory img {
     display: none;
 }
-
 .whats-new .video_list {
     overflow: hidden;
     margin: 0 0 15px 0px;
@@ -1549,7 +1559,7 @@ h3.moduletabletag {
 }
 #k2_ajax_form {
     overflow: hidden;
-    padding: 10px 0 0;
+    padding: 24px 0 0;
 }
 #k2_ajax_form #bible_books {
     overflow: hidden;
@@ -1573,6 +1583,7 @@ h3.moduletabletag {
     border-radius: 4px 0 0 4px;
     line-height: 24px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 #k2_ajax_form h4 {
     overflow: hidden;
