@@ -1425,3 +1425,9 @@ div.k2SearchBlock {
 #footer  span:hover {
     background-position: 0 -40px;
 }
+.gmnoprint div span {
+    display: none;
+}
+.gmnoprint div a {
+    display: none;
+}

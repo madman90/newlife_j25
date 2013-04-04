@@ -528,7 +528,7 @@ $output .= '</div>';
 								$button->set('methodname', 'modal-button');
 								$button->set('options', "{handler: 'iframe', size: {x: ".$tmpl['windowwidth'].", y: ".$tmpl['windowheight']."}, overlayOpacity: ".$tmpl['mboverlayopacity'].", classWindow: 'phocamaps-plugin-window', classOverlay: 'phocamaps-plugin-overlay'}");
 							
-								$output .= '<a class="modal-button" title="'.$text.'"  href="'.JRoute::_($linkMap . '&tmpl=component').'" rel="'. $button->options.'">'.$text.'</a>';
+								$output .= '<a class="modal-button" title=""  href="'.JRoute::_($linkMap . '&tmpl=component').'" rel="'. $button->options.'"></a>';
 							}
 
 						}
