@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 ?>
 <?php if (($this->params->get('page_title')) =='Головна'):  ?>
 
-<h2>Вітаємо на сайті</h2>
+<h2 class="late">Оновлення</h2>
 <!--<p>Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст Вітальний текст</p>-->
 <?php else: ?>
 <?php if($this->params->get('show_page_title')): ?>
@@ -25,9 +25,6 @@ defined('_JEXEC') or die;
 <?php endif; ?>
 <!-- Start K2 Latest Layout -->
 <div id="k2Container" class="latestView<?php if($this->params->get('pageclass_sfx')) echo ' '.$this->params->get('pageclass_sfx'); ?>">
-     <h3>Оновлення</h3>
-
-
 
         <ul class="latestItemList">
         <?php foreach($this->blocks as $key=>$block): ?>

@@ -16,7 +16,7 @@
 
 }
 h3 {
-    font-family: afbattersea;
+    font-family: "GOST_2.304_A";
     overflow: hidden;
 
 }
@@ -26,7 +26,7 @@ textarea#message {
     width: 340px;
     height: 147px;
     border: solid 1px #990000;
-    font: 15px/16px afbattersea;
+    font: 15px/16px "afbattersea";
     color: #999999;
 }
 input {
@@ -37,7 +37,7 @@ input {
     width: 349px;
     height: 30px;
     border: solid 1px #990000;
-    font: 15px/16px afbattersea;
+    font: 15px/16px "afbattersea";
     color: #999999;
 }
 .button {
@@ -47,7 +47,8 @@ input {
     margin: 1px;
     background-color: #9B0606;
     border: solid 1px #FFFFFF;
-    font-size: 27px;
+    font-size: 24px;
+    font-family: "afbattersea";
     color: #FFFFFF;
     box-shadow: 0 0 2px 0 #CCC0B2;
     -moz-box-shadow: 0 0 2px 0 #CCC0B2;
@@ -61,12 +62,12 @@ p.sp_qc_loading {
 }
 p.sp_qc_warn {
     color: #9B0606;
-    font: 18px/18px afbattersea;
+    font: 18px/18px "GOST_2.304_A";
 }
 p.sp_qc_success {
     color: #3875d7;
     font-weight: normal;
-    font: 18px/18px afbattersea;
+    font: 18px/18px "GOST_2.304_A";
 }
 .sp_qc_error {
     border:1px solid #e20000;

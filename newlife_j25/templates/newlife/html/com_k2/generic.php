@@ -9,7 +9,6 @@
 
 // no direct access
 defined('_JEXEC') or die;
-K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 
 /**
  * truncateHtml can truncate a string up to a number of characters while preserving whole words and HTML tags

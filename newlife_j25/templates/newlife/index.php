@@ -67,7 +67,7 @@ $classrr = NULL;
                 <div class="footer_wrap">
                         <div id="footer">
                             <p>2011, &copy; Церква «Нове життя»</p>
-                            <a href="#">Jason-designer</a>
+                            <span>Jason-designer</span>
                             <div class="geekhub_logo">
                                 <span>&nbsp;</span>
                                 <p>Powered by geekhub</p>

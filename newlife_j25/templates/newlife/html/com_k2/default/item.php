@@ -21,9 +21,22 @@ defined('_JEXEC') or die;
     <!-- K2 Plugins: K2BeforeDisplay -->
     <?php echo $this->item->event->K2BeforeDisplay; ?>
 
+
+
+    <!-- Plugins: AfterDisplayTitle -->
+    <?php echo $this->item->event->AfterDisplayTitle; ?>
+
+    <!-- K2 Plugins: K2AfterDisplayTitle -->
+    <?php echo $this->item->event->K2AfterDisplayTitle; ?>
+
+    <!--    Priches Series-->
+    <?php if (count($this->item->extra_fields)>0 && $this->item->extra_fields[0]->value != ''): ?>
+    <h2><?php echo $this->item->extra_fields[0]->value ?></h2>
+    <?php endif; ?>
+
     <?php if($this->item->params->get('itemTitle')): ?>
     <!-- Item title -->
-    <h2 class="itemTitle">
+    <h3 class="itemTitle">
         <?php if(isset($this->item->editLink)): ?>
         <!-- Item edit link -->
         <span class="itemEditLink">
@@ -44,18 +57,7 @@ defined('_JEXEC') or die;
 	  	</span>
         <?php endif; ?>
 
-    </h2>
-    <?php endif; ?>
-
-    <!-- Plugins: AfterDisplayTitle -->
-    <?php echo $this->item->event->AfterDisplayTitle; ?>
-
-    <!-- K2 Plugins: K2AfterDisplayTitle -->
-    <?php echo $this->item->event->K2AfterDisplayTitle; ?>
-
-    <!--    Priches Series-->
-    <?php if (count($this->item->extra_fields)>0 && $this->item->extra_fields[0]->value != ''): ?>
-    <h3><?php echo $this->item->extra_fields[0]->value ?></h3>
+    </h3>
     <?php endif; ?>
 
     <?php if($this->item->params->get('itemDateCreated')): ?>
