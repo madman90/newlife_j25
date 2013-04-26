@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
         <div id="whatsnew_content">
         <?php if(isset($this->leading) && count($this->leading)): ?>
             <!-- Leading items -->
-            <ul id="itemListLeading" class="video_list_short">
+            <ul class="latestItemList">
                 <?php foreach($this->leading as $key=>$item): ?>
 
                 <?php
@@ -35,7 +35,7 @@ defined('_JEXEC') or die;
                     $lastContainer='';
                 ?>
 
-                <li class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->leading)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_leading_columns'), 1).'%;"'; ?>>
+                <li class="whats_new<?php echo $lastContainer; ?>"<?php echo (count($this->leading)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_leading_columns'), 1).'%;"'; ?>>
                     <?php
                     // Load category_item.php by default
                     $this->item=$item;
@@ -52,7 +52,7 @@ defined('_JEXEC') or die;
 
         <?php if(isset($this->primary) && count($this->primary)): ?>
             <!-- Primary items -->
-            <ul id="itemListPrimary">
+            <ul class="latestItemList">
                 <?php foreach($this->primary as $key=>$item): ?>
 
                 <?php
@@ -63,7 +63,7 @@ defined('_JEXEC') or die;
                     $lastContainer='';
                 ?>
 
-                <li class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->primary)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_primary_columns'), 1).'%;"'; ?>>
+                <li class="whats_new<?php echo $lastContainer; ?>"<?php echo (count($this->primary)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_primary_columns'), 1).'%;"'; ?>>
                     <?php
                     // Load category_item.php by default
                     $this->item=$item;
@@ -80,7 +80,7 @@ defined('_JEXEC') or die;
 
         <?php if(isset($this->secondary) && count($this->secondary)): ?>
             <!-- Secondary items -->
-            <ul id="itemListSecondary">
+            <ul class="latestItemList">
                 <?php foreach($this->secondary as $key=>$item): ?>
 
                 <?php
@@ -91,7 +91,7 @@ defined('_JEXEC') or die;
                     $lastContainer='';
                 ?>
 
-                <li class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->secondary)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_secondary_columns'), 1).'%;"'; ?>>
+                <li class="whats_new<?php echo $lastContainer; ?>"<?php echo (count($this->secondary)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_secondary_columns'), 1).'%;"'; ?>>
                     <?php
                     // Load category_item.php by default
                     $this->item=$item;
@@ -108,7 +108,7 @@ defined('_JEXEC') or die;
 
         <?php if(isset($this->links) && count($this->links)): ?>
             <!-- Link items -->
-            <ul id="itemListLinks">
+            <ul class="latestItemList">
                 <h4><?php echo JText::_('K2_MORE'); ?></h4>
                 <?php foreach($this->links as $key=>$item): ?>
 
@@ -120,7 +120,7 @@ defined('_JEXEC') or die;
                     $lastContainer='';
                 ?>
 
-                <li class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->links)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_links_columns'), 1).'%;"'; ?>>
+                <li class="whats_new<?php echo $lastContainer; ?>"<?php echo (count($this->links)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_links_columns'), 1).'%;"'; ?>>
                     <?php
                     // Load category_item_links.php by default
                     $this->item=$item;

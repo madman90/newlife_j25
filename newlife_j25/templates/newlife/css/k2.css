@@ -548,7 +548,7 @@ div.k2ReportCommentFormContainer {padding:8px;width:480px;margin:0 auto;}
 }
 .short_view {
     overflow: hidden;
-    margin: 0 0 25px;
+    margin: 0 0 15px;
 }
 .video_list li.video_list_short {
     overflow: hidden;
@@ -995,7 +995,7 @@ div.latestItemsUser {background:#f7fafe;border:1px solid #ddd;margin:0 8px 8px 0
 }
 .latestItemList {
     overflow: hidden;
-    padding: 9px 12px 7px 0;
+    padding: 9px 4px 7px 0;
 
 }
 .latestItemList li {
@@ -1670,7 +1670,10 @@ h3.moduletabletag {
     overflow: hidden;
     font-size: 17px;
 }
-
+.newlife_link {
+    overflow: hidden;
+    padding: 34px 0 0;
+}
 
 
 /* --- END --- */

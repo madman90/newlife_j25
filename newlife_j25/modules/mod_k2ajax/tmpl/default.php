@@ -32,9 +32,8 @@
         </div>
 
         <?php endif; ?>
-
-
         <input id="reset" type="button" value="Скасувати">
+        <div class="newlife_link"><a href="http://newlife.ck.ua/">Архів проповідей</a></div>
     </form>
 </div>
 <script type="text/javascript">

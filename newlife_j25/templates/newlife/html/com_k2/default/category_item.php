@@ -14,8 +14,89 @@ defined('_JEXEC') or die;
 K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 
 ?>
+<!---------------------------------Whats new------------------------------------------------------------------------------------>
+<?php if ($this->category->alias == 'whats-new'): ?>
+<div class="main_li">
+    <div class="news">
+        <?php if($this->item->params->get('catItemDateCreated')): ?>
+        <!-- Date created -->
+        <span class="latestItemDateCreated">
+                    <?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
+                </span>
+        <?php endif; ?>
+        <span class="img_icon">&nbsp;</span>
+    </div><!--news-->
 
-<?php if ($this->category->alias == 'video' && $this->view_mode == 'short'): ?>
+    <?php if($this->item->params->get('itemImage') && !empty($this->item->image)): ?>
+    <!-- Item Image -->
+    <div class="latestItemImageBlock">
+        <a href="<?php echo $this->item->link; ?>" title="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>">
+            <img src="<?php echo $this->item->imageSmall; ?>" alt="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>" style="width:<?php echo $this->item->imageWidth; ?>px;height:100%;" />
+        </a>
+
+    </div>
+    <?php endif; ?>
+    <!--        <pre>-->
+    <!--            --><?php //print_r($this->item); die();?>
+    <!--        </pre>-->
+    <div class="latestItemBody">
+        <?php if($this->item->params->get('catItemTitle')): ?>
+        <!-- Item title -->
+        <h3 class="latestItemTitle">
+            <?php if ($this->item->params->get('catItemTitleLinked')): ?>
+            <a href="<?php echo $this->item->link; ?>">
+                <?php echo $this->item->title; ?>
+            </a>
+            <?php else: ?>
+            <?php echo $this->item->title; ?>
+            <?php endif; ?>
+        </h3>
+        <?php endif; ?>
+        <!-- Plugins: AfterDisplayTitle -->
+        <?php echo $this->item->event->AfterDisplayTitle; ?>
+
+        <!-- K2 Plugins: K2AfterDisplayTitle -->
+        <?php echo $this->item->event->K2AfterDisplayTitle; ?>
+
+        <?php if($this->item->params->get('catItemIntroText')): ?>
+        <!-- Item introtext -->
+        <div class="latestItemIntroText">
+            <?php echo $this->item->introtext; ?>
+        </div>
+        <?php endif; ?>
+    </div>
+
+    <!-- Plugins: BeforeDisplayContent -->
+    <?php echo $this->item->event->BeforeDisplayContent; ?>
+
+    <!-- K2 Plugins: K2BeforeDisplayContent -->
+    <?php echo $this->item->event->K2BeforeDisplayContent; ?>
+
+    <!-- Plugins: AfterDisplayContent -->
+    <?php echo $this->item->event->AfterDisplayContent; ?>
+
+    <!-- K2 Plugins: K2AfterDisplayContent -->
+    <?php echo $this->item->event->K2AfterDisplayContent; ?>
+
+
+    <?php if($this->item->params->get('catItemCategory') || $this->item->params->get('catItemTags')): ?>
+    <div class="latestItemLinks">
+
+        <?php if($this->item->params->get('catItemCategory')): ?>
+        <!-- Item category name -->
+        <div class="latestItemCategory">
+            <span><?php echo JText::_('K2_PUBLISHED_IN'); ?></span>
+            <a href="<?php echo $this->item->category->link; ?>"><?php echo $this->item->category->name; ?></a>
+        </div>
+        <?php endif; ?>
+    </div>
+    <?php endif; ?>
+</div>
+<span class="video_arrow"><a class="video_link_arrow" href="<?php echo $this->item->link; ?>">&nbsp;</a></span>
+
+
+<!------------------------------------Video short---------------------------------------------------------------------------------->
+<?php elseif ($this->category->alias == 'video' && $this->view_mode == 'short'): ?>
 <div class="short_view">
     <?php if($this->item->params->get('catItemDateCreated')): ?>
     <!-- DATE CREATED -->
@@ -57,6 +138,8 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 </div>
 
 
+<!--------------------------------------Video full-------------------------------------------------------------------------->
+
 <?php else: ?>
 
 <!-- Start K2 Item Layout -->
@@ -88,7 +171,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 
 
 </div>
-<!---------------------------------------------------------------------------------------------------------------->
     <div class="catItemBody">
     <!-- Plugins: BeforeDisplayContent -->
 <!--    --><?php //echo $this->item->event->BeforeDisplayContent; ?>
@@ -99,7 +181,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
     <?php if (count($this->item->extra_fields)>0 && $this->item->extra_fields[0]->value != ''): ?>
         <h3><?php echo $this->item->extra_fields[0]->value ?></h3>
     <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemTitle')): ?>
     <!-- ITEM TITLE -->
     <h2 class="catItemTitle">
@@ -134,7 +215,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
     <?php echo $this->item->event->AfterDisplayTitle; ?>
 <!-- K2 Plugins: K2AfterDisplayTitle -->
     <?php echo $this->item->event->K2AfterDisplayTitle; ?>
-<!------------------------------------------------------------------------------------------------------------->
 
     <?php if($this->item->params->get('catItemDateCreated')): ?>
     <!-- DATE CREATED -->
@@ -142,7 +222,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 			<?php echo JHTML::_('date', $this->item->created , 'j.m.Y'); ?>
 		</span>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemDateModified')): ?>
     <!-- ITEM DATE MODIFIED -->
         <?php if($this->item->modified != $this->nullDate && $this->item->modified != $this->item->created ): ?>
@@ -151,7 +230,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 	    </span>
             <?php endif; ?>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemAuthor')): ?>
     <!-- ITEM AUTHOR -->
     <span class="catItemAuthor">
@@ -163,7 +241,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
         <?php endif; ?>
 		</span>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemIntroText')): ?>
     <!-- ITEM INTROTEXT -->
     <div class="catItemIntroText">
@@ -175,7 +252,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 
 <!-- K2 Plugins: K2AfterDisplayContent -->
     <?php echo $this->item->event->K2AfterDisplayContent; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemImage') && !empty($this->item->image)): ?>
     <!-- Item Image -->
     <div class="catItemImageBlock">
@@ -186,7 +262,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 		  </span>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemRating')): ?>
     <!-- Item Rating -->
     <div class="catItemRatingBlock">
@@ -204,7 +279,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
         </div>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if(
         $this->item->params->get('catItemHits') ||
         $this->item->params->get('catItemCategory') ||
@@ -218,7 +292,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 			</span>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemCategory')): ?>
     <!-- Item category name -->
     <div class="catItemCategory">
@@ -226,7 +299,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
         <a href="<?php echo $this->item->category->link; ?>"><?php echo $this->item->category->name; ?></a>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemTags') && count($this->item->tags)): ?>
     <!-- Item tags -->
     <div class="catItemTagsBlock">
@@ -238,7 +310,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
         </ul>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
 
     <?php if($this->item->params->get('catItemAttachments') && count($this->item->attachments)): ?>
     <!-- Item attachments -->
@@ -258,7 +329,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
         </ul>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
 
     <?php if($this->item->params->get('catItemImageGallery') && !empty($this->item->gallery)): ?>
     <!-- Item image gallery -->
@@ -267,7 +337,6 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
         <?php echo $this->item->gallery; ?>
     </div>
         <?php endif; ?>
-<!------------------------------------------------------------------------------------------------------------->
     <?php if($this->item->params->get('catItemCommentsAnchor') && ( ($this->item->params->get('comments') == '2' && !$this->user->guest) || ($this->item->params->get('comments') == '1')) ): ?>
     <!-- Anchor link to comments below -->
         <div class="catItemCommentsLink">
@@ -286,7 +355,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
                 <?php endif; ?>
         </div>
         <?php endif; ?>
-    <!------------------------------------------------------------------------------------------------------------->
+
         <?php if ($this->item->params->get('catItemReadMore')): ?>
         <!-- Item "read more..." link -->
         <div class="catItemReadMore">
